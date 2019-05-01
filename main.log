@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.1)  1 MAY 2019 17:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.1)  1 MAY 2019 17:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -855,7 +855,7 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              on input line 14.
 Package typearea Info: Using dirty hack to recalculate internal output
 (typearea)             dimensions of LaTeX on input line 14.
-Package tocbasic Info: character protrusion at toc deactivated on input line 17
+Package tocbasic Info: character protrusion at toc deactivated on input line 16
 .
  (./main.toc)
 \tf@toc=\write5
@@ -865,49 +865,37 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 17
 
 
 ] (./chapters/0_abstract.tex) [4]
-(./chapters/1_introduction.tex
-
-LaTeX Warning: Citation `Gusfield' on page 5 undefined on input line 6.
-
-) [5] (./chapters/2_basic_concepts.tex) [6] (./main.bbl) [7] [8
+(./chapters/1_introduction.tex) [5] (./chapters/2_basic_concepts.tex) [6]
+[7] [8] [9] [10] [11] (./main.bbl) [12] [13
 
 
-] [9]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 35.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 35.
-
-(./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 35.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 35.
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 54.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 54.
+ (./main.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 54.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 54.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 08E61BF3B9E6886DCDCE06A864F5E453;1919.
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 35.
+(rerunfilecheck)             Checksum: 383DEC10FFD137054B8DB783AEE0406E;2414.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 54.
  ) 
 Here is how much of TeX's memory you used:
- 23645 strings out of 492982
- 426905 string characters out of 6134897
- 590053 words of memory out of 5000000
- 26756 multiletter control sequences out of 15000+600000
- 78196 words of font info for 76 fonts, out of 8000000 for 9000
+ 23656 strings out of 492982
+ 426987 string characters out of 6134897
+ 590083 words of memory out of 5000000
+ 26759 multiletter control sequences out of 15000+600000
+ 75198 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  66i,15n,85p,8857b,739s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/
-public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/
-share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/publi
-c/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/
-texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/
-lmssbx10.pfb>
-Output written on main.pdf (9 pages, 166868 bytes).
+public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/s
+hare/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/publi
+c/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/
+texmf/fonts/type1/public/lm/lmssbx10.pfb>
+Output written on main.pdf (13 pages, 150047 bytes).
 PDF statistics:
- 155 PDF objects out of 1000 (max. 8388607)
- 135 compressed objects within 2 object streams
- 27 named destinations out of 1000 (max. 500000)
- 28277 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 195 PDF objects out of 1000 (max. 8388607)
+ 172 compressed objects within 2 object streams
+ 36 named destinations out of 1000 (max. 500000)
+ 27805 words of extra memory for PDF output out of 29859 (max. 10000000)
 
