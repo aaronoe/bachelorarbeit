@@ -1,0 +1,28 @@
+\input{settings/settings}
+
+\begin{document}
+
+\input{Institutsvorlage}
+\titel{Stable marriage and finding seminar assignments} % Titel der Arbeit
+\typ{Bachelorarbeit} % Typ der Arbeit:  Diplomarbeit, Masterarbeit, Bachelorarbeit
+\grad{Bachelor of Science (B. Sc.)} % erreichter Akademischer Grad
+\autor{Aaron Oertel} % Autor der Arbeit, mit Vor- und Nachname
+\gebdatum{18.02.1997} % Geburtsdatum des Autors
+\gebort{Dinslaken} % Geburtsort des Autors
+\gutachter{Dr. Alexander van der Grinten}{Prof. Dr. Henning Meyerhenke} 
+\mitverteidigung % entfernen, falls keine Verteidigung erfolgt
+\makeTitel
+
+% Hier folgt die eigentliche Arbeit (bei doppelseitigem Druck auf einem neuen Blatt):
+\tableofcontents
+
+\newpage
+\input{chapters/0_abstract.tex}
+
+\newpage
+\input{chapters/1_introduction.tex}
+
+% Erzeugen der Selbständigkeitserklärung auf einem neuen Blatt:
+\selbstaendigkeitserklaerung{\today}
+
+\end{document}
