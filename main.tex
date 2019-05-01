@@ -13,7 +13,6 @@
 \mitverteidigung % entfernen, falls keine Verteidigung erfolgt
 \makeTitel
 
-% Hier folgt die eigentliche Arbeit (bei doppelseitigem Druck auf einem neuen Blatt):
 \tableofcontents
 
 \newpage
@@ -21,6 +20,13 @@
 
 \newpage
 \input{chapters/1_introduction.tex}
+
+\newpage
+\input{chapters/2_basic_concepts.tex}
+
+\newpage
+\bibliography{main}
+\bibliographystyle{ieeetr}
 
 % Erzeugen der Selbständigkeitserklärung auf einem neuen Blatt:
 \selbstaendigkeitserklaerung{\today}
