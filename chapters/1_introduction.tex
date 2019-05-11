@@ -1,9 +1,36 @@
 \section{Introduction}
 \label{sec:introduction}
-hello
 
-\subsection{Background}
-Background\cite{Gusfield}
+\subsection{Motivation}
+Many universities require students to enroll in a seminar in order to obtain their degree. Usually the students have a choice between a handful of different seminars, however there are capacity constraints that make it hard to give all students their first choice. Let's consider the following example: 100 students have to be assigned to one of 6 seminars, where each of the seminars has a capacity of 20. The students express their preferences by supplying a strict, but incomplete preference list of the 6 seminars. The goal for the school's administration now is to assign as many students as possible to a seminar of their choice. 
+\newline
+What makes this problem harder is that the students preferences aren't necessarily equally distributed. Oftentimes a majority of students prefers one seminar in which case conflicts exist in choosing which students get their first choice. At the same time, it can happen that students go unmatched if their preference lists are short and full of seminars that have reached full capacity already.
+\newline
+The goal of this thesis is to formally model the aforementioned problem, while presenting different algorithms for finding possible matchings and finally to evaluate these algorithms using certain metrics that make sense in the domain of matching, such as stability, rank-maximality, popularity and pareto-optimality. Additionally, an interactive system will be developed, which allows a school's administration to find a student-seminar matching using one of the presented algorithms. 
+
+\subsection{Formal Definition}
+The problem of assigning students to seminars can be described as a many-to-one matching, where one seminar is matched to a maximum of $c$ students, where $c$ is the seminar's capacity. Additionally, there are one-sided preferences on the side of the students, who provide a potentially incomplete strict ordering over the seminars. Therefore the problem can be formalized as a bipartite one-to-many matching problem, with one-sided preferences.
+
+\subsection{Other Applications}
+
+\subsection{Similar Problems}
+There are many similar problems, which differ in what the preference lists look like and how many entities of the first set are matched to how many entities of the second set. Studying of these problems reveals some important insights into matching markets.
+
+\subsubsection{Stable Marriage Problem}
+The stable marriage problem was one of the first matching problems to be researched\cite{GaleShapleyOrig} and consequently motivated a lot more research in the domain of matching.
+\newline
+The problem is stated as follows: A set of $m$ men and $n$ women shall be matched one-to-one, where each men and women provide a complete strict-preference order over the agents of the other set. The deferred acceptance algorithm presented in Gale and Shapley's paper\cite{GaleShapleyOrig}
+finds a stable, complete matching in polynomial time. Stability is defined as follows: given a women $w$ and any man that she was not matched to $m$, $w$ does not prefer $m$ more than her current partner, and $m$ does not prefer $w$ more than his current partner. 
+\newline
+TODO: present algorithm here?
+\newline
+The algorithm can be executed in two ways: 
+\begin{enumerate}
+    \item the men have priority, by proposing to women, where the woman has to accept the proposal iff it improves her situation.  
+    \item the women have priority and propose to men. This case is analogue to the first one
+\end{enumerate}
+It has been shown that all possible executions of the algorithm with men as proposers yield the same stable matching. That matching is men-optimal, which means that every man has the best partner that he can have in any stable matching.\cite{Gusfield} Additionally, with men proposing the produced matchings has also been shown to be women-pessimal, meaning that every woman is matched to the worst partner that she can have in any matching.\cite{Gusfield}
+
 
 \subsection{Outline}
 Outline Test

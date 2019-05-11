@@ -1,5 +1,10 @@
 \begin{thebibliography}{1}
 
+\bibitem{GaleShapleyOrig}
+D.~Gale and L.~S. Shapley, ``College admissions and the stability of
+  marriage,'' {\em The American Mathematical Monthly}, vol.~69, no.~1,
+  pp.~9--15, 1962.
+
 \bibitem{Gusfield}
 D.~Gusfield and R.~W. Irving, {\em The Stable Marriage Problem: Structure and
   Algorithms}.
