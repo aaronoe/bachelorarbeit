@@ -10,4 +10,22 @@ D.~Gusfield and R.~W. Irving, {\em The Stable Marriage Problem: Structure and
   Algorithms}.
 \newblock Cambridge, MA, USA: MIT Press, 1989.
 
+\bibitem{RePEc:ris:nobelp:2012_005}
+A.~Roth, ``The theory and practice of market design,'' Nobel Prize in Economics
+  documents 2012-5, Nobel Prize Committee, 2012.
+
+\bibitem{RONN1990285}
+E.~Ronn, ``Np-complete stable matching problems,'' {\em Journal of Algorithms},
+  vol.~11, no.~2, pp.~285 -- 304, 1990.
+
+\bibitem{NBERw6963}
+A.~E. Roth and E.~Peranson, ``The redesign of the matching market for american
+  physicians: Some engineering aspects of economic design,'' Working Paper
+  6963, National Bureau of Economic Research, February 1999.
+
+\bibitem{Munkres}
+J.~Munkres, ``Algorithms for the assignment and transportation problems,'' {\em
+  Journal of the Society for Industrial and Applied Mathematics}, vol.~5,
+  no.~1, pp.~32--38, 1957.
+
 \end{thebibliography}

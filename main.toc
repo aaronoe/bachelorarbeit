@@ -3,20 +3,22 @@
 \contentsline {section}{\numberline {2}Introduction}{5}{section.2}
 \contentsline {subsection}{\numberline {2.1}Motivation}{5}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Formal Definition}{5}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Other Applications}{5}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}Similar Problems}{5}{subsection.2.4}
-\contentsline {subsubsection}{\numberline {2.4.1}Stable Marriage Problem}{5}{subsubsection.2.4.1}
-\contentsline {subsection}{\numberline {2.5}Outline}{6}{subsection.2.5}
-\contentsline {section}{\numberline {3}Basic Concepts}{7}{section.3}
-\contentsline {subsection}{\numberline {3.1}Graph Matching}{7}{subsection.3.1}
-\contentsline {subsubsection}{\numberline {3.1.1}Unweighted Graphs}{7}{subsubsection.3.1.1}
-\contentsline {subsubsection}{\numberline {3.1.2}Weighted Graphs}{7}{subsubsection.3.1.2}
-\contentsline {subsection}{\numberline {3.2}Stable Matching}{7}{subsection.3.2}
-\contentsline {subsubsection}{\numberline {3.2.1}Practical Applications}{7}{subsubsection.3.2.1}
-\contentsline {subsubsection}{\numberline {3.2.2}One to one: Stable Marriage Problem}{7}{subsubsection.3.2.2}
-\contentsline {subsubsection}{\numberline {3.2.3}One to many: Hospital Residents Problem}{7}{subsubsection.3.2.3}
-\contentsline {section}{\numberline {4}Methodology}{8}{section.4}
-\contentsline {section}{\numberline {5}Implementation}{9}{section.5}
-\contentsline {section}{\numberline {6}Evaluation}{10}{section.6}
-\contentsline {section}{\numberline {7}Discussion}{11}{section.7}
-\contentsline {section}{\numberline {8}Conclusion}{12}{section.8}
+\contentsline {subsection}{\numberline {2.3}Similar Problems}{5}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}Stable Marriage Problem}{5}{subsubsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.2}The Hospitals/Residents Problem}{6}{subsubsection.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.3}House allocation problem}{7}{subsubsection.2.3.3}
+\contentsline {subsubsection}{\numberline {2.3.4}Assignment Problem}{7}{subsubsection.2.3.4}
+\contentsline {subsection}{\numberline {2.4}Outline}{7}{subsection.2.4}
+\contentsline {section}{\numberline {3}Basic Concepts}{8}{section.3}
+\contentsline {subsection}{\numberline {3.1}Graph Matching}{8}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}Unweighted Graphs}{8}{subsubsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.2}Weighted Graphs}{8}{subsubsection.3.1.2}
+\contentsline {subsection}{\numberline {3.2}Stable Matching}{8}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Practical Applications}{8}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}One to one: Stable Marriage Problem}{8}{subsubsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.3}One to many: Hospital Residents Problem}{8}{subsubsection.3.2.3}
+\contentsline {section}{\numberline {4}Methodology}{9}{section.4}
+\contentsline {section}{\numberline {5}Implementation}{10}{section.5}
+\contentsline {section}{\numberline {6}Evaluation}{11}{section.6}
+\contentsline {section}{\numberline {7}Discussion}{12}{section.7}
+\contentsline {section}{\numberline {8}Conclusion}{13}{section.8}
