@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{GaleShapleyOrig}
 D.~Gale and L.~S. Shapley, ``College admissions and the stability of
@@ -23,9 +23,26 @@ A.~E. Roth and E.~Peranson, ``The redesign of the matching market for american
   physicians: Some engineering aspects of economic design,'' Working Paper
   6963, National Bureau of Economic Research, February 1999.
 
+\bibitem{FEKETE2003219}
+S.~P. Fekete, M.~Skutella, and G.~J. Woeginger, ``The complexity of economic
+  equilibria for house allocation markets,'' {\em Information Processing
+  Letters}, vol.~88, no.~5, pp.~219 -- 223, 2003.
+
+\bibitem{sng-matching}
+C.~Thiam Soon~Sng, ``Efficient algorithms for bipartite matching problems with
+  preferences,'' 05 2019.
+
+\bibitem{algorithmics}
+D.~F. Manlove, {\em Algorithmics of Matching Under Preferences}.
+\newblock WORLD SCIENTIFIC, 2013.
+
 \bibitem{Munkres}
 J.~Munkres, ``Algorithms for the assignment and transportation problems,'' {\em
   Journal of the Society for Industrial and Applied Mathematics}, vol.~5,
   no.~1, pp.~32--38, 1957.
+
+\bibitem{GraphTheoryIntro}
+D.~B. West, {\em Introduction to Graph Theory (2nd Edition)}.
+\newblock Pearson, 2000.
 
 \end{thebibliography}

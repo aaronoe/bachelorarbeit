@@ -8,17 +8,24 @@
 \contentsline {subsubsection}{\numberline {2.3.2}The Hospitals/Residents Problem}{6}{subsubsection.2.3.2}
 \contentsline {subsubsection}{\numberline {2.3.3}House allocation problem}{7}{subsubsection.2.3.3}
 \contentsline {subsubsection}{\numberline {2.3.4}Assignment Problem}{7}{subsubsection.2.3.4}
-\contentsline {subsection}{\numberline {2.4}Outline}{7}{subsection.2.4}
-\contentsline {section}{\numberline {3}Basic Concepts}{8}{section.3}
-\contentsline {subsection}{\numberline {3.1}Graph Matching}{8}{subsection.3.1}
-\contentsline {subsubsection}{\numberline {3.1.1}Unweighted Graphs}{8}{subsubsection.3.1.1}
-\contentsline {subsubsection}{\numberline {3.1.2}Weighted Graphs}{8}{subsubsection.3.1.2}
-\contentsline {subsection}{\numberline {3.2}Stable Matching}{8}{subsection.3.2}
-\contentsline {subsubsection}{\numberline {3.2.1}Practical Applications}{8}{subsubsection.3.2.1}
-\contentsline {subsubsection}{\numberline {3.2.2}One to one: Stable Marriage Problem}{8}{subsubsection.3.2.2}
-\contentsline {subsubsection}{\numberline {3.2.3}One to many: Hospital Residents Problem}{8}{subsubsection.3.2.3}
-\contentsline {section}{\numberline {4}Methodology}{9}{section.4}
-\contentsline {section}{\numberline {5}Implementation}{10}{section.5}
-\contentsline {section}{\numberline {6}Evaluation}{11}{section.6}
-\contentsline {section}{\numberline {7}Discussion}{12}{section.7}
-\contentsline {section}{\numberline {8}Conclusion}{13}{section.8}
+\contentsline {subsection}{\numberline {2.4}Optimality criteria for matchings}{7}{subsection.2.4}
+\contentsline {subsubsection}{\numberline {2.4.1}Maximum cardinality}{8}{subsubsection.2.4.1}
+\contentsline {subsubsection}{\numberline {2.4.2}Popularity}{8}{subsubsection.2.4.2}
+\contentsline {subsubsection}{\numberline {2.4.3}Pareto Optimality}{8}{subsubsection.2.4.3}
+\contentsline {subsubsection}{\numberline {2.4.4}Rank Maximality}{8}{subsubsection.2.4.4}
+\contentsline {subsubsection}{\numberline {2.4.5}Profile-based Optimality}{8}{subsubsection.2.4.5}
+\contentsline {subsubsection}{\numberline {2.4.6}Maximum Utility}{8}{subsubsection.2.4.6}
+\contentsline {subsection}{\numberline {2.5}Outline}{8}{subsection.2.5}
+\contentsline {section}{\numberline {3}Basic Concepts}{9}{section.3}
+\contentsline {subsection}{\numberline {3.1}Graph Matching}{9}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}Unweighted Graphs}{9}{subsubsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.2}Weighted Graphs}{9}{subsubsection.3.1.2}
+\contentsline {subsection}{\numberline {3.2}Stable Matching}{9}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Practical Applications}{9}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}One to one: Stable Marriage Problem}{9}{subsubsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.3}One to many: Hospital Residents Problem}{9}{subsubsection.3.2.3}
+\contentsline {section}{\numberline {4}Methodology}{10}{section.4}
+\contentsline {section}{\numberline {5}Implementation}{11}{section.5}
+\contentsline {section}{\numberline {6}Evaluation}{12}{section.6}
+\contentsline {section}{\numberline {7}Discussion}{13}{section.7}
+\contentsline {section}{\numberline {8}Conclusion}{14}{section.8}
