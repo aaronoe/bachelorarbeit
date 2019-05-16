@@ -31,7 +31,7 @@ It has been shown that all possible executions of the algorithm with men as prop
 \newline
 While the scenario of matching women to men like described (hopefully) doesn't occur in the real world, Gale and Shapley's paper inspired a lot more approaches to other practical problems:
 
-\subsubsection{The Hospitals/Residents Problem}
+\subsubsection{Hospitals/Residents Problem}
 A few years after the publication of Gale and Shapley's original paper, it was found that the deferred acceptance algorithm was essentially the same algorithm used by the National Resident Matching Program (NRMP) in the United States to match graduating medical students to residency positions in hospitals.\cite{Gusfield} As a matter of fact, Gale and Shapley's paper described an algorithm for the so-called "college admissions problem"\cite{GaleShapleyOrig}, which is essentially the same problem. Just like in the stable-marriage problem, there is a solution that be hospital-optimal or resident-pessimal. 
 \newline
 The problem can be described as finding a one-to-many matching with two-sided incomplete, but strict preferences. Essentially, a hospital can offer multiple spots and both parties can mark entities from the other set as unacceptable by not including them in their preference list.\cite{RePEc:ris:nobelp:2012_005} 
@@ -50,52 +50,6 @@ $\sum_{a \in A} W(a, M(a))$.
 One of the first algorithms used for solving this problem was the Hungarian algorithm by Munkres, which finds a minimum-weight matching in polynomial time.\cite{Munkres} 
 \newline
 Alternatively the problem can be transformed into an instance of the minimum-cost flow problem to determine a minimum weight matching. Section 3.4 (TODO) will further investigate using this algorithm for the problem of student-seminar matchings.
-
-\subsection{Optimality criteria for matchings}
-Looking at the previously presented problems, it is clear that there are different objective functions or optimality criteria for such matchings. For instance, in the stable marriage problem, matchings are primarily judged by the stability characteristic. However such a characteristic does not make sense in the case of the student-seminar problem, since it assumes both-sided preferences. For that very reason, different criteria have to be used for judging the quality of a matching.
-\newline
-Intuitively, when thinking about matching students to seminars, it would be desirable to match as many students as possible, as well as matching the students to their first choice, etc. To formalize these requirements, a few criteria have been discussed in academia, which will be helpful for comparing different approaches. 
-
-\subsubsection{Maximum cardinality}
-The goal of the maximum cardinality problem is finding a matching $M$ on a graph $G=(V=(X, Y), E)$, so that $|M|$ is maximal.\cite{GraphTheoryIntro} Consequently, maximum cardinality as an optimality criteria means that a matching is ideal if the number of students that are matched is maximized among all possible matchings. It should be noted here, that the student's preferences are not considered when computing the maximum cardinality matching. As a matter of fact, it is possible that multiple matchings (TODO: source) of the same cardinality exist, where one of the matchings could be better in the sense of a different optimality criteria. Therefore, maximum cardinality may be desirable, but should be used in conjunction with a different criteria, as it does not consider student preferences.
-
-\subsubsection{Pareto Optimality}
-Pareto optimality or Pareto efficiency is a commonly used term in economics to describe the state of resource allocations. Intuitively an allocation, or in our case a matching, is Pareto optimal, iff no improvement can be made to a single individual, without worsening the situation for other individuals. For example a matching, in which two students $s_1, s_2$ would be better off by swapping their seminars is not Pareto optimal.
-In order to more formally define Pareto-optimality we must first define student preferences more clearly: 
-\newline
-Given two matchings $M, M'$ and a student $s \in S$, the student $s$ prefers $M'$ over $M$ in the following cases:
-\begin{enumerate}
-    \item s is matched in $M'$ and unmatched in $M$, or
-    \item s is matched in both $M'$ and $M$, however prefers $M'(a)$ over $M(a)$
-\end{enumerate}
-Using this defintion we now define Pareto optimality as follows: Given an instance $I$ of a matching problem and its set of possible matchings $\mathcal{M}$, we define a relation $\succ$ on $\mathcal{M}$, where given two matchings $M, M' \in \mathcal{M}$ the following holds true: $M' \succ M$ if no students prefers $M$ to $M'$, but some student prefers $M'$ over $M$. Consequently a matching $M' \in \mathcal{M}$ is called Pareto-optimal iff there exists no other matching $M \in \mathcal{M}$, such that $M' \succ M$.\cite{algorithmics}
-A Pareto-optimal matching always exists for any instance of a matching problem and can be efficiently computed using one of various algorithms. A simple greedy algorithm uses the random serial-dictatorship mechanism to draw each agent in random order and let's them select their most-preferred, available item from their preference list.\cite{RothTwoSided, SerialDictatorship} However the greedy algorithm does not always compute a Pareto optimal matching of maximum cardinality, which would be desirable in student-seminar matching.\cite{Abraham:2005:POH:2129395.2129512}
-
-\subsubsection{Popularity}
-In the context of matching with one-sided preference lists, using an optimality criteria (TODO) like Stability, that is based on the preferences of both parties, doesn't apply. Instead a commonly used criteria is a matching $M$'s Popularity, which indicates that more students prefer that matching $M$ over any other possible matching.\cite{ManlovePopularMatchings} Given the definition of the student-seminar matching problem, we can formally define Popularity as follows:
-Let $P(M', M)$ be the set of students who prefer $M'$ over $M$. A matching $M'$ is said to be more popular than $M$, denoted by $M' \succ M$, iff $|P(M', M)| > |P(M, M')|$. That concludes that a matching $M'$ is popular, iff there is no other matching $M$ that is more popular than $M'$, i.e. $M' \succ M$.\cite{Klaus, AbrahamPopular} Due to that definition, this criteria is often also referred to as the majority assignment.\cite{Gardenfors}
-\newline
-Using this definition, we can see that every popular matching also is a pareto-optimal matching. Given a popular matching $M'$ and any matching $M$ for an instance $I$ of the problem, $M'$ is pareto-optimal if $P(M, M') = 0$ and $P(M', M) \geq 1$, which obviously implies that $M'$ is popular as well.\cite{Klaus}
-\newline
-It is important to note that a popular matching's cardinality could be smaller than the maximum cardinality, meaning that in the case of student-seminar matchings, a group of students could be left unassigned in favor of the majority of the students having a match that they prefer. (TODO: sentence)
-Additionally, a popular matching, unlike a pareto-optimal matching, does not always exist. To illustrate this, let's consider the following instance: $S=\{s_1, s_2, s_3\}$, $T=\{t_1, t_2, t_3\}$, where each student has the same preferences, being $t_1 < t_2 < t_3$. Given the following matchings, we can confirm that there exists no popular matching for the given instance: 
-\begin{enumerate}
-    \item $M_1=\{(s_1, t_1), (s_2, t_2), (s_3, t_3)\}$
-    \item $M_2=\{(s_1, t_3), (s_2, t_1), (s_3, t_2)\}$
-    \item $M_3=\{(s_1, t_2), (s_2, t_3), (s_3, t_1)\}$
-\end{enumerate}
-Obviously $M_2$ is more popular than $M_1$, $M_3$ is more popular than $M_2$ and $M_1$ is more popular than $M_3$.\cite{AbrahamPopular}
-
-\subsubsection{Strategy Proofness}
-
-\subsubsection{Profile-based Optimality}
-Contrary to popularity and Pareto optimality, where the students' satisfaction with a matching is compared, we could also examine the structure of a matching by defining the profile of a matching and comparing it. Intuitively the profile of a matching $M$ is a vector whose $i$th component indicates the number of students obtaining their $i$th-choice seminar in $M$ according to their preference list. 
-\newline
-Formally, let $I$ be an instance and $\mathcal{M}$ the set of its matchings. Given a matching $M \in \mathcal{M}$ with the set of students $S$ and seminars $T$, we define the regret $r(M)$ of $M$ as follows:
-$r(M) = \max \{rank(s_i, t_j): (s_i, t_j)\in M\, s_i \in S, t_j \in T\}$, where for every match $(s_i, t_j) \in M$, $rank(s_i, t_j)$ is defined as the position of $t_j$ on $s_i$'s preference list. The profile of $M$ is now defined as a vector $\langle p_1,..., p_r* \rangle$, with $r^* = r(M)$ and for each $k \in [1,r^*]$, the $k$th component is defined as: $p_k=|\{(s_i, t_j) \in M: rank(s_i, t_j) = k\}|$.\cite{algorithmics}
-\newline
-Using the defintion of a matching's profile, it is now possible to define a matching as rank-maximal as follows: A matching $M$ is rank-maximal, if its profile $p(M)$ is lexicographically maximum over all possible matchings in $\mathcal{M}$. That means that the number of students in $M$ who are matched to their first choice is maximum among all $M' \in \mathcal{M}$ and taking that into consideration, the number of students who are matched to their 2nd choice is maximum among all matchings, and so on.
-TODO: greedy rank maximal as well? 
 
 \subsection{Outline}
 Now that the problem has been formalized and similar problems have been presented, I will present several different algorithmic approaches to find possible matchings. To evaluate these matchings I will also present commonly used metrics like:

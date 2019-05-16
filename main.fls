@@ -300,8 +300,8 @@ INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/1_introduc
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmssbx10.tfm
 INPUT /usr/share/texmf/tex/latex/lm/omslmr.fd
 INPUT /usr/share/texmf/tex/latex/lm/omslmr.fd
-INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/2_basic_concepts.tex
-INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/2_basic_concepts.tex
+INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/2_optimality.tex
+INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/2_optimality.tex
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.bbl
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.bbl
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmri12.tfm
@@ -325,4 +325,3 @@ INPUT /usr/share/texmf/fonts/type1/public/lm/lmss17.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb

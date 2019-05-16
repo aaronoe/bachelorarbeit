@@ -5,26 +5,19 @@
 \contentsline {subsection}{\numberline {2.2}Formal Definition}{5}{subsection.2.2}
 \contentsline {subsection}{\numberline {2.3}Similar Problems}{5}{subsection.2.3}
 \contentsline {subsubsection}{\numberline {2.3.1}Stable Marriage Problem}{5}{subsubsection.2.3.1}
-\contentsline {subsubsection}{\numberline {2.3.2}The Hospitals/Residents Problem}{6}{subsubsection.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.2}Hospitals/Residents Problem}{6}{subsubsection.2.3.2}
 \contentsline {subsubsection}{\numberline {2.3.3}House allocation problem}{7}{subsubsection.2.3.3}
 \contentsline {subsubsection}{\numberline {2.3.4}Assignment Problem}{7}{subsubsection.2.3.4}
-\contentsline {subsection}{\numberline {2.4}Optimality criteria for matchings}{7}{subsection.2.4}
-\contentsline {subsubsection}{\numberline {2.4.1}Maximum cardinality}{8}{subsubsection.2.4.1}
-\contentsline {subsubsection}{\numberline {2.4.2}Pareto Optimality}{8}{subsubsection.2.4.2}
-\contentsline {subsubsection}{\numberline {2.4.3}Popularity}{9}{subsubsection.2.4.3}
-\contentsline {subsubsection}{\numberline {2.4.4}Strategy Proofness}{9}{subsubsection.2.4.4}
-\contentsline {subsubsection}{\numberline {2.4.5}Profile-based Optimality}{9}{subsubsection.2.4.5}
-\contentsline {subsection}{\numberline {2.5}Outline}{10}{subsection.2.5}
-\contentsline {section}{\numberline {3}Basic Concepts}{11}{section.3}
-\contentsline {subsection}{\numberline {3.1}Graph Matching}{11}{subsection.3.1}
-\contentsline {subsubsection}{\numberline {3.1.1}Unweighted Graphs}{11}{subsubsection.3.1.1}
-\contentsline {subsubsection}{\numberline {3.1.2}Weighted Graphs}{11}{subsubsection.3.1.2}
-\contentsline {subsection}{\numberline {3.2}Stable Matching}{11}{subsection.3.2}
-\contentsline {subsubsection}{\numberline {3.2.1}Practical Applications}{11}{subsubsection.3.2.1}
-\contentsline {subsubsection}{\numberline {3.2.2}One to one: Stable Marriage Problem}{11}{subsubsection.3.2.2}
-\contentsline {subsubsection}{\numberline {3.2.3}One to many: Hospital Residents Problem}{11}{subsubsection.3.2.3}
-\contentsline {section}{\numberline {4}Methodology}{12}{section.4}
-\contentsline {section}{\numberline {5}Implementation}{13}{section.5}
-\contentsline {section}{\numberline {6}Evaluation}{14}{section.6}
-\contentsline {section}{\numberline {7}Discussion}{15}{section.7}
-\contentsline {section}{\numberline {8}Conclusion}{16}{section.8}
+\contentsline {subsection}{\numberline {2.4}Outline}{7}{subsection.2.4}
+\contentsline {section}{\numberline {3}Optimality criteria for matchings}{9}{section.3}
+\contentsline {subsection}{\numberline {3.1}Maximum cardinality}{9}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Pareto Optimality}{9}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Popularity}{10}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Strategy Proofness}{11}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Profile-based Optimality}{11}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.6}Application to student-seminar matching}{11}{subsection.3.6}
+\contentsline {section}{\numberline {4}Methodology}{13}{section.4}
+\contentsline {section}{\numberline {5}Implementation}{14}{section.5}
+\contentsline {section}{\numberline {6}Evaluation}{15}{section.6}
+\contentsline {section}{\numberline {7}Discussion}{16}{section.7}
+\contentsline {section}{\numberline {8}Conclusion}{17}{section.8}
