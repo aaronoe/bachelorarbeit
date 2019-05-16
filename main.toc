@@ -12,10 +12,9 @@
 \contentsline {subsubsection}{\numberline {2.4.1}Maximum cardinality}{8}{subsubsection.2.4.1}
 \contentsline {subsubsection}{\numberline {2.4.2}Pareto Optimality}{8}{subsubsection.2.4.2}
 \contentsline {subsubsection}{\numberline {2.4.3}Popularity}{9}{subsubsection.2.4.3}
-\contentsline {subsubsection}{\numberline {2.4.4}Rank Maximality}{9}{subsubsection.2.4.4}
+\contentsline {subsubsection}{\numberline {2.4.4}Strategy Proofness}{9}{subsubsection.2.4.4}
 \contentsline {subsubsection}{\numberline {2.4.5}Profile-based Optimality}{9}{subsubsection.2.4.5}
-\contentsline {subsubsection}{\numberline {2.4.6}Maximum Utility}{9}{subsubsection.2.4.6}
-\contentsline {subsection}{\numberline {2.5}Outline}{9}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.5}Outline}{10}{subsection.2.5}
 \contentsline {section}{\numberline {3}Basic Concepts}{11}{section.3}
 \contentsline {subsection}{\numberline {3.1}Graph Matching}{11}{subsection.3.1}
 \contentsline {subsubsection}{\numberline {3.1.1}Unweighted Graphs}{11}{subsubsection.3.1.1}

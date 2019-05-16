@@ -86,9 +86,16 @@ Additionally, a popular matching, unlike a pareto-optimal matching, does not alw
 \end{enumerate}
 Obviously $M_2$ is more popular than $M_1$, $M_3$ is more popular than $M_2$ and $M_1$ is more popular than $M_3$.\cite{AbrahamPopular}
 
-\subsubsection{Rank Maximality}
+\subsubsection{Strategy Proofness}
+
 \subsubsection{Profile-based Optimality}
-\subsubsection{Maximum Utility}
+Contrary to popularity and Pareto optimality, where the students' satisfaction with a matching is compared, we could also examine the structure of a matching by defining the profile of a matching and comparing it. Intuitively the profile of a matching $M$ is a vector whose $i$th component indicates the number of students obtaining their $i$th-choice seminar in $M$ according to their preference list. 
+\newline
+Formally, let $I$ be an instance and $\mathcal{M}$ the set of its matchings. Given a matching $M \in \mathcal{M}$ with the set of students $S$ and seminars $T$, we define the regret $r(M)$ of $M$ as follows:
+$r(M) = \max \{rank(s_i, t_j): (s_i, t_j)\in M\, s_i \in S, t_j \in T\}$, where for every match $(s_i, t_j) \in M$, $rank(s_i, t_j)$ is defined as the position of $t_j$ on $s_i$'s preference list. The profile of $M$ is now defined as a vector $\langle p_1,..., p_r* \rangle$, with $r^* = r(M)$ and for each $k \in [1,r^*]$, the $k$th component is defined as: $p_k=|\{(s_i, t_j) \in M: rank(s_i, t_j) = k\}|$.\cite{algorithmics}
+\newline
+Using the defintion of a matching's profile, it is now possible to define a matching as rank-maximal as follows: A matching $M$ is rank-maximal, if its profile $p(M)$ is lexicographically maximum over all possible matchings in $\mathcal{M}$. That means that the number of students in $M$ who are matched to their first choice is maximum among all $M' \in \mathcal{M}$ and taking that into consideration, the number of students who are matched to their 2nd choice is maximum among all matchings, and so on.
+TODO: greedy rank maximal as well? 
 
 \subsection{Outline}
 Now that the problem has been formalized and similar problems have been presented, I will present several different algorithmic approaches to find possible matchings. To evaluate these matchings I will also present commonly used metrics like:
