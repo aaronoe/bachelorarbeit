@@ -4,45 +4,45 @@ The top-level auxiliary file: main.aux
 The style file: ieeetr.bst
 Database file #1: main.bib
 Warning--empty journal in sng-matching
-You've used 14 entries,
+You've used 17 entries,
             1876 wiz_defined-function locations,
-            589 strings with 5888 characters,
-and the built_in function-call counts, 3392 in all, are:
-= -- 334
-> -- 113
+            612 strings with 6622 characters,
+and the built_in function-call counts, 4310 in all, are:
+= -- 429
+> -- 143
 < -- 2
-+ -- 44
-- -- 30
-* -- 234
-:= -- 486
-add.period$ -- 17
-call.type$ -- 14
-change.case$ -- 11
++ -- 55
+- -- 38
+* -- 302
+:= -- 606
+add.period$ -- 21
+call.type$ -- 17
+change.case$ -- 13
 chr.to.int$ -- 0
-cite$ -- 15
-duplicate$ -- 177
-empty$ -- 343
-format.name$ -- 30
-if$ -- 838
+cite$ -- 18
+duplicate$ -- 225
+empty$ -- 432
+format.name$ -- 38
+if$ -- 1068
 int.to.chr$ -- 0
-int.to.str$ -- 14
-missing$ -- 14
-newline$ -- 48
-num.names$ -- 16
-pop$ -- 47
+int.to.str$ -- 17
+missing$ -- 18
+newline$ -- 58
+num.names$ -- 19
+pop$ -- 54
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 111
+skip$ -- 149
 stack$ -- 0
-substring$ -- 199
-swap$ -- 66
+substring$ -- 267
+swap$ -- 88
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 31
-width$ -- 16
-write$ -- 138
+while$ -- 39
+width$ -- 19
+write$ -- 171
 (There was 1 warning)

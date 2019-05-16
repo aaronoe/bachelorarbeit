@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.1)  16 MAY 2019 15:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.1)  16 MAY 2019 17:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -726,13 +726,13 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 16.
 
 
 ] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/0_abstract.tex) [4] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/1_introduction.tex [5] [6] [7] [8]
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 90.
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 96.
  (/usr/share/texmf/tex/latex/lm/omslmr.fd
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 90.
-) [9] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/2_basic_concepts.tex) [10] [11] [12] [13] [14] [15] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.bbl) [16] [17
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 96.
+ [9]) [10] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/2_basic_concepts.tex) [11] [12] [13] [14] [15] [16] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.bbl [17]) [18] [19
 
 
 ]
@@ -746,18 +746,18 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 53.
  ) 
 Here is how much of TeX's memory you used:
- 24227 strings out of 492982
- 437641 string characters out of 6134897
- 600113 words of memory out of 5000000
- 27192 multiletter control sequences out of 15000+600000
- 81088 words of font info for 123 fonts, out of 8000000 for 9000
+ 24239 strings out of 492982
+ 437844 string characters out of 6134897
+ 601244 words of memory out of 5000000
+ 27195 multiletter control sequences out of 15000+600000
+ 81270 words of font info for 125 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  66i,15n,85p,8912b,739s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}</usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.pdf (17 pages, 227072 bytes).
+Output written on /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.pdf (19 pages, 232063 bytes).
 PDF statistics:
- 353 PDF objects out of 1000 (max. 8388607)
- 317 compressed objects within 4 object streams
- 72 named destinations out of 1000 (max. 500000)
+ 372 PDF objects out of 1000 (max. 8388607)
+ 334 compressed objects within 4 object streams
+ 77 named destinations out of 1000 (max. 500000)
  27901 words of extra memory for PDF output out of 29859 (max. 10000000)
 

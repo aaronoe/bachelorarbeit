@@ -11,21 +11,21 @@
 \contentsline {subsection}{\numberline {2.4}Optimality criteria for matchings}{7}{subsection.2.4}
 \contentsline {subsubsection}{\numberline {2.4.1}Maximum cardinality}{8}{subsubsection.2.4.1}
 \contentsline {subsubsection}{\numberline {2.4.2}Pareto Optimality}{8}{subsubsection.2.4.2}
-\contentsline {subsubsection}{\numberline {2.4.3}Popularity}{8}{subsubsection.2.4.3}
+\contentsline {subsubsection}{\numberline {2.4.3}Popularity}{9}{subsubsection.2.4.3}
 \contentsline {subsubsection}{\numberline {2.4.4}Rank Maximality}{9}{subsubsection.2.4.4}
 \contentsline {subsubsection}{\numberline {2.4.5}Profile-based Optimality}{9}{subsubsection.2.4.5}
 \contentsline {subsubsection}{\numberline {2.4.6}Maximum Utility}{9}{subsubsection.2.4.6}
 \contentsline {subsection}{\numberline {2.5}Outline}{9}{subsection.2.5}
-\contentsline {section}{\numberline {3}Basic Concepts}{10}{section.3}
-\contentsline {subsection}{\numberline {3.1}Graph Matching}{10}{subsection.3.1}
-\contentsline {subsubsection}{\numberline {3.1.1}Unweighted Graphs}{10}{subsubsection.3.1.1}
-\contentsline {subsubsection}{\numberline {3.1.2}Weighted Graphs}{10}{subsubsection.3.1.2}
-\contentsline {subsection}{\numberline {3.2}Stable Matching}{10}{subsection.3.2}
-\contentsline {subsubsection}{\numberline {3.2.1}Practical Applications}{10}{subsubsection.3.2.1}
-\contentsline {subsubsection}{\numberline {3.2.2}One to one: Stable Marriage Problem}{10}{subsubsection.3.2.2}
-\contentsline {subsubsection}{\numberline {3.2.3}One to many: Hospital Residents Problem}{10}{subsubsection.3.2.3}
-\contentsline {section}{\numberline {4}Methodology}{11}{section.4}
-\contentsline {section}{\numberline {5}Implementation}{12}{section.5}
-\contentsline {section}{\numberline {6}Evaluation}{13}{section.6}
-\contentsline {section}{\numberline {7}Discussion}{14}{section.7}
-\contentsline {section}{\numberline {8}Conclusion}{15}{section.8}
+\contentsline {section}{\numberline {3}Basic Concepts}{11}{section.3}
+\contentsline {subsection}{\numberline {3.1}Graph Matching}{11}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}Unweighted Graphs}{11}{subsubsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.2}Weighted Graphs}{11}{subsubsection.3.1.2}
+\contentsline {subsection}{\numberline {3.2}Stable Matching}{11}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Practical Applications}{11}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}One to one: Stable Marriage Problem}{11}{subsubsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.3}One to many: Hospital Residents Problem}{11}{subsubsection.3.2.3}
+\contentsline {section}{\numberline {4}Methodology}{12}{section.4}
+\contentsline {section}{\numberline {5}Implementation}{13}{section.5}
+\contentsline {section}{\numberline {6}Evaluation}{14}{section.6}
+\contentsline {section}{\numberline {7}Discussion}{15}{section.7}
+\contentsline {section}{\numberline {8}Conclusion}{16}{section.8}

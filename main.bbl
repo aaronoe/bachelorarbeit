@@ -33,8 +33,9 @@ C.~Thiam Soon~Sng, ``Efficient algorithms for bipartite matching problems with
   preferences,'' 05 2019.
 
 \bibitem{algorithmics}
-D.~F. Manlove, {\em Algorithmics of Matching Under Preferences}.
-\newblock WORLD SCIENTIFIC, 2013.
+D.~F. Manlove, {\em Algorithmics of Matching Under Preferences}, vol.~2 of {\em
+  Series on Theoretical Computer Science}.
+\newblock WorldScientific, 2013.
 
 \bibitem{Munkres}
 J.~Munkres, ``Algorithms for the assignment and transportation problems,'' {\em
@@ -44,6 +45,22 @@ J.~Munkres, ``Algorithms for the assignment and transportation problems,'' {\em
 \bibitem{GraphTheoryIntro}
 D.~B. West, {\em Introduction to Graph Theory (2nd Edition)}.
 \newblock Pearson, 2000.
+
+\bibitem{RothTwoSided}
+A.~E. Roth and M.~A.~O. Sotomayor, {\em Two-Sided Matching: A Study in
+  Game-Theoretic Modeling and Analysis}.
+\newblock Econometric Society Monographs, Cambridge University Press, 1990.
+
+\bibitem{SerialDictatorship}
+A.~Abdulkadiroglu and T.~Sonmez, ``{Random Serial Dictatorship and the Core
+  from Random Endowments in House Allocation Problems},'' {\em Econometrica},
+  vol.~66, pp.~689--702, May 1998.
+
+\bibitem{Abraham:2005:POH:2129395.2129512}
+D.~J. Abraham, K.~Cechl\'{a}rov\'{a}, D.~F. Manlove, and K.~Mehlhorn, ``Pareto
+  optimality in house allocation problems,'' in {\em Proceedings of the 16th
+  International Conference on Algorithms and Computation}, ISAAC'05, (Berlin,
+  Heidelberg), pp.~1163--1175, Springer-Verlag, 2005.
 
 \bibitem{ManlovePopularMatchings}
 D.~Manlove and C.~Sng, ``Popular matchings in the capacitated house allocation
