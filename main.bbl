@@ -45,4 +45,24 @@ J.~Munkres, ``Algorithms for the assignment and transportation problems,'' {\em
 D.~B. West, {\em Introduction to Graph Theory (2nd Edition)}.
 \newblock Pearson, 2000.
 
+\bibitem{ManlovePopularMatchings}
+D.~Manlove and C.~Sng, ``Popular matchings in the capacitated house allocation
+  problem,'' September 2006.
+
+\bibitem{Klaus}
+B.~Klaus, D.~F. Manlove, and F.~Rossi, ``Matching under preferences,'' in {\em
+  Handbook of Computational Social Choice} (F.~Brandt, V.~Conitzer, U.~Endriss,
+  J.~Lang, and A.~D. Procaccia, eds.), pp.~333--355, Cambridge ; New York:
+  Cambridge University Press, April 2016.
+
+\bibitem{AbrahamPopular}
+D.~J. Abraham, R.~W. Irving, T.~Kavitha, and K.~Mehlhorn, ``Popular
+  matchings,'' in {\em Proceedings of the Sixteenth Annual ACM-SIAM Symposium
+  on Discrete Algorithms}, SODA '05, (Philadelphia, PA, USA), pp.~424--432,
+  Society for Industrial and Applied Mathematics, 2005.
+
+\bibitem{Gardenfors}
+P.~Gärdenfors, ``Match making: Assignments based on bilateral preferences,''
+  {\em Behavioral Science}, vol.~20, no.~3, pp.~166--173, 1975.
+
 \end{thebibliography}

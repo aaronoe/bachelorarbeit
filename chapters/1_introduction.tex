@@ -57,11 +57,29 @@ Looking at the previously presented problems, it is clear that there are differe
 Intuitively, when thinking about matching students to seminars, it would be desirable to match as many students as possible, as well as matching the students to their first choice, etc. To formalize these requirements, a few criteria have been discussed in academia, which will be helpful for comparing different approaches. 
 
 \subsubsection{Maximum cardinality}
-The goal of the maximum cardinality problem is finding a matching $M$ on a graph $G=(V=(X, Y), E)$, so that $|M|$ is maximal.\cite{GraphTheoryIntro} Consequently, maximum cardinality as an optimality criteria means that a matching is ideal in the sense of the criteria if the number of students that are matched is maximized among all possible matchings.
-
-\subsubsection{Popularity}
+The goal of the maximum cardinality problem is finding a matching $M$ on a graph $G=(V=(X, Y), E)$, so that $|M|$ is maximal.\cite{GraphTheoryIntro} Consequently, maximum cardinality as an optimality criteria means that a matching is ideal if the number of students that are matched is maximized among all possible matchings. It should be noted here, that the student's preferences are not considered when computing the maximum cardinality matching. As a matter of fact, it is possible that multiple matchings (TODO: source) of the same cardinality exist, where one of the matchings could be better in the sense of a different optimality criteria. Therefore, maximum cardinality may be desirable, but should be used in conjunction with a different criteria, as it does not consider student preferences.
 
 \subsubsection{Pareto Optimality}
+
+\subsubsection{Popularity}
+In the context of matching with one-sided preference lists, using an optimality criteria (TODO) like Stability, that is based on the preferences of both parties, doesn't apply. Instead a commonly used criteria is a matching $M$'s Popularity, which indicates that more students prefer that matching $M$ over any other possible matching.\cite{ManlovePopularMatchings} Given the definition of the student-seminar matching problem, we can formally define Popularity as follows:
+\newline
+Given two matchings $M, M'$ and a student $s \in S$, the student $s$ prefers $M'$ over $M$ in the following cases:
+\begin{enumerate}
+    \item s is matched in $M'$ and unmatched in $M$, or
+    \item s is matched in both $M'$ and $M$, however prefers $M'(a)$ over $M(a)$
+\end{enumerate}
+Now let $P(M', M)$ be the set of students who prefer $M'$ over $M$. A matching $M'$ is said to be more popular than $M$, denoted by $M' \succ M$, iff $|P(M', M)| > |P(M, M')|$. That concludes that a matching $M'$ is popular, iff there is no other matching $M$ that is more popular than $M'$, i.e. $M' \succ M$.\cite{Klaus, AbrahamPopular} Due to that definition, this criteria is often also referred to as the majority assignment.\cite{Gardenfors}
+\newline
+It is important to note that a popular matching's cardinality could be smaller than the maximum cardinality, meaning that in the case of student-seminar matchings, a group of students could be left unassigned in favor of the majority of the students having a match that they prefer. (TODO: sentence)
+Additionally, a popular matching does not always exist. To illustrate this, let's consider the following instance: $S=\{s_1, s_2, s_3\}$, $T=\{t_1, t_2, t_3\}$, where each student has the same preferences, being $t_1 < t_2 < t_3$. Given the following matchings, we can confirm that there exists no popular matching for the given instance: 
+\begin{enumerate}
+    \item $M_1=\{(s_1, t_1), (s_2, t_2), (s_3, t_3)\}$
+    \item $M_2=\{(s_1, t_3), (s_2, t_1), (s_3, t_2)\}$
+    \item $M_3=\{(s_1, t_2), (s_2, t_3), (s_3, t_1)\}$
+\end{enumerate}
+Obviously $M_2$ is more popular than $M_1$, $M_3$ is more popular than $M_2$ and $M_1$ is more popular than $M_3$.\cite{AbrahamPopular}
+
 \subsubsection{Rank Maximality}
 \subsubsection{Profile-based Optimality}
 \subsubsection{Maximum Utility}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.1)  12 MAY 2019 20:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.1)  16 MAY 2019 15:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -725,39 +725,39 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 16.
  [3
 
 
-] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/0_abstract.tex) [4] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/1_introduction.tex [5] [6] [7]
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 72.
+] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/0_abstract.tex) [4] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/1_introduction.tex [5] [6] [7] [8]
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 90.
  (/usr/share/texmf/tex/latex/lm/omslmr.fd
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 72.
-) [8] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/2_basic_concepts.tex) [9] [10] [11] [12] [13] [14] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.bbl) [15] [16
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 90.
+) [9] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/2_basic_concepts.tex) [10] [11] [12] [13] [14] [15] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.bbl) [16] [17
 
 
-] [17]
+]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 53.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 53.
  (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 53.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 53.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 3892AE3F84BE2013468787D1EA09DA39;4493.
+(rerunfilecheck)             Checksum: 5767D0DC6447E8208E27ABCFBBD156B7;4493.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 53.
  ) 
 Here is how much of TeX's memory you used:
- 24202 strings out of 492982
- 437349 string characters out of 6134897
- 599968 words of memory out of 5000000
- 27188 multiletter control sequences out of 15000+600000
- 80470 words of font info for 117 fonts, out of 8000000 for 9000
+ 24227 strings out of 492982
+ 437641 string characters out of 6134897
+ 600113 words of memory out of 5000000
+ 27192 multiletter control sequences out of 15000+600000
+ 81088 words of font info for 123 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  66i,15n,85p,8912b,739s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}</usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.pdf (17 pages, 219483 bytes).
+Output written on /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.pdf (17 pages, 227072 bytes).
 PDF statistics:
- 338 PDF objects out of 1000 (max. 8388607)
- 302 compressed objects within 4 object streams
- 63 named destinations out of 1000 (max. 500000)
+ 353 PDF objects out of 1000 (max. 8388607)
+ 317 compressed objects within 4 object streams
+ 72 named destinations out of 1000 (max. 500000)
  27901 words of extra memory for PDF output out of 29859 (max. 10000000)
 
