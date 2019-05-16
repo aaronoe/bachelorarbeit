@@ -1,0 +1,30 @@
+\section{Algorithmic approaches}
+In the previous section, we have discussed several optimality criteria that apply to the problem of matching students to seminars. This chapter will present algorithms for computing matchings that fulfill some of those criteria, as well as evaluating them against each other. The goal of this evaluation is choosing the "ideal" algorithm for implementation. We will see that each of the algorithms has some draw-backs, which might make them undesirable for the student-seminar problem. 
+
+\subsection{Greedy with serial dictatorship}
+One of the simplest algorithms for the student-seminar matching problem is a greedy approach, that iterates over the set of students and assigns each of the students to their highest-priority seminar that is still available. In contrast to Gale \& Shapley's deferred acceptance algorithm for the stable marriage problem, this algorithm does not tentatively match students once they make their selection, but make a final assignment. Due to that this algorithm finds a matching in $\mathcal{O}(n)$ time with $n$ being the number of students.
+
+\subsubsection{Properties of the computed matching}
+Strategy-proof
+Individual with first pick gets her preferred house, so clearly no incentive to lie.
+Individual with second pick gets her preferred house among remaining houses, so again no reason to lie.
+and so on…
+
+Efficiency
+Individual with priority one doesn’t want to trade.
+Given that she is out, individual with priority two doesn’t want to trade.
+And so on….
+
+\subsubsection{Drawbacks}
+Incomplete lists: unassigned students
+See: https://jeremykun.com/2015/10/26/serial-dictatorships-and-house-allocation/
+Pareto: https://www.sciencedirect.com/science/article/pii/S0899825607000097
+
+
+\subsection{Greedy with random serial dictatorship}
+
+\subsection{Assignment Problem}
+
+\subsection{Popular Matchings in CHA}
+
+\subsection{Pareto Optimal Matchings for CHA}

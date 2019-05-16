@@ -302,6 +302,10 @@ INPUT /usr/share/texmf/tex/latex/lm/omslmr.fd
 INPUT /usr/share/texmf/tex/latex/lm/omslmr.fd
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/2_optimality.tex
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/2_optimality.tex
+INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/3_algorithms.tex
+INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/3_algorithms.tex
+INPUT /usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-32.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-32.def
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.bbl
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.bbl
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmri12.tfm
