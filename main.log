@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.1)  16 MAY 2019 21:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.1)  17 MAY 2019 21:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -535,14 +535,57 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \labelindent=\skip59
 \enit@outerparindent=\dimen165
 \enit@toks=\toks36
 \enit@inbox=\box39
 \enitdp@description=\count123
-) (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.aux)
+) (/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating environment
+ (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count124
+\float@exts=\toks37
+\float@box=\box40
+\@float@everytoks=\toks38
+\@floatcapt=\box41
+) (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\@float@every@algorithm=\toks39
+\c@algorithm=\count125
+) (/usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+Package: algpseudocode 
+ (/usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count126
+\c@ALG@rem=\count127
+\c@ALG@nested=\count128
+\ALG@tlm=\skip60
+\ALG@thistlm=\skip61
+\c@ALG@Lnr=\count129
+\c@ALG@blocknr=\count130
+\c@ALG@storecount=\count131
+\c@ALG@tmpcounter=\count132
+\ALG@tmplength=\skip62
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
+) (/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2017/10/31 v2.20.4
+\thm@style=\toks40
+\thm@bodyfont=\toks41
+\thm@headfont=\toks42
+\thm@notefont=\toks43
+\thm@headpunct=\toks44
+\thm@preskip=\skip63
+\thm@postskip=\skip64
+\thm@headsep=\skip65
+\dth@everypar=\toks45
+)) (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
@@ -567,14 +610,14 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) (/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
-\AtBeginShipoutBox=\box40
+\AtBeginShipoutBox=\box42
 Package hyperref Info: Link coloring OFF on input line 3.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count124
+\c@section@level=\count133
 )
 LaTeX Info: Redefining \ref on input line 3.
 LaTeX Info: Redefining \pageref on input line 3.
@@ -585,17 +628,17 @@ LaTeX Info: Redefining \nameref on input line 3.
 
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count125
+\scratchcounter=\count134
 \scratchdimen=\dimen166
-\scratchbox=\box41
-\nofMPsegments=\count126
-\nofMParguments=\count127
-\everyMPshowfont=\toks37
-\MPscratchCnt=\count128
+\scratchbox=\box43
+\nofMPsegments=\count135
+\nofMParguments=\count136
+\everyMPshowfont=\toks46
+\MPscratchCnt=\count137
 \MPscratchDim=\dimen167
-\MPnumerator=\count129
-\makeMPintoPDFobject=\count130
-\everyMPtoPDFconversion=\toks38
+\MPnumerator=\count138
+\makeMPintoPDFobject=\count139
+\everyMPtoPDFconversion=\toks47
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
  (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
@@ -644,8 +687,8 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              on input line 14.
 Package typearea Info: Using dirty hack to recalculate internal output
 (typearea)             dimensions of LaTeX on input line 14.
-\parindentbak=\skip60
-\parskipbak=\skip61
+\parindentbak=\skip66
+\parskipbak=\skip67
  (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 )
@@ -732,14 +775,10 @@ File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 57.
- [7]) [8] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/2_optimality.tex [9] [10]) [11] [12] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/3_algorithms.tex (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-32.def
-File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
-)
-Overfull \hbox (139.34235pt too wide) in paragraph at lines 19--22
-\T1/lmr/m/n/12 (-20) dictatorships-and-house-allocation/ Pareto: https://www.sciencedirect.com/science/article/pii/S0899825607000097 
- []
-
-) [13] [14] [15] [16] [17] [18] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.bbl [19]) [20] [21
+ [7]) [8] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/2_optimality.tex [9] [10]) [11] [12] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/3_algorithms.tex
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 8.
+\c@theorem=\count140
+ [13] [14]) [15] [16] [17] [18] [19] [20] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.bbl [21]) [22] [23
 
 
 ]
@@ -749,22 +788,22 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 56.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 56.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 56.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 70DF7A729E20255914F82EA916A5E5E6;4709.
+(rerunfilecheck)             Checksum: 47929E32736A2D4FA4123F79D910D713;5027.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 56.
  ) 
 Here is how much of TeX's memory you used:
- 24512 strings out of 492982
- 440993 string characters out of 6134897
- 600203 words of memory out of 5000000
- 27444 multiletter control sequences out of 15000+600000
- 81800 words of font info for 131 fonts, out of 8000000 for 9000
+ 25010 strings out of 492982
+ 448859 string characters out of 6134897
+ 611627 words of memory out of 5000000
+ 27914 multiletter control sequences out of 15000+600000
+ 84885 words of font info for 133 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  66i,15n,85p,8912b,739s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}</usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb>
-Output written on /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.pdf (21 pages, 236672 bytes).
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.pdf (23 pages, 270086 bytes).
 PDF statistics:
- 382 PDF objects out of 1000 (max. 8388607)
- 343 compressed objects within 4 object streams
- 83 named destinations out of 1000 (max. 500000)
- 27901 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 408 PDF objects out of 1000 (max. 8388607)
+ 365 compressed objects within 4 object streams
+ 89 named destinations out of 1000 (max. 500000)
+ 28421 words of extra memory for PDF output out of 29859 (max. 10000000)
 

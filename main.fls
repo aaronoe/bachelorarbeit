@@ -193,6 +193,18 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithm.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithm.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.aux
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.aux
 OUTPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.aux
@@ -304,11 +316,10 @@ INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/2_optimali
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/2_optimality.tex
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/3_algorithms.tex
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/3_algorithms.tex
-INPUT /usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-32.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-32.def
-INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.bbl
-INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.bbl
+INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx12.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmri12.tfm
+INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.bbl
+INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.bbl
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.aux
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.out
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.out
@@ -317,6 +328,7 @@ INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc
 INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc
 INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc
 INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc
+INPUT /usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmex10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb
@@ -329,3 +341,4 @@ INPUT /usr/share/texmf/fonts/type1/public/lm/lmss17.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb
