@@ -28,9 +28,12 @@ S.~P. Fekete, M.~Skutella, and G.~J. Woeginger, ``The complexity of economic
   equilibria for house allocation markets,'' {\em Information Processing
   Letters}, vol.~88, no.~5, pp.~219 -- 223, 2003.
 
-\bibitem{sng-matching}
-C.~Thiam Soon~Sng, ``Efficient algorithms for bipartite matching problems with
-  preferences,'' 05 2019.
+\bibitem{SngThesis}
+C.~Thiam Soon~Sng, {\em Efficient Algorithms for Bipartite Matching Problems
+  with Preferences}.
+\newblock PhD thesis, University of Glasgow, 7 2008.
+\newblock A thesis submitted to the Faculty of Information and Mathematical
+  Sciences at the University of Glasgow for the degree of Doctor of Philosophy.
 
 \bibitem{algorithmics}
 D.~F. Manlove, {\em Algorithmics of Matching Under Preferences}, vol.~2 of {\em
@@ -56,12 +59,6 @@ A.~Abdulkadiroglu and T.~Sonmez, ``{Random Serial Dictatorship and the Core
   from Random Endowments in House Allocation Problems},'' {\em Econometrica},
   vol.~66, pp.~689--702, May 1998.
 
-\bibitem{Abraham:2005:POH:2129395.2129512}
-D.~J. Abraham, K.~Cechl\'{a}rov\'{a}, D.~F. Manlove, and K.~Mehlhorn, ``Pareto
-  optimality in house allocation problems,'' in {\em Proceedings of the 16th
-  International Conference on Algorithms and Computation}, ISAAC'05, (Berlin,
-  Heidelberg), pp.~1163--1175, Springer-Verlag, 2005.
-
 \bibitem{ManlovePopularMatchings}
 D.~Manlove and C.~Sng, ``Popular matchings in the capacitated house allocation
   problem,'' September 2006.
@@ -85,5 +82,21 @@ P.~Gärdenfors, ``Match making: Assignments based on bilateral preferences,''
 \bibitem{MANEA2007316}
 M.~Manea, ``Serial dictatorship and pareto optimality,'' {\em Games and
   Economic Behavior}, vol.~61, no.~2, pp.~316 -- 330, 2007.
+
+\bibitem{Abraham:Pacha}
+D.~J. Abraham, K.~Cechl\'{a}rov\'{a}, D.~F. Manlove, and K.~Mehlhorn, ``Pareto
+  optimality in house allocation problems,'' in {\em Proceedings of the 16th
+  International Conference on Algorithms and Computation}, ISAAC'05, (Berlin,
+  Heidelberg), pp.~1163--1175, Springer-Verlag, 2005.
+
+\bibitem{Gabow1983}
+H.~N. Gabow, ``An efficient reduction technique for degree-constrained subgraph
+  and bidirected network flow problems,'' in {\em Proceedings of the Fifteenth
+  Annual ACM Symposium on Theory of Computing}, STOC '83, (New York, NY, USA),
+  pp.~448--456, ACM, 1983.
+
+\bibitem{ShapleyTTC}
+L.~Shapley and H.~Scarf, ``On cores and indivisibility,'' {\em Journal of
+  Mathematical Economics}, vol.~1, no.~1, pp.~23 -- 37, 1974.
 
 \end{thebibliography}

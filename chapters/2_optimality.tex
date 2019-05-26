@@ -25,7 +25,7 @@ Let $P(M', M)$ be the set of students who prefer $M'$ over $M$. A matching $M'$ 
 Using this definition, we can see that every popular matching also is a pareto-optimal matching. Given a popular matching $M'$ and any matching $M$ for an instance $I$ of the problem, $M'$ is pareto-optimal if $P(M, M') = 0$ and $P(M', M) \geq 1$, which obviously implies that $M'$ is popular as well.\cite{Klaus}
 \newline
 It is important to note that a popular matching's cardinality could be smaller than the maximum cardinality, meaning that in the case of student-seminar matchings, a group of students could be left unassigned in favor of the majority of the students having a match that they prefer. (TODO: sentence)
-Additionally, a popular matching, unlike a pareto-optimal matching, does not always exist. To illustrate this, let's consider the following instance: $S=\{s_1, s_2, s_3\}$, $T=\{t_1, t_2, t_3\}$, where each student has the same preferences, being $t_1 < t_2 < t_3$. Given the following matchings, we can confirm that there exists no popular matching for the given instance: 
+Additionally, a popular matching, unlike a pareto-optimal matching, does not always exist. To illustrate this, let's consider the following instance: $S=\{s_1, s_2, s_3\}$, $T=\{t_1, t_2, t_3\}$, where each student has the same preference list, being $t_1 < t_2 < t_3$, and each seminar $t_i \in T$ has a capacity of 1. Given the following matchings, we can confirm that there exists no popular matching for the given instance: 
 \begin{enumerate}
     \item $M_1=\{(s_1, t_1), (s_2, t_2), (s_3, t_3)\}$
     \item $M_2=\{(s_1, t_3), (s_2, t_1), (s_3, t_2)\}$
@@ -50,7 +50,7 @@ Given the problem description of student-seminar matching, it would be desirable
 \begin{enumerate}
     \item Maximum Cardinality: As few students as possible should be left unmatched.
     \item Pareto Optimality: A set of students should not feel the need to swap their match to improve their situation.
-    \item Popularity: The number of students who are satisfied with their matching should be greater than the number of students dissatisfied.
+    \item Popularity: The number of students who are satisfied with their matching should be maximum among all possible matchings.
     \item Rank Maximality: As many students as possible should be matched to their first choice or if not possible second choice, and so on.
 \end{enumerate}
 Using these requirements, the next sections will present algorithms, for finding matchings that have some of those properties. One of these will be implemented to be used by the interactive system to find matchings which will try to optimize some of the mentioned metrics. As we have already seen, there does not always exists a popular matching or a pareto-optimal matching that is also agent complete. Additionally, the fact that students can supply incomplete preference lists, can very well lead to matchings that leave a few students unassigned, even if the sum of the capacity of all seminars is greater than the number of students. Given these constraints and observations, we will see that there is no such thing as an ideal matching for all instances based on the criteria we have presented. However, it will be possible to find matchings that will make the majority of the students satisfied.

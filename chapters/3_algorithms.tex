@@ -9,14 +9,17 @@ One of the simplest algorithms for the student-seminar matching problem is a gre
     \label{alg1} % and a label for \ref{} commands later in the document
     \begin{algorithmic} % enter the algorithmic environment
         \Require set of Students with preferences $S$, set of Seminars $T$
+        \Ensure Pareto-Optimal Matching M
+        \Function{SD-Matching}{$S, T$}
         \State $M = \emptyset$
         \ForEach {$s \in \mathcal S $}
-            \State $t \Leftarrow$ highest ranked, available seminar on s's preference list
+            \State $t =$ highest ranked, available seminar on preference list of s
             \If{$t \neq null$}
-                \State $M = M \cup (s, t)$
+                \State $M = M \cup \{(s, t)\}$
             \EndIf
         \EndFor
         \State\Return M
+        \EndFunction
     \end{algorithmic}
 \end{algorithm}
 
@@ -51,10 +54,32 @@ In this example, each seminar only has a capacity of 1 and both students have se
 To address the other problem of preference over students, a simple approach is using the random serial dictatorship mechanism, which instead creates a random order of students as the pick order. This approach is still not fair in the sense, that the first student in that order has a better chance at receiving his top priority seminar, than all other students, however, any student has the chance to be the first one to make a pick. 
 
 \subsection{Pareto Optimal Maximal Matchings for CHA}
+We have seen that serial dictatorship is an easy and time efficient mechanism for computing pareto-optimal matchings. A big weakness of the approach is that it finds just one of many possible pareto-optimal matchings, without making any guarantees about quality in regards to cardinality. Particularly, the example in Table \ref{table:1} shows how permutations of the same instance can produce matchings of different cardinality, which motivates the search for an algorithm that produces a Pareto-Optimal matching of maximum cardinality. 
+
+(TODO: cited) Abraham \cite{Abraham:Pacha} has proposed a 3-phase algorithm for computing a maximum cardinality matching for the capacitated house allocation problem. Before presenting the algorithm, an important lemma about Pareto optimal matchings has to be presented first, which is then used for proofing the correctness of the algorithm. To characterize the lemma, we need to define the terms maximality, trade-in-free and cyclic coalition in regards to a matching $M$ first: 
+\begin{enumerate}
+    \item \textbf{Maximal}: $M$ is maximal, if no student $s_i \in S$ and seminar $t_j \in T$ exists, so that $s_i$ is unassigned, $t_j$ is undersubscribed in $M$ and $t_j$ is on $s_i$'s preference list.\cite{Abraham:Pacha}
+    \item \textbf{Trade-in-free}: $M$ is trade-in-free, if there are no student $s_i \in S$ and seminars $t_j, t_l \in T$, such that $s_i$ is assigned to $t_l$, but prefers $t_j$ over $t_l$ and $t_j$ is undersubscribed.\cite{Abraham:Pacha} 
+    \item \textbf{Cyclic coalition}: $M$ contains a cyclic coalition, if there exists a sequence of distinct assigned students $C = \langle s_0, s_1, \dots, s_{r-1} \rangle$ with $r \geq 2$, such that $s_i$ prefers $M(s_{i + 1 \bmod r})$ (i.e. the seminar assigned to the next student in $C$ after $s_i$) over $M(s_i)$ for every $i$.\cite{Abraham:Pacha}
+\end{enumerate}
+Using these definitions, (TODO) Sng now presents and proofs the following lemma:
+\newtheorem{lemma}[theorem]{Lemma}
+\begin{lemma}\label{lemma-pacha}
+    Let $M$ be a matching of a given instance $I$ of $CHA$. Then $M$ is Pareto optimal if and only if $M$ is maximal, trade-in-free and cyclic-coalition-free.\cite{Abraham:Pacha}
+\end{lemma}
+
+Using this lemma, (TODO) Abraham et al \cite{Abraham:Pacha} construct a 3-phased algorithm, where each phase fulfills one of the properties as described in Lemma \ref{lemma-pacha}, like so: Let $I$ be an instance of CHA and $G$ it's underlying graph, then perform the following steps:
+\begin{enumerate}
+    \item \textbf{Phase 1}: In order to guarantee maximality, compute a maximum matching $M$ in $G$ using Gabow's algorithm. \cite{Gabow1983}
+    \item \textbf{Phase 2}: Using the matching $M$ produced by step 1, the algorithm now fulfills the trade-in-free criteria as follows: Search for pairs $(s_i, t_j) \in M$ with $s_i \in S$ and $t_j \in T$ and where $t_j$ is undersubscribed in $M$ and $s_i$ prefers $t_j$ over his own match $t_l := M(s_i)$. Whenever such a pair is found, remove the existing assignment $(s_i, t_l)$ and add $(s_i, t_j)$ to $M$. Consequently $t_l$ is now undersubscribed and may be assigned to another student. Therefore, we continue the search for such pairs until no such pair can be found for every student in $S$.
+    \item \textbf{Phase 3}: The last phase of the algorithm eliminates any cyclic coalitions from $M$, if they exist, by using a modified version of Gale's Top Trading Cycles (denoted by TTC) Method.\cite{ShapleyTTC} Essentially, the TTC method creates a graph from the matching $M$, where every student that is not matched to his most-preferred seminar, denoted by $S'$, is represented by a node. Next a directed edge is created from each student $s_i \in S'$, to all students in $S'$ who are assigned to the first seminar on $s_i$'s preference list. Now, there must be atleast one cycle in this graph, as students may have an edge to themselves. The next step is identifying the cycles and implementing a trade among all agents of that cycle that reassigns the seminars among these students. After the trade, all students from that cycle are removed and these steps are repeated until the graph is empty. Once the graph is empty, $M$ is coalition-free by the correctness of the TTC method.\cite{Abraham:Pacha}
+\end{enumerate}
+
+Since all modifications to the matching in phase 1 and 2 are limited to swaps and no deletions, maximum cardinality is still guaranteed after the termination of phase 3.
 
 \subsection{Assignment Problem}
 
-\subsection{Transformation as an instance of min-weight matching}
+\subsection{Transformation to an instance of min-weight matching}
 In order to find a rank-maximal matching, a matching of minimum weight can be computed, because that matching also satisfies the rank-maximality property. Since the problem of matching students to seminars can simply be described as finding a matching on a bipartite graph, we can construct such a graph, given the set of students, preference lists and seminars and apply graph algorithms that find such matchings for us. 
 \newline
 Indeed, we can simply transform the student-seminar matching problem into an instance of the minimum-cost flow problem. The goal of this algorithm will be to send $|S|$ units of flow through the network, while minimizing the cost of the flow, which is indicated by a seminar's rank on the student's preference lists.
@@ -63,6 +88,9 @@ Indeed, we can simply transform the student-seminar matching problem into an ins
 The problem of matching students as seminars can be given as a bipartite graph $G=(V=(S, T), E)$, where $S$ is the set of students and $T$ the set of seminars. The set of edges $E$ is defined as follows: $E:= \{(s, t) \mid s \in S \land t \in T \land \mbox{t is on the prefernce list of s}\}$. Additionally, a weight function $W: E \rightarrow  \mathbb{N}$ is specified, which maps each edge to the position of the seminar on the student's preference list. In order to transform this bipartite graph into an input for the minimum-cost flow problem, a flow network has to be constructed using the bipartite graph. (TODO: define flow network?) 
 
 To transform the bipartite graph into a flow network, we first add a source and sink vertex to the graph. Then, we add weights, capacities and edges from and to the source and sink. Specificially, we create an edge from the source to each of the student vertices with a capacity of 1 and a cost of 0. These edges indicate that a student can only be assigned once. Next, for every student we re-use the edges from the bipartite graph $G$, where each edge $e \in E$ is assigned a capacity of 1 and a cost of $W(e)$. The capacity, again indicates that a student can only be assigned once and the weight indicates the position of the seminar on the student's preference list. Last, one edge is added from each seminar $s \in S$ to the sink with a capacity of $C(s)$ and a cost of 0. 
+
+\subsubsection{Properties of the computed matching}
+The matching $M$ computed by the algorithm is Pareto optimal. \cite{SngThesis}
 
 \subsubsection{Drawbacks}
 The matching computed using this method has the minimum weight property, and therefore is rank-maximal, however a big drawback is that the algorithm is not strategy-proof: Using this algorithm, students are encouraged to provide short preference lists in order to get matched to a higher ranked seminar. The algorithm tries to match every student, which means that students with a list of just one seminar will be prioitized over students, who also prefer that seminar but also supply other preferences. This problem could lead to having all students supply singleton preference lists, which also makes it harder to find perfect matchings. Therefore the algorithm does not encourage the students to supply preference lists that reflect their true preferences, which is a desirable property that has been considered for other matching problems like the hospital-residents-problem.\cite{Gusfield}
