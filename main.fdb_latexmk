@@ -1,15 +1,15 @@
 # Fdb version 3
-["bibtex main"] 1558121254 "main.aux" "main.bbl" "main" 1558121360
+["bibtex main"] 1558875440 "main.aux" "main.bbl" "main" 1558875764
   "/usr/share/texlive/texmf-dist/bibtex/bst/base/ieeetr.bst" 1480098433 18361 1a00e58565e7f19bf2b3e1bfb82254ae ""
-  "main.aux" 1558121360 5642 495951b0f85745bb41fc22a5cfb9e751 ""
+  "main.aux" 1558875763 6025 ef8d24ae257ce3d2485e3b0135d4d508 ""
   "main.bcf" 0 -1 0 ""
   "main.bib" 1558117535 10110 3d9d7cd484f026e0af21ba6f4b3d75f8 ""
   (generated)
-  "main.blg"
   "main.bbl"
-["pdflatex"] 1558121359 "/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.tex" "/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.pdf" "main" 1558121360
+  "main.blg"
+["pdflatex"] 1558875763 "/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.tex" "/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.pdf" "main" 1558875764
   "/etc/texmf/web2c/texmf.cnf" 1555854128 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.aux" 1558121360 5642 495951b0f85745bb41fc22a5cfb9e751 ""
+  "/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.aux" 1558875763 6025 ef8d24ae257ce3d2485e3b0135d4d508 ""
   "/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.tex" 1558116386 1166 b9975f07e0158c4a81ca7e8afc9e1a2a ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm1200.tfm" 1480098696 3584 f80ddd985bd00e29e9a6047ebd9d4781 ""
@@ -203,18 +203,18 @@
   "chapters/0_abstract.tex" 1556727581 57 e54dc1ac3ec8eb7b75a1f8db3e7d8761 ""
   "chapters/1_introduction.tex" 1558026083 9326 212f60d0e327ee918e40395d071675dc ""
   "chapters/2_optimality.tex" 1558025980 9291 cd22888850b717517232811db0a313f1 ""
-  "chapters/3_algorithms.tex" 1558121359 5801 408cf69cfd2138a3aea33ab295cb1f68 ""
-  "main.aux" 1558121360 5642 495951b0f85745bb41fc22a5cfb9e751 ""
-  "main.bbl" 1558121254 3614 21de3643e83cbeb541875aba0a0b2d50 "bibtex main"
-  "main.out" 1558121360 5027 47929e32736a2d4fa4123f79d910d713 ""
+  "chapters/3_algorithms.tex" 1558875763 8684 fd0441158a253055ab85863d57c07e97 ""
+  "main.aux" 1558875763 6025 ef8d24ae257ce3d2485e3b0135d4d508 ""
+  "main.bbl" 1558875440 3614 21de3643e83cbeb541875aba0a0b2d50 "bibtex main"
+  "main.out" 1558875764 5112 07a77098c0176c0748e0a6f5ea07cbde ""
   "main.tex" 1558116386 1166 b9975f07e0158c4a81ca7e8afc9e1a2a ""
-  "main.toc" 1558121360 2671 f244b55135d9a8a8b79c9ad05ecef98b ""
+  "main.toc" 1558875764 2751 2aa5d9d925e79746ea9e7a2afee161c5 ""
   "settings/settings.tex" 1558118015 993 ca917a5762de8548a946beb7174ed3be ""
   (generated)
-  "/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.log"
-  "main.out"
   "/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.pdf"
   "main.log"
-  "main.pdf"
   "main.aux"
   "main.toc"
+  "main.out"
+  "main.pdf"
+  "/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.log"

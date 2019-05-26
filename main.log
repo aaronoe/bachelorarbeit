@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.1)  17 MAY 2019 21:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.1)  26 MAY 2019 15:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -778,32 +778,40 @@ LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
  [7]) [8] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/2_optimality.tex [9] [10]) [11] [12] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/3_algorithms.tex
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 8.
 \c@theorem=\count140
- [13] [14]) [15] [16] [17] [18] [19] [20] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.bbl [21]) [22] [23
+ [13]
+Underfull \vbox (badness 3260) has occurred while \output is active []
+
+ [14pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.61 
+     ] [15]) [16] [17] [18] [19] [20] [21] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.bbl [22]) [23] [24
 
 
-]
+] [25]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 56.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 56.
  (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 56.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 56.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 47929E32736A2D4FA4123F79D910D713;5027.
+(rerunfilecheck)             Checksum: 07A77098C0176C0748E0A6F5EA07CBDE;5112.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 56.
  ) 
 Here is how much of TeX's memory you used:
- 25010 strings out of 492982
- 448859 string characters out of 6134897
- 611627 words of memory out of 5000000
- 27914 multiletter control sequences out of 15000+600000
- 84885 words of font info for 133 fonts, out of 8000000 for 9000
+ 25016 strings out of 492982
+ 448930 string characters out of 6134897
+ 611718 words of memory out of 5000000
+ 27918 multiletter control sequences out of 15000+600000
+ 84794 words of font info for 132 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  66i,15n,85p,8912b,739s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.pdf (23 pages, 270086 bytes).
+Output written on /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.pdf (25 pages, 274058 bytes).
 PDF statistics:
- 408 PDF objects out of 1000 (max. 8388607)
- 365 compressed objects within 4 object streams
- 89 named destinations out of 1000 (max. 500000)
- 28421 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 426 PDF objects out of 1000 (max. 8388607)
+ 381 compressed objects within 4 object streams
+ 93 named destinations out of 1000 (max. 500000)
+ 28429 words of extra memory for PDF output out of 29859 (max. 10000000)
 

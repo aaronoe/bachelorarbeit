@@ -32,23 +32,39 @@ Since the order, in which the students get to pick their match is pre-defined, w
     Let $M$ be the matching produced by the algorithm. We assume that there exists a matching $N$ that pareto-dominates $M$. Now let $s\in S$ be the first student who prefers his match in $N$ over $M$. Since $s$ prefers $N(s)$ over $M(s)$, the seminar $N(s)$ must have been unavailable when he made his pick. That means that another student $s' \in S$ exists, who picked $N(s)$ before $s$ could. However, we required that $s$ was matched to a better seminar in $N$, which means that $s'$ gets a worse match in $N$. This is a contradiction, so $N$ cannot pareto-dominate $M$.
 \end{proof} TODO: citation
 
-Another important property, that the algorithm posesses is that it is strategy-proof. This means that no student has an incentive to lie about his true preference in order to receive a better match. That holds true because the first student who gets matched, can pick his preferred, remaining seminar, the second student can pick his preferred, remaining seminar and so on.
+Another important property of the algorithm is, that it is strategy-proof. This means that no student has an incentive to lie about his true preference in order to receive a better match. That holds true, because the first student who gets matched, can only pick his preferred, remaining seminar, the second student can only pick his preferred, remaining seminar and so on.
 
 \subsubsection{Drawbacks}
-When looking at the algorithm it is clear that it has a strict preference order over students, specified by the order in which students are matched in the for loop. Additionally, the algorithm makes no effort to match all students. If it's a student's turn to pick his match, and none of the seminar's on his preference lists are free, that student will not be matched at all. This problem gets worse, when we consider that our problem statement allows for incomplete preference lists, which increases the chances of having a high number of unmatched students.
-\newline
-To address the first problem, a simple approach is using the random serial dictatorship mechanism, which instead creates a random order of students as the pick order. This approach is still not fair in the sense, that the first student in that order has a better chance at receiving his top priority seminar, than all other students, however, any student has the chance to be the first one to make a pick. 
+When looking at the algorithm it is clear that it has a strict preference order over students, specified by the order in which students are matched in the for loop. Additionally, the algorithm makes no effort to match all students. If it's a student's turn to pick his match, and none of the seminars on his preference lists are free, that student will not be matched at all. This problem gets worse, when we consider that our problem statement allows for incomplete preference lists, which increases the chances of having a high number of unmatched students. To illustrate this let's consider the following example in Table \ref{table:1}:
+\begin{table}[h!]
+    \centering 
+    \begin{tabular}{llll}
+    Agent   & Pref list     & Seminar   & Capacity \\
+    $s_1$   & $t_1$, $t_2$  & $t_1$     & 1        \\
+    $s_2$   & $t_1$         & $t_2$     & 1       
+    \end{tabular}
+    \caption{Instance where Serial Dictatorship admits no max cardinality matching}
+    \label{table:1}
+\end{table} 
+In this example, each seminar only has a capacity of 1 and both students have seminar $t_1$ as their first preference. If the algorithm first gives $s_1$ a chance to pick and then $s_2$, $s_1$ will be matched to $t_1$, making $t_1$ full and not allowing $s_2$ to be matched. On the other hand, matching $s_2$ to $t_1$ first and then matching $s_1$ to $t_1$ also yields a pareto optimal matching, however in this case all the students are matched.
+
+To address the other problem of preference over students, a simple approach is using the random serial dictatorship mechanism, which instead creates a random order of students as the pick order. This approach is still not fair in the sense, that the first student in that order has a better chance at receiving his top priority seminar, than all other students, however, any student has the chance to be the first one to make a pick. 
 
 \subsection{Pareto Optimal Maximal Matchings for CHA}
 
 \subsection{Assignment Problem}
 
 \subsection{Transformation as an instance of min-weight matching}
-In order to find a rank-maximal Matching, it makes sense that a matching with the minimum weight, also satisfied the rank-maximality property. Since the problem of matching students to seminars can simply be described as finding a matching on a bipartite graph, we can simply construct such a graph and apply graph-algorithms that find such matchings for us. 
+In order to find a rank-maximal matching, a matching of minimum weight can be computed, because that matching also satisfies the rank-maximality property. Since the problem of matching students to seminars can simply be described as finding a matching on a bipartite graph, we can construct such a graph, given the set of students, preference lists and seminars and apply graph algorithms that find such matchings for us. 
 \newline
-Indeed, we can simply transform the student-seminar matching problem into an instance of the minimum-cost flow problem. The goal of this algorithm will be to send $|S|$ units of flow through the network, while minimizing the cost of the flow, which is indicated by a seminar's rank on the student's preference lists:
+Indeed, we can simply transform the student-seminar matching problem into an instance of the minimum-cost flow problem. The goal of this algorithm will be to send $|S|$ units of flow through the network, while minimizing the cost of the flow, which is indicated by a seminar's rank on the student's preference lists.
 
-\subsubsection{Transforming the instance}
-The problem is given as a bipartite graph $G=(V=(S, T), E)$, where $S$ is the set of students and $T$ the set of seminars. The set of edges $E$ is defined as follows: $E:= \{(s, t) \mid s \in S \land t \in T \land \mbox{t is on the prefernce list of s}\}$. Additionally, a weight function $W: E \rightarrow  \mathbb{N}$ is specified, which maps each edge to the position of the seminar on the student's preference list. 
+\subsubsection{Input Transformation}
+The problem of matching students as seminars can be given as a bipartite graph $G=(V=(S, T), E)$, where $S$ is the set of students and $T$ the set of seminars. The set of edges $E$ is defined as follows: $E:= \{(s, t) \mid s \in S \land t \in T \land \mbox{t is on the prefernce list of s}\}$. Additionally, a weight function $W: E \rightarrow  \mathbb{N}$ is specified, which maps each edge to the position of the seminar on the student's preference list. In order to transform this bipartite graph into an input for the minimum-cost flow problem, a flow network has to be constructed using the bipartite graph. (TODO: define flow network?) 
+
+To transform the bipartite graph into a flow network, we first add a source and sink vertex to the graph. Then, we add weights, capacities and edges from and to the source and sink. Specificially, we create an edge from the source to each of the student vertices with a capacity of 1 and a cost of 0. These edges indicate that a student can only be assigned once. Next, for every student we re-use the edges from the bipartite graph $G$, where each edge $e \in E$ is assigned a capacity of 1 and a cost of $W(e)$. The capacity, again indicates that a student can only be assigned once and the weight indicates the position of the seminar on the student's preference list. Last, one edge is added from each seminar $s \in S$ to the sink with a capacity of $C(s)$ and a cost of 0. 
+
+\subsubsection{Drawbacks}
+The matching computed using this method has the minimum weight property, and therefore is rank-maximal, however a big drawback is that the algorithm is not strategy-proof: Using this algorithm, students are encouraged to provide short preference lists in order to get matched to a higher ranked seminar. The algorithm tries to match every student, which means that students with a list of just one seminar will be prioitized over students, who also prefer that seminar but also supply other preferences. This problem could lead to having all students supply singleton preference lists, which also makes it harder to find perfect matchings. Therefore the algorithm does not encourage the students to supply preference lists that reflect their true preferences, which is a desirable property that has been considered for other matching problems like the hospital-residents-problem.\cite{Gusfield}
 
 \subsection{Popular Matchings in CHA}

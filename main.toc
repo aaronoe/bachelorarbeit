@@ -20,13 +20,14 @@
 \contentsline {subsection}{\numberline {4.1}Greedy with serial dictatorship}{13}{subsection.4.1}
 \contentsline {subsubsection}{\numberline {4.1.1}Properties of the computed matching}{13}{subsubsection.4.1.1}
 \contentsline {subsubsection}{\numberline {4.1.2}Drawbacks}{14}{subsubsection.4.1.2}
-\contentsline {subsection}{\numberline {4.2}Pareto Optimal Maximal Matchings for CHA}{14}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Assignment Problem}{14}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}Transformation as an instance of min-weight matching}{14}{subsection.4.4}
-\contentsline {subsubsection}{\numberline {4.4.1}Transforming the instance}{15}{subsubsection.4.4.1}
-\contentsline {subsection}{\numberline {4.5}Popular Matchings in CHA}{15}{subsection.4.5}
-\contentsline {section}{\numberline {5}Methodology}{16}{section.5}
-\contentsline {section}{\numberline {6}Implementation}{17}{section.6}
-\contentsline {section}{\numberline {7}Evaluation}{18}{section.7}
-\contentsline {section}{\numberline {8}Discussion}{19}{section.8}
-\contentsline {section}{\numberline {9}Conclusion}{20}{section.9}
+\contentsline {subsection}{\numberline {4.2}Pareto Optimal Maximal Matchings for CHA}{15}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Assignment Problem}{15}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Transformation as an instance of min-weight matching}{15}{subsection.4.4}
+\contentsline {subsubsection}{\numberline {4.4.1}Input Transformation}{15}{subsubsection.4.4.1}
+\contentsline {subsubsection}{\numberline {4.4.2}Drawbacks}{15}{subsubsection.4.4.2}
+\contentsline {subsection}{\numberline {4.5}Popular Matchings in CHA}{16}{subsection.4.5}
+\contentsline {section}{\numberline {5}Methodology}{17}{section.5}
+\contentsline {section}{\numberline {6}Implementation}{18}{section.6}
+\contentsline {section}{\numberline {7}Evaluation}{19}{section.7}
+\contentsline {section}{\numberline {8}Discussion}{20}{section.8}
+\contentsline {section}{\numberline {9}Conclusion}{21}{section.9}
