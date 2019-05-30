@@ -126,8 +126,8 @@ To summarize, so far for every applicant $a_i \in A$ we have defined the applica
     \begin{enumerate}
         \item for every f-house $h_j$
         \begin{enumerate}
-            \item if $f_j \leq c_j$, then $f(h_j) \subseteq M(h_j)$
-            \item if $f_j > c_j$, then $|M(h_j)| = c_j$ and $M(h_j) \subseteq f(h_j)$
+            \item\label{condition1a} if $f_j \leq c_j$, then $f(h_j) \subseteq M(h_j)$
+            \item\label{condition1b} if $f_j > c_j$, then $|M(h_j)| = c_j$ and $M(h_j) \subseteq f(h_j)$
         \end{enumerate}
         \item $M$ is an agent complete matching in the reduced graph $G'$
     \end{enumerate}
@@ -136,8 +136,15 @@ To summarize, so far for every applicant $a_i \in A$ we have defined the applica
 \subsubsection{Algorithm}
 Using Theorem \ref{theorem-popular-4}, Manlove and Sng develop the algorithm Popular-CHA for findin a maximum popular matching or reporting that none exists.\cite{ManlovePopularMatchings} The algorithm works as follows:
 \begin{enumerate}
-    \item 
+    \item The algorithm reduces $G$ to $G'$.
+    \item Match all agents to their first-choice house $h_j$, if $f_j \leq c_j$, i.e. the house would be undersubscribed or just full afterwards. This will satisfy condition \ref{condition1a} of Theorem \ref{theorem-popular-4}.
+    \item Remove all applicants and their incident edges from $G'$, that were matched in the previous step. Additionally, update the capacities for each previously matched house $h_j$ as $c'_j = c_j - f_j$. All full and isolated houses and their incident edges are also removed.
+    \item Compute a maximum cardinality matching $M'$ on $G'$ using the updated capacities. For this step Manlove and Sng use Gabow's algorithm \cite{Gabow1983}.
+    \item If $M'$ is not agent complete, then no popular matchings exists. Otherwise merge the matchings $M$ and $M'$.
+    \item As a last step, to fulfill condition \ref{condition1b} of Theorem \ref{theorem-popular-4}, promote any agent $a_i \in M$ who is matched to their s-house to their f-house, if it's undersubscribed. 
 \end{enumerate}
+
+Due to the fact that step 2, 4 and 6 make the computed matching fulfill the criteria outline in Theorem \ref{theorem-popular-4}, the algorithm produces a popular matching of maximum cardinality, if it exists. Furthermore it's runtime complexity is $\mathcal{O}(\sqrt{C}n_1 + |E|)$, where $C$ is the sum of the capacities of the houses and $n_1$ the number of applicants. $|E|$ is equivalent to the sum of the agents' preference lists. The runtime is dominated by Gabow's algorithm, which computes the maximum cardinality matching in $G'$ in $\mathcal{O}(\sqrt{C}n_1)$.\cite{ManlovePopularMatchings} Alternatively, a modified version of the Hopcroft-Karp algorithm could be used for computing the maximum cardinality matching in $\mathcal{O}(E\sqrt{V})$\cite{Hopcroft} time, which is what Abraham et al. use for the one-to-one case.
 
 \subsection{Comparison}
 
