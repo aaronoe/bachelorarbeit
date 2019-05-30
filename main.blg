@@ -3,10 +3,9 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: main.aux
 The style file: ieeetr.bst
 Database file #1: main.bib
-Warning--I didn't find a database entry for "Abraham:2005:POH:2129395.2129512"
 You've used 20 entries,
             1876 wiz_defined-function locations,
-            642 strings with 7303 characters,
+            640 strings with 7239 characters,
 and the built_in function-call counts, 5326 in all, are:
 = -- 549
 > -- 159
@@ -45,4 +44,3 @@ warning$ -- 0
 while$ -- 49
 width$ -- 22
 write$ -- 210
-(There was 1 warning)

@@ -314,9 +314,9 @@ INPUT /usr/share/texmf/tex/latex/lm/omslmr.fd
 INPUT /usr/share/texmf/tex/latex/lm/omslmr.fd
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/2_optimality.tex
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/2_optimality.tex
+INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/3_algorithms.tex
+INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/3_algorithms.tex
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx12.tfm
-INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/3_algorithms.tex
-INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/3_algorithms.tex
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmri12.tfm
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.bbl
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.bbl

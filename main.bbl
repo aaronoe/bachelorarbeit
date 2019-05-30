@@ -59,6 +59,12 @@ A.~Abdulkadiroglu and T.~Sonmez, ``{Random Serial Dictatorship and the Core
   from Random Endowments in House Allocation Problems},'' {\em Econometrica},
   vol.~66, pp.~689--702, May 1998.
 
+\bibitem{Abraham:Pacha}
+D.~J. Abraham, K.~Cechl\'{a}rov\'{a}, D.~F. Manlove, and K.~Mehlhorn, ``Pareto
+  optimality in house allocation problems,'' in {\em Proceedings of the 16th
+  International Conference on Algorithms and Computation}, ISAAC'05, (Berlin,
+  Heidelberg), pp.~1163--1175, Springer-Verlag, 2005.
+
 \bibitem{ManlovePopularMatchings}
 D.~Manlove and C.~Sng, ``Popular matchings in the capacitated house allocation
   problem,'' September 2006.
@@ -82,12 +88,6 @@ P.~Gärdenfors, ``Match making: Assignments based on bilateral preferences,''
 \bibitem{MANEA2007316}
 M.~Manea, ``Serial dictatorship and pareto optimality,'' {\em Games and
   Economic Behavior}, vol.~61, no.~2, pp.~316 -- 330, 2007.
-
-\bibitem{Abraham:Pacha}
-D.~J. Abraham, K.~Cechl\'{a}rov\'{a}, D.~F. Manlove, and K.~Mehlhorn, ``Pareto
-  optimality in house allocation problems,'' in {\em Proceedings of the 16th
-  International Conference on Algorithms and Computation}, ISAAC'05, (Berlin,
-  Heidelberg), pp.~1163--1175, Springer-Verlag, 2005.
 
 \bibitem{Gabow1983}
 H.~N. Gabow, ``An efficient reduction technique for degree-constrained subgraph

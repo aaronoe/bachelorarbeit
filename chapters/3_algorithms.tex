@@ -56,7 +56,7 @@ To address the other problem of preference over students, a simple approach is u
 \subsection{Pareto Optimal Maximal Matchings for CHA}
 We have seen that serial dictatorship is an easy and time efficient mechanism for computing pareto-optimal matchings. A big weakness of the approach is that it finds just one of many possible pareto-optimal matchings, without making any guarantees about quality in regards to cardinality. Particularly, the example in Table \ref{table:1} shows how permutations of the same instance can produce matchings of different cardinality, which motivates the search for an algorithm that produces a Pareto-Optimal matching of maximum cardinality. 
 
-(TODO: cited) Abraham \cite{Abraham:Pacha} has proposed a 3-phase algorithm for computing a maximum cardinality matching for the capacitated house allocation problem. Before presenting the algorithm, an important lemma about Pareto optimal matchings has to be presented first, which is then used for proofing the correctness of the algorithm. To characterize the lemma, we need to define the terms maximality, trade-in-free and cyclic coalition in regards to a matching $M$ first: 
+(TODO: cited) Abraham et. al \cite{Abraham:Pacha} have proposed a 3-phase algorithm for computing a maximum cardinality matching for the house allocation problem, which was extended by Sng \cite{SngThesis} to work with capacities as well. Before presenting the algorithm, an important lemma about Pareto optimal matchings has to be presented first, which is then used for proofing the correctness of the algorithm. To characterize the lemma, we need to define the terms maximality, trade-in-free and cyclic coalition in regards to a matching $M$ first: 
 \begin{enumerate}
     \item \textbf{Maximal}: $M$ is maximal, if no student $s_i \in S$ and seminar $t_j \in T$ exists, so that $s_i$ is unassigned, $t_j$ is undersubscribed in $M$ and $t_j$ is on $s_i$'s preference list.\cite{Abraham:Pacha}
     \item \textbf{Trade-in-free}: $M$ is trade-in-free, if there are no student $s_i \in S$ and seminars $t_j, t_l \in T$, such that $s_i$ is assigned to $t_l$, but prefers $t_j$ over $t_l$ and $t_j$ is undersubscribed.\cite{Abraham:Pacha} 
@@ -75,7 +75,9 @@ Using this lemma, (TODO) Abraham et al \cite{Abraham:Pacha} construct a 3-phased
     \item \textbf{Phase 3}: The last phase of the algorithm eliminates any cyclic coalitions from $M$, if they exist, by using a modified version of Gale's Top Trading Cycles (denoted by TTC) Method.\cite{ShapleyTTC} Essentially, the TTC method creates a graph from the matching $M$, where every student that is not matched to his most-preferred seminar, denoted by $S'$, is represented by a node. Next a directed edge is created from each student $s_i \in S'$, to all students in $S'$ who are assigned to the first seminar on $s_i$'s preference list. Now, there must be atleast one cycle in this graph, as students may have an edge to themselves. The next step is identifying the cycles and implementing a trade among all agents of that cycle that reassigns the seminars among these students. After the trade, all students from that cycle are removed and these steps are repeated until the graph is empty. Once the graph is empty, $M$ is coalition-free by the correctness of the TTC method.\cite{Abraham:Pacha}
 \end{enumerate}
 
-Since all modifications to the matching in phase 1 and 2 are limited to swaps and no deletions, maximum cardinality is still guaranteed after the termination of phase 3.
+Since all modifications to the matching in phase 1 and 2 are limited to swaps and no deletions, maximum cardinality is still guaranteed after the termination of phase 3. Additionally, the resulting matching is also trade-in-free and cyclic-coalition-free as those properties are guaranteed after performing phase 2 and 3 respectively. The runtime of the algorithm is dominated by finding a maximum cardinality matching (phase 1), which yields a time complexity of $\mathcal{O}(E\sqrt{V})$\cite{Abraham:Pacha} when using the Hopcroft-Karp algorithm. Phase 1 and 2 both take $\mathcal{O}(|E|)$ of time\cite{SngThesis}, which in total yields a worst-case complexity of $\mathcal{O}(E\sqrt{V})$ for finding a maximum cardinality pareto-optimal matching given any instance $I$ of the problem.
+
+\subsubsection{Properties}
 
 \subsection{Assignment Problem}
 
@@ -95,4 +97,61 @@ The matching $M$ computed by the algorithm is Pareto optimal. \cite{SngThesis}
 \subsubsection{Drawbacks}
 The matching computed using this method has the minimum weight property, and therefore is rank-maximal, however a big drawback is that the algorithm is not strategy-proof: Using this algorithm, students are encouraged to provide short preference lists in order to get matched to a higher ranked seminar. The algorithm tries to match every student, which means that students with a list of just one seminar will be prioitized over students, who also prefer that seminar but also supply other preferences. This problem could lead to having all students supply singleton preference lists, which also makes it harder to find perfect matchings. Therefore the algorithm does not encourage the students to supply preference lists that reflect their true preferences, which is a desirable property that has been considered for other matching problems like the hospital-residents-problem.\cite{Gusfield}
 
-\subsection{Popular Matchings in CHA}
+\subsection{Maximum Popular Matchings in CHA}
+Abraham et al \cite{AbrahamPopular} presented an algorithm for finding a popular matching in the house allocation problem (without capacities), which either finds such a popular matching or reports that none exists in $\mathcal{O}(|V| + |E|)$ time. Manlove and Sng \cite{ManlovePopularMatchings} extended this algorithm for the many-to-one case, the capacitated house allocation problem, by developing a characterisation of such popular matchings in CHA and then using it to construct an algorithm that finds a maximum popular matching for any given instance, if it exists. 
+Intuitively, the algorithm will try to match as many applicants as possible to their most-preferred choice to fulfill the popularity criteria. Formally, Manlove and Sng\cite{ManlovePopularMatchings} define and proof an alternative characterisation of Popularity in order to develop their algorithm:
+
+\subsubsection{An alternative characterisation of popular matchings}
+Given an instance $I$ of the CHA problem, for every student $a_1 \in A$ let $h_j := f(a_1)$ be the first ranked house on $s_1$'s preference list. Furthermore, we call $h_j$ an f-house. For each house $h_j \in H$, define the set of applicants, who named $h_j$ as their first choice, as $f(h_j) = \{a_i \in A: f(a_i) = h_j\}$ and the size of that set as $f_j = |f(h_j)|$. For a matching $M$ in $I$, we now say that a house $h_j \in H$ is full if $|M(h_j)| = c_j$, i.e. the maximum number of applicants is matched to that house, and undersubscribed if $|M(h_j)| < c_j$. Additionally, for every applicant $a_i \in A$, we append a last-resort house $l(a_i)$ with capacity 1 to $a_i$'s preference list.\cite{ManlovePopularMatchings} Manlove and Sng now prove the following lemma\cite{ManlovePopularMatchings}:
+\newtheorem{lemma-popular-1}[theorem]{Lemma}
+\begin{lemma}\label{lemma-popular1}
+    Let $M$ be a popular matching in $I$. Then for every f-house $h_j$, $|M(h_j) \cap f(h_j)| = \min\{c_j, f_j\}$.
+\end{lemma} 
+In other words, for a popular matching $M$ in $I$, every f-house $h_j$ is matched to atleast the number of applicants who have $h_j$ as their first-preference but at most $h_j$'s capacity $c_j$. Next, for every applicant $a_i$, we define $s(a_i)$ to be the most-preferred house $h_j$ on his preference list, such that either (i) $h_j$  is not an f-house, meaning that it's not the first choice of any applicant, or (ii) $h_j$ is an f-house, but $h_j \neq f(a_i)$ and $f_j < c_j$. In simple terms, $s(a_i)$ is the first undersubscribed house on $a_i$'s preference list after $f(a_i)$. We will refer to such houses as s-houses. It is important to note that such a house $s(a_i)$ always exists, due to the introduction of $l(a_i)$. In a popular matching an agent $a_i$ may only be matched to either $f(a_i)$ or $s(a_i)$, as every house in between those two is full according to the defintion of $f(a_i)$ and $s(a_i)$. Manlove and Sng, again prove the following two lemmas\cite{ManlovePopularMatchings}: 
+
+\newtheorem{lemma-popular-2}[theorem]{Lemma}
+\begin{lemma}\label{lemma-popular2}
+    Let $M$ be a popular matching in $I$. Then no agent $a_i \in A$ can be matched in $M$ to a house between $f(a_i)$ and $s(a_i)$ on $a_i$'s preference list.
+\end{lemma} 
+
+\newtheorem{lemma-popular-3}[theorem]{Lemma}
+\begin{lemma}\label{lemma-popular3}
+    Let $M$ be a popular matching in $I$. Then no agent $a_i \in A$ can be matched in $M$ to a house worse than $s(a_i)$ on $a_i$'s preference list.
+\end{lemma} 
+
+To summarize, so far for every applicant $a_i \in A$ we have defined the applicant's most preferred house $f(a_i)$ and his second most-preferred, but available house $s(a_j)$. We have seen that, in a stable matching, applicants can only be matched to either of those houses $f(a_i)$ or $s_(a_i)$. Using this information, we can now construct a subgraph $G'$ of $G = (V=(A, H), E)$, by removing all edges in $G$ from every applicant $a_i$, except the ones to $f(a_i)$ and $s(a_i)$. We now say that a matching $M$ is agent-complete in $G'$ if it matches all agents in $A$ and none of the agents $a_i$ are matched to their last-resort house $l(a_i)$.\cite{ManlovePopularMatchings} Manlove and Sng proof the following theorem to fully characterize popular matchings\cite{ManlovePopularMatchings}:
+\newtheorem{theorem-popular-4}[theorem]{Theorem}
+\begin{theorem}\label{theorem-popular-4}
+    A matching $M$ is popular in $I$ iff:
+    \begin{enumerate}
+        \item for every f-house $h_j$
+        \begin{enumerate}
+            \item if $f_j \leq c_j$, then $f(h_j) \subseteq M(h_j)$
+            \item if $f_j > c_j$, then $|M(h_j)| = c_j$ and $M(h_j) \subseteq f(h_j)$
+        \end{enumerate}
+        \item $M$ is an agent complete matching in the reduced graph $G'$
+    \end{enumerate}
+\end{theorem} 
+
+\subsubsection{Algorithm}
+Using Theorem \ref{theorem-popular-4}, Manlove and Sng develop the algorithm Popular-CHA for findin a maximum popular matching or reporting that none exists.\cite{ManlovePopularMatchings} The algorithm works as follows:
+\begin{enumerate}
+    \item 
+\end{enumerate}
+
+\subsection{Comparison}
+
+\begin{table}[h!]
+    \begin{tabular}{lllll}
+    \hline
+                        & Greedy & Max Pareto   & Assignment & Popular           \\ \hline
+    Strategy Proof      & yes    & yes          & no         & yes               \\
+    Maximum Cardinality & no     & yes          & yes        & yes               \\
+    Pareto-Optimal      & yes    & yes          & yes        & yes               \\
+    Popular             & no     & no           & no         & yes               \\
+    Rank Maximal        & no     & no           & yes        & no                \\
+    Time Complexity     & $O(n)$   & $O(n*sqrt(m))$ & $O(n^3)$?    & $O(sqrt(C)n_1 * m)$ \\ \hline
+    \end{tabular}
+    \caption{Comparison of different algorithmic approaches}
+    \label{tab:algorithm-comparison}
+\end{table}
