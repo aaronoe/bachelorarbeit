@@ -9,18 +9,18 @@
 \contentsline {subsubsection}{\numberline {2.3.3}House allocation problem}{8}{subsubsection.2.3.3}
 \contentsline {subsubsection}{\numberline {2.3.4}Assignment Problem}{8}{subsubsection.2.3.4}
 \contentsline {subsection}{\numberline {2.4}Outline}{8}{subsection.2.4}
-\contentsline {section}{\numberline {3}Optimality criteria for matchings}{10}{section.3}
+\contentsline {section}{\numberline {3}Optimality criteria}{10}{section.3}
 \contentsline {subsection}{\numberline {3.1}Maximum cardinality}{10}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Pareto Optimality}{10}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.2}Pareto-Optimality}{10}{subsection.3.2}
 \contentsline {subsection}{\numberline {3.3}Popularity}{11}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}Strategy Proofness}{12}{subsection.3.4}
-\contentsline {subsection}{\numberline {3.5}Profile-based Optimality}{12}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.4}Profile-based optimality}{12}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Strategy-Proofness}{12}{subsection.3.5}
 \contentsline {subsection}{\numberline {3.6}Application to student-seminar matching}{12}{subsection.3.6}
 \contentsline {section}{\numberline {4}Algorithmic approaches}{14}{section.4}
 \contentsline {subsection}{\numberline {4.1}Greedy with serial dictatorship}{14}{subsection.4.1}
 \contentsline {subsubsection}{\numberline {4.1.1}Properties of the computed matching}{14}{subsubsection.4.1.1}
 \contentsline {subsubsection}{\numberline {4.1.2}Drawbacks}{15}{subsubsection.4.1.2}
-\contentsline {subsection}{\numberline {4.2}Pareto Optimal Maximal Matchings for CHA}{16}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.2}Pareto Optimal Maximal Matchings for CHA}{15}{subsection.4.2}
 \contentsline {subsubsection}{\numberline {4.2.1}Properties}{17}{subsubsection.4.2.1}
 \contentsline {subsection}{\numberline {4.3}Assignment Problem}{17}{subsection.4.3}
 \contentsline {subsection}{\numberline {4.4}Transformation to an instance of min-weight matching}{17}{subsection.4.4}
@@ -28,14 +28,17 @@
 \contentsline {subsubsection}{\numberline {4.4.2}Properties of the computed matching}{18}{subsubsection.4.4.2}
 \contentsline {subsubsection}{\numberline {4.4.3}Drawbacks}{18}{subsubsection.4.4.3}
 \contentsline {subsection}{\numberline {4.5}Maximum Popular Matchings in CHA}{18}{subsection.4.5}
-\contentsline {subsubsection}{\numberline {4.5.1}An alternative characterisation of popular matchings}{19}{subsubsection.4.5.1}
+\contentsline {subsubsection}{\numberline {4.5.1}An alternative characterization of popular matchings}{19}{subsubsection.4.5.1}
 \contentsline {subsubsection}{\numberline {4.5.2}Algorithm}{20}{subsubsection.4.5.2}
+\contentsline {subsubsection}{\numberline {4.5.3}Properties}{20}{subsubsection.4.5.3}
 \contentsline {subsection}{\numberline {4.6}Comparison}{20}{subsection.4.6}
-\contentsline {section}{\numberline {5}Methodology}{21}{section.5}
-\contentsline {section}{\numberline {6}Implementation}{22}{section.6}
-\contentsline {section}{\numberline {7}Evaluation}{23}{section.7}
-\contentsline {section}{\numberline {8}Discussion}{24}{section.8}
-\contentsline {section}{\numberline {9}Extensions of the problem}{25}{section.9}
-\contentsline {subsubsection}{\numberline {9.0.1}Two-Sided Preferences}{25}{subsubsection.9.0.1}
-\contentsline {subsubsection}{\numberline {9.0.2}Many-to-Many matchings}{25}{subsubsection.9.0.2}
-\contentsline {section}{\numberline {10}Conclusion}{26}{section.10}
+\contentsline {subsubsection}{\numberline {4.6.1}Strategy-proofness and maximum cardinality}{21}{subsubsection.4.6.1}
+\contentsline {subsubsection}{\numberline {4.6.2}Max-PaCHA and the assignment problem}{22}{subsubsection.4.6.2}
+\contentsline {section}{\numberline {5}Methodology}{23}{section.5}
+\contentsline {section}{\numberline {6}Implementation}{24}{section.6}
+\contentsline {section}{\numberline {7}Evaluation}{25}{section.7}
+\contentsline {section}{\numberline {8}Discussion}{26}{section.8}
+\contentsline {section}{\numberline {9}Extensions of the problem}{27}{section.9}
+\contentsline {subsubsection}{\numberline {9.0.1}Two-Sided Preferences}{27}{subsubsection.9.0.1}
+\contentsline {subsubsection}{\numberline {9.0.2}Many-to-Many matchings}{27}{subsubsection.9.0.2}
+\contentsline {section}{\numberline {10}Conclusion}{28}{section.10}

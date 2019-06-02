@@ -1,4 +1,4 @@
-\section{Optimality criteria for matchings}
+\section{Optimality criteria}
 Looking at the previously presented problems, it is clear that there are different objective functions or optimality criteria for such matchings. For instance, in the stable marriage problem, matchings are primarily judged by the stability characteristic. However such a characteristic does not make sense in the case of the student-seminar problem, since stability assumes both-sided preferences. For that very reason, different criteria have to be used for judging the quality of a matching.
 \newline
 Intuitively, when thinking about matching students to seminars, it would be desirable to match as many students as possible, as well as matching the students to their first choice, etc. To formalize these requirements, a few criteria have been discussed in academia, which will be helpful for comparing different approaches. 
@@ -6,7 +6,7 @@ Intuitively, when thinking about matching students to seminars, it would be desi
 \subsection{Maximum cardinality}
 The goal of the maximum cardinality problem is finding a matching $M$ on a graph $G=(V=(X, Y), E)$, so that $|M|$ is maximal.\cite{GraphTheoryIntro} Consequently, maximum cardinality as an optimality criteria means that a matching is ideal if the number of students that are matched is maximized among all possible matchings. It should be noted here, that the student's preferences are not considered when computing the maximum cardinality matching. As a matter of fact, it is possible that multiple matchings (TODO: source) of the same cardinality exist, where one of the matchings could be better in the sense of a different optimality criteria. Therefore, maximum cardinality may be desirable, but should be used in conjunction with a different criteria, as it does not consider student preferences.
 
-\subsection{Pareto Optimality}
+\subsection{Pareto-Optimality}
 Pareto optimality or Pareto efficiency is a commonly used term in economics to describe the state of resource allocations. Intuitively an allocation, or in our case a matching, is Pareto optimal, iff no improvement can be made to a single individual, without worsening the situation for other individuals. For example a matching, in which two students $s_1, s_2$ would be better off by swapping their seminars is not Pareto optimal.
 In order to more formally define Pareto-optimality we must first define student preferences more clearly: 
 \newline
@@ -33,10 +33,7 @@ Additionally, a popular matching, unlike a pareto-optimal matching, does not alw
 \end{enumerate}
 Obviously $M_2$ is more popular than $M_1$, $M_3$ is more popular than $M_2$ and $M_1$ is more popular than $M_3$.\cite{AbrahamPopular}
 
-\subsection{Strategy Proofness}
-TODO: should this be included?
-
-\subsection{Profile-based Optimality}
+\subsection{Profile-based optimality}
 Contrary to popularity and Pareto optimality, where the students' satisfaction with a matching is compared, we could also examine the structure of a matching by defining the profile of a matching and comparing it. Intuitively the profile of a matching $M$ is a vector whose $i$th component indicates the number of students obtaining their $i$th-choice seminar in $M$ according to their preference list. 
 \newline
 Formally, let $I$ be an instance and $\mathcal{M}$ the set of its matchings. Given a matching $M \in \mathcal{M}$ with the set of students $S$ and seminars $T$, we define the regret $r(M)$ of $M$ as follows:
@@ -45,12 +42,18 @@ $r(M) = \max \{rank(s_i, t_j): (s_i, t_j)\in M\, s_i \in S, t_j \in T\}$, where 
 Using the defintion of a matching's profile, it is now possible to define a matching as rank-maximal as follows: A matching $M$ is rank-maximal, if its profile $p(M)$ is lexicographically maximum over all possible matchings in $\mathcal{M}$. That means that the number of students in $M$ who are matched to their first choice is maximum among all $M' \in \mathcal{M}$ and taking that into consideration, the number of students who are matched to their 2nd choice is maximum among all matchings, and so on.
 TODO: greedy rank maximal as well? 
 
-\subsection{Application to student-seminar matching}
+\subsection{Strategy-Proofness}
+The previously mentioned criteria all have in common that they primarily consider the structure of the computed matching to evaluate quality and not the structure of the instance. An important question to consider though, is if the agents can manipulate the outcome of an algorithm by not truthfully disclosing their preferences. Indeed, in the setting of matching residents to hospitals in the US, a previously used algorithm allowed students to improve the outcome of the algorithm by not supplying their real preferences.\cite{Gusfield} In the literature, the term for a mechanism, where no agent can benefit from misrepresenting their preferences is called strategy-proof. \cite{Klaus} Such mechanisms are of high interest for most matching problems, since preference-based optimality criteria, like the ones previously mentioned, would certainly lose some significance.
+For instance, it has been shown \cite{ROTH1982127}, that for the stable marriage problem with incomplete preferences, there exists no matching mechanism that both produces a popular matching and is strategy-proof.
+To formalize this, we will use a game-theory definition of strategy-proofness, which goes as follows: It is a weakly dominant strategy for each agent to report their true preference list. \cite{Klaus}
+
+\subsection{Application to student-seminar matching}\label{criteria-application}
 Given the problem description of student-seminar matching, it would be desirable to find a matching that has the following properties:
 \begin{enumerate}
-    \item Maximum Cardinality: As few students as possible should be left unmatched.
-    \item Pareto Optimality: A set of students should not feel the need to swap their match to improve their situation.
-    \item Popularity: The number of students who are satisfied with their matching should be maximum among all possible matchings.
-    \item Rank Maximality: As many students as possible should be matched to their first choice or if not possible second choice, and so on.
+    \item \textbf{Maximum Cardinality:} As few students as possible should be left unmatched.
+    \item \textbf{Pareto Optimality:} A set of students should not feel the need to swap their match to improve their situation.
+    \item \textbf{Popularity:} The number of students who are satisfied with their matching should be maximum among all possible matchings.
+    \item \textbf{Rank Maximality:} As many students as possible should be matched to their first choice or if not possible second choice, and so on.
+    \item \textbf{Stratey-proofness:} Students should not be able to benefit, i.e. increase their chances of being matched to their top-preference, by lying about their true-preferences. A matching mechansim should also not encourage students to supply short preference lists.
 \end{enumerate}
-Using these requirements, the next sections will present algorithms, for finding matchings that have some of those properties. One of these will be implemented to be used by the interactive system to find matchings which will try to optimize some of the mentioned metrics. As we have already seen, there does not always exists a popular matching or a pareto-optimal matching that is also agent complete. Additionally, the fact that students can supply incomplete preference lists, can very well lead to matchings that leave a few students unassigned, even if the sum of the capacity of all seminars is greater than the number of students. Given these constraints and observations, we will see that there is no such thing as an ideal matching for all instances based on the criteria we have presented. However, it will be possible to find matchings that will make the majority of the students satisfied.
+Using these requirements, the next sections will present algorithms, for finding matchings that have some of those properties. One of these will be implemented to be used by the interactive system to find matchings which will try to optimize some of the mentioned metrics. As we have already seen, there does not always exists a popular matching or a pareto-optimal matching that is also agent complete. Additionally, the fact that students can supply incomplete preference lists, can very well lead to matchings that leave a few students unassigned, even if the sum of the capacity of all seminars is greater than the number of students. Given these constraints and observations, we will see that there is no such thing as an ideal matching for all instances based on the criteria we have presented. However, it will be possible to find matchings that will leave a majority of the students satisfied.
