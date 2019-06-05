@@ -6,7 +6,7 @@
 \contentsline {subsection}{\numberline {2.3}Related Problems}{7}{subsection.2.3}
 \contentsline {subsubsection}{\numberline {2.3.1}Stable Marriage Problem}{7}{subsubsection.2.3.1}
 \contentsline {subsubsection}{\numberline {2.3.2}Hospitals/Residents Problem}{8}{subsubsection.2.3.2}
-\contentsline {subsubsection}{\numberline {2.3.3}House allocation problem}{9}{subsubsection.2.3.3}
+\contentsline {subsubsection}{\numberline {2.3.3}House allocation problem}{8}{subsubsection.2.3.3}
 \contentsline {subsubsection}{\numberline {2.3.4}Assignment Problem}{9}{subsubsection.2.3.4}
 \contentsline {subsection}{\numberline {2.4}Outline}{9}{subsection.2.4}
 \contentsline {section}{\numberline {3}Optimality criteria}{11}{section.3}
@@ -16,7 +16,7 @@
 \contentsline {subsection}{\numberline {3.4}Profile-based optimality}{13}{subsection.3.4}
 \contentsline {subsection}{\numberline {3.5}Strategy-Proofness}{13}{subsection.3.5}
 \contentsline {subsection}{\numberline {3.6}Application to student-seminar matching}{13}{subsection.3.6}
-\contentsline {section}{\numberline {4}Algorithmic approaches}{15}{section.4}
+\contentsline {section}{\numberline {4}Algorithmic Approaches}{15}{section.4}
 \contentsline {subsection}{\numberline {4.1}Greedy with serial dictatorship}{15}{subsection.4.1}
 \contentsline {subsubsection}{\numberline {4.1.1}Properties}{15}{subsubsection.4.1.1}
 \contentsline {subsubsection}{\numberline {4.1.2}Drawbacks}{16}{subsubsection.4.1.2}
