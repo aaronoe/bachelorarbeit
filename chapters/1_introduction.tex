@@ -67,6 +67,9 @@ One of the first algorithms used for solving this problem was the Hungarian algo
 \newline
 Alternatively, the problem can be transformed into an instance of the minimum-cost flow problem to determine a minimum weight matching. Section \ref{algo:assignment} will further investigate using this algorithm for the problem of student-seminar matching.
 
+\subsubsection{The Student-Project Allocation Problem}
+A similar problem to the CHA or student-seminar assignment problem is the Student-Project Allocation problem (SPA). This problem considers three entities instead of two, which are students, projects and lecturers. In most variations of the problem, students have preferences over courses, while courses again have capacities. However, lecturers are also considered, where lecturers can have preferences over students and/or courses. Algorithmic approaches used for this problem are mostly based on the deferred acceptance mechanism and find stable matchings that can either favor the students or lecturers.\cite{algorithmics} 
+
 \subsection{Outline}
 Given this problem definition, we will review the literature for optimality criteria and, based on that criteria, present algorithms that produce matchings with those characteristics. Many of those charactistics are quite obvious such as maximum-cardinality; however, we will also review terms such as "Pareto-efficiency" or "Popularity" that are commonly used in the context of market design and game theory. 
 Using these criteria, we will review matching algorithms that solve the problem and then analyze and compare their runtime-complexity and optimality-properties. We will see that no algorithm is known that fulfills all desirable properties, which makes it necessary to understand the trade-offs and relationships between the algorithms. 

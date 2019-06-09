@@ -22,6 +22,19 @@
 \usepackage{algorithm}% http://ctan.org/pkg/algorithms
 \usepackage{algpseudocode}% http://ctan.org/pkg/algorithmicx
 \usepackage{amsthm}
+\usepackage{url}
+
+%Anpassung von Kopf- und Fußzeile
+%beinflusst die erste Seite des Kapitels
+\usepackage[automark,headsepline]{scrlayer-scrpage}
+\ihead{\leftmark}
+\chead{}
+\ohead{\thepage}
+\ifoot*{}
+\cfoot[\thepage]{}
+\cfoot*{}
+\ofoot*{}
+\pagestyle{scrheadings}
 
 \algnewcommand\algorithmicforeach{\textbf{for each}}
 \algdef{S}[FOR]{ForEach}[1]{\algorithmicforeach\ #1\ \algorithmicdo}

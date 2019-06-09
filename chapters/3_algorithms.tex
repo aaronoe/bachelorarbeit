@@ -1,7 +1,7 @@
 \section{Algorithmic Approaches}\label{chapter:algorithms}
 In the previous section, we discussed several optimality criteria that apply to the problem of matching students to seminars. This chapter will present algorithms for computing matchings that fulfill some of those criteria, as well as evaluating them against each other. The goal of this evaluation is choosing the "ideal" algorithm for implementation. We will see that each of the algorithms has some draw-backs, which might make them undesirable for the student-seminar problem. 
 
-\subsection{Greedy with serial dictatorship}
+\subsection{Greedy with serial dictatorship}\label{algo-rsd}
 One of the simplest algorithms for the student-seminar matching problem is a greedy approach, that iterates over the set of students and assigns each of the students to their most preferred seminar that still has some capacity left. In contrast to Gale \& Shapley's deferred acceptance algorithm for the stable marriage problem, this algorithm does not tentatively match students once they make their selection, but makes a final assignment for those students. Because of this, the algorithm finds a matching in $\mathcal{O}(n)$ time with $n$ being the number of students. This mechanism of letting students successively pick their highest available preference in order is known as serial dictatorship.\cite{MANEA2007316} In detail the algorithm is as follows: 
 
 \begin{algorithm} % enter the algorithm environment
@@ -33,7 +33,7 @@ Since the order, in which the students get to pick their match is pre-defined, w
 \end{theorem}
 \begin{proof}
     Let $M$ be the matching produced by the algorithm. We assume that there exists a matching $N$ that pareto-dominates $M$. Now, let $s\in S$ be the first student who prefers his match in $N$ over $M$. Since $s$ prefers $N(s)$ over $M(s)$, the seminar $N(s)$ must have been unavailable when he made his pick. That means that another student $s' \in S$ exists, who picked $N(s)$ before $s$ could. However, we required that $s$ was matched to a better seminar in $N$, which means that $s'$ gets a worse match in $N$. This is a contradiction, so $N$ cannot pareto-dominate $M$.
-\end{proof} TODO: citation
+\end{proof}
 
 We can also easily see that the algorithm is strategy-proof, because every applicant makes his final pick once it's his turn, there is no benefit in misrepresenting preferences.\cite{Klaus}
 
@@ -53,7 +53,7 @@ In this example, each seminar only has a capacity of 1 and both students have se
 
 To address the other problem of preference over students, a simple approach is using the random serial dictatorship mechanism, which instead creates a random order of students as the pick order. This approach is still not fair in the sense that the first student in that order has a better chance at receiving his top priority seminar compared to all other students; however, any student has the chance to be the first one to make a pick. 
 
-\subsection{Pareto Optimal Maximal Matchings for CHA}
+\subsection{Pareto Optimal Maximal Matchings for CHA}\label{algo-max-po}
 We have seen that serial dictatorship is an easy and time-efficient mechanism for computing Pareto-optimal matchings. A big weakness of the approach, however, is that it finds just one of many possible Pareto-optimal matchings without making any guarantees about quality in regards to cardinality. Particularly, the example in Table \ref{table:1} shows how permutations of the same instance can produce matchings of different cardinality, which motivates the search for an algorithm that produces a Pareto-Optimal matching of maximum cardinality. 
 
 (TODO: cited) Abraham et. al \cite{Abraham:Pacha} have proposed a 3-phase algorithm for computing a maximum cardinality matching for the house allocation problem, which was extended by Sng \cite{SngThesis} for the many-to-one case. Before presenting the algorithm, an important lemma about Pareto optimal matchings has to be shown first, which is then used for proofing the correctness of the algorithm. To characterize the lemma, we need to define the terms maximality, trade-in-free and cyclic coalition in regards to a matching $M$ first: 
@@ -96,7 +96,7 @@ To transform the bipartite graph into a flow network, we first add a source and 
 \subsubsection{Properties}
 The matching $M$ computed by the algorithm is Pareto optimal\cite{SngThesis} and has the minimum weight property, and therefore is rank-maximal;\cite{SngThesis} however, a large drawback is that this mechanism is not strategy-proof: students are encouraged to provide short preference lists in order to get matched to their most-preferred seminar. The algorithm tries to match every student, which means that students with a list of just one seminar will be prioritized over students, who prefer the same seminar but also supply other preferences. This problem could lead to having all students provide single-element preference lists, which increases the difficulty of finding perfect matchings. Therefore, the algorithm does not encourage the students to supply preference lists that reflect their true preferences, which is a desirable property that has been considered for other matching problems like the hospital-residents-problem.\cite{Gusfield}
 
-\subsection{Maximum Popular Matchings in CHA}
+\subsection{Maximum Popular Matchings in CHA}\label{algo-max-pop}
 Abraham et al \cite{AbrahamPopular} presented an algorithm for finding a popular matching in the house allocation problem (without capacities), which either finds such a popular matching or reports that none exists in $\mathcal{O}(|V| + |E|)$ time. Manlove and Sng \cite{ManlovePopularMatchings} extended this algorithm for the many-to-one case, the Capacitated House Allocation problem, by developing a characterization of such popular matchings in CHA and then using it to construct an algorithm that finds a maximum popular matching for any given instance, if it exists. 
 Intuitively, the algorithm will try to match as many applicants as possible to their most-preferred choice to fulfill the popularity criteria. Formally, Manlove and Sng\cite{ManlovePopularMatchings} define and proof an alternative characterisation of Popularity in order to develop their algorithm:
 
