@@ -36,6 +36,8 @@
 \newcommand*{\@titelVerteidigungsdatum}{} % Verteidigungstext, wird nicht vom Studenten ausgefüllt
 \newcommand{\mitverteidigung}{\renewcommand*{\@titelVerteidigungsdatum}{verteidigt am: \,\,\TitelPunktLinie{3cm}}} % Verteidigungsplatzhalter erzeugen
 \newcommand*{\@wastwoside}{}
+\newcommand*{\@titelBetreuer}{Betreuer}
+\newcommand{\betreuer}[1]{\renewcommand*{\@titelBetreuer}{#1}}
 
 % Titelseite erzeugen:
 \newcommand{\makeTitel}{%
@@ -99,6 +101,8 @@
 				Gutachter/innen: & \@titelGutachterA \\
 					& \@titelGutachterB
 				\vspace{0.5\baselineskip}\\
+				Betreuer/in: & \@titelBetreuer\\
+				\vspace{0.5\baselineskip}\\
 				eingereicht am: & \@titelEinreichungsdatum \hfill \@titelVerteidigungsdatum
 			\end{tabularx}}
 			\vspace{-1\baselineskip}\\\phantom{x} % Übler Hack, um eine Warnung wg. einer zu leeren hbox zu verhindern
@@ -127,6 +131,8 @@
 	\let\einreichungsdatum\undefined
 	\let\@titelVerteidigungsdatum\undefined
 	\let\verteidigungsdatum\undefined
+	\let\@titelBetreuer\undefined
+	\let\betreuer\undefined
 
 	\KOMAoptions{\@wastwoside}% Stelle alten Modus (ein-/doppelseitig) wieder her
 	\let\@wastwoside\undefined
