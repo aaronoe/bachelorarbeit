@@ -41,10 +41,14 @@
 \contentsline {subsubsection}{\numberline {5.2.4}Results}{26}{subsubsection.5.2.4}
 \contentsline {subsubsection}{\numberline {5.2.5}Learnings}{26}{subsubsection.5.2.5}
 \contentsline {section}{\numberline {6}Implementation}{27}{section.6}
-\contentsline {subsubsection}{\numberline {6.0.1}Overview}{27}{subsubsection.6.0.1}
-\contentsline {subsubsection}{\numberline {6.0.2}Algorithm Implementation}{27}{subsubsection.6.0.2}
-\contentsline {subsubsection}{\numberline {6.0.3}Web-Interface Implementation}{27}{subsubsection.6.0.3}
+\contentsline {subsection}{\numberline {6.1}Overview}{27}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Algorithm Implementation}{27}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Web-Interface Implementation}{27}{subsection.6.3}
 \contentsline {section}{\numberline {7}Evaluation}{28}{section.7}
+\contentsline {subsection}{\numberline {7.1}Sample Data}{28}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Methodology}{28}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Results}{28}{subsection.7.3}
+\contentsline {subsection}{\numberline {7.4}Conclusion}{28}{subsection.7.4}
 \contentsline {section}{\numberline {8}Extensions to the problem}{29}{section.8}
 \contentsline {subsection}{\numberline {8.1}Two-Sided preferences}{29}{subsection.8.1}
 \contentsline {subsubsection}{\numberline {8.1.1}Stable matchings}{29}{subsubsection.8.1.1}
