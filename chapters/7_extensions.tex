@@ -2,7 +2,47 @@
 For the bulk of this thesis, we have looked at many-to-one matching problems with one-sided preferences, as this settings makes the most sense for the student-seminar application. However, there is a wide range of similar problems and extensions that are also worth mentioning. This section will present some of those problems and key results from the literature. 
 
 \subsection{Two-Sided preferences}
+In many practical one-to-many matching schemes, both parties will express preferences over the other. For instance, many countries use such schemes for matching students to university programs, which can be viewed as an instance of a one-to-many matching problem with two-sided preferences. The same problem exists in the US, where graduating medical students need to be matched to residency positions in hospitals. 
 
+Since we are dealing with two-sided preferences now, it is not possible to simply transform this problem into a weighted bipartite graph anymore, since edges now have two weights. It could be possible to use the product of those two weights as an edge weight, however, in practice different mechanisms are being used that don't rely on the graph representation of the problem.
+
+\subsubsection{Stable matchings}
+In the context of two-sided preferences Stability is a commonly used optimality criteria that matchings should fulfill. It can be seen as the two-sided preference extension to Pareto-optimality and is defined as follows. Given a set $H$ of hospitals and a set $R$ of residents, a matching $M$ of an instance $I$ is stable iff there is no pair $(r_i, h_j) \in M, r_i \in R, h_j \in H$ with:
+\begin{itemize}
+    \item $r_i$ and $h_j$ are on each other's preference lists
+    \item either $r_i$ is assigned in $M$, or $r_i$ prefers $h_j$ to $M(r_i)$
+    \item either $h_j$ is undersubscribed in $M$, or $h_j$ prefers $r_i$ to it's least preferred assigned resident in $M(h_j)$
+\end{itemize}
+Simply put, in a stable matching $M$, no pair of agents $(r_i, h_j)$ should have an incentive to give up their current match to get matched to each other.
+
+\subsubsection{Algorithm}
+Gale and Shapley \cite{GaleShapleyOrig} proved that for every instance of the problem, there exists a stable matching that can be computed using a linear-time algorithm. There are two variants of the algorithm, one that computes a resident-optimal, hospital pessimal matching and one that does the opposite. That means, that in the first case, each resident is matched to the best hospital among all stable matchings, while each hospital is matched to the worst set of residents among all stable matchings.\cite{Gusfield} In the context of student-seminar matchings it would make sense to use the resident/student optimal algorithm, which goes as follows\cite{Gusfield}:
+\begin{algorithm} % enter the algorithm environment
+    \caption{Resident-oriented deferred acceptance algorithm} 
+    \label{alg:resident-oriented-algorithm} 
+    \begin{algorithmic} % enter the algorithmic environment
+        \Require set of Residents with preferences $R$, set of Seminars $T$
+        \Ensure Stable Matching M
+        \While{Some resident $r$ is free and has a non-empty preference list} 
+        \State $h:=$ first hospital on $r$'s preference list
+        \If{$h$ is fully subscribed}
+            \State $r':=$ worst resident provisionally assigned to h
+            \State unassign $r'$ from $h$
+        \EndIf
+        \State provisionally assign $r$ to $h$
+
+        \If{$h$ is fully subscribed}
+            $s:=$ worst resident provisionally assigned to $h$
+            \ForEach{successor $s'$ of $s$ on $h$'s list}
+                \State remove $s'$ and $h'$ from each other's list
+            \EndFor
+        \EndIf
+
+        \EndWhile
+    \end{algorithmic}
+\end{algorithm}
+
+An advantage of using this algorithm for matching students to seminars is that the order in which students are processed does not matter. Gusfield shows that for any permutation of the input, each hospital is assigned the same number of residents, the same set of residents is unassigned and each undersubscribed hospital is matched to the same set of residents.\cite{Gusfield}
 
 \subsection{Many-to-Many matchings}
 
