@@ -50,6 +50,8 @@
 \contentsline {subsubsection}{\numberline {8.1.1}Stable matchings}{29}{subsubsection.8.1.1}
 \contentsline {subsubsection}{\numberline {8.1.2}Algorithm}{29}{subsubsection.8.1.2}
 \contentsline {subsection}{\numberline {8.2}Many-to-Many matchings}{30}{subsection.8.2}
-\contentsline {subsection}{\numberline {8.3}Online variant}{30}{subsection.8.3}
+\contentsline {subsubsection}{\numberline {8.2.1}One-sided preferences}{30}{subsubsection.8.2.1}
+\contentsline {subsubsection}{\numberline {8.2.2}Two-sided preferences}{30}{subsubsection.8.2.2}
+\contentsline {subsection}{\numberline {8.3}Online variant}{31}{subsection.8.3}
 \contentsline {subsubsection}{\numberline {8.3.1}Online max-cardinality matching}{31}{subsubsection.8.3.1}
 \contentsline {section}{\numberline {9}Conclusion}{32}{section.9}
