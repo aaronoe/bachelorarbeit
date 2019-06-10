@@ -133,4 +133,14 @@ F.~Diebold, H.~Aziz, M.~Bichler, F.~Matthes, and A.~Schneider, ``Course
   allocation via stable matching,'' {\em Business {\&} Information Systems
   Engineering}, vol.~6, pp.~97--110, Apr 2014.
 
+\bibitem{Mehta:Online}
+A.~Mehta, ``Online matching and ad allocation,'' {\em Found. Trends Theor.
+  Comput. Sci.}, vol.~8, pp.~265--368, Oct. 2013.
+
+\bibitem{Karp:Online}
+R.~M. Karp, U.~V. Vazirani, and V.~V. Vazirani, ``An optimal algorithm for
+  on-line bipartite matching,'' in {\em Proceedings of the Twenty-second Annual
+  ACM Symposium on Theory of Computing}, STOC '90, (New York, NY, USA),
+  pp.~352--358, ACM, 1990.
+
 \end{thebibliography}

@@ -46,7 +46,8 @@
 \contentsline {subsubsection}{\numberline {6.0.3}Web-Interface Implementation}{27}{subsubsection.6.0.3}
 \contentsline {section}{\numberline {7}Evaluation}{28}{section.7}
 \contentsline {section}{\numberline {8}Extensions to the problem}{29}{section.8}
-\contentsline {subsubsection}{\numberline {8.0.1}Two-Sided preferences}{29}{subsubsection.8.0.1}
-\contentsline {subsubsection}{\numberline {8.0.2}Many-to-Many matchings}{29}{subsubsection.8.0.2}
-\contentsline {subsubsection}{\numberline {8.0.3}Online variant}{29}{subsubsection.8.0.3}
-\contentsline {section}{\numberline {9}Conclusion}{30}{section.9}
+\contentsline {subsection}{\numberline {8.1}Two-Sided preferences}{29}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}Many-to-Many matchings}{29}{subsection.8.2}
+\contentsline {subsection}{\numberline {8.3}Online variant}{29}{subsection.8.3}
+\contentsline {subsubsection}{\numberline {8.3.1}Online max-cardinality matching}{29}{subsubsection.8.3.1}
+\contentsline {section}{\numberline {9}Conclusion}{31}{section.9}
