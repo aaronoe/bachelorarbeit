@@ -1,0 +1,89 @@
+fun getVeryLargeRandomData(): Pair<List<Student>, List<Seminar>> {
+    val seminars = (0 until 100).map {
+        Seminar("$it", Random.nextInt(20, 40))
+    }
+    val totalCapacity = seminars.sumBy { it.capacity }
+
+    val students = (0 until totalCapacity).map {
+        Student("$it", "$it", seminars.shuffled().dropLast(98))
+    }
+
+    return students to seminars
+}
+
+Algorithm: de.aaronoe.algorithms.PopularChaAlgorithm@688ab01f - Profile: [2671, 152] - Unassigned Count: 184
+Algorithm: de.aaronoe.algorithms.PopularChaAlgorithm@688ab01f - Profile: [2694, 129] - Unassigned Count: 208
+Algorithm: de.aaronoe.algorithms.PopularChaAlgorithm@688ab01f - Profile: [2610, 132] - Unassigned Count: 202
+Algorithm: de.aaronoe.algorithms.PopularChaAlgorithm@688ab01f - Profile: [2525, 122] - Unassigned Count: 181
+Algorithm: de.aaronoe.algorithms.PopularChaAlgorithm@688ab01f - Profile: [2602, 129] - Unassigned Count: 199
+Algorithm: de.aaronoe.algorithms.PopularChaAlgorithm@688ab01f - Profile: [2638, 151] - Unassigned Count: 189
+Algorithm: de.aaronoe.algorithms.PopularChaAlgorithm@688ab01f - Profile: [2517, 180] - Unassigned Count: 189
+Algorithm: de.aaronoe.algorithms.PopularChaAlgorithm@688ab01f - Profile: [2617, 144] - Unassigned Count: 207
+Algorithm: de.aaronoe.algorithms.PopularChaAlgorithm@688ab01f - Profile: [2579, 155] - Unassigned Count: 154
+Algorithm: de.aaronoe.algorithms.PopularChaAlgorithm@688ab01f - Profile: [2602, 159] - Unassigned Count: 160
+Algorithm: de.aaronoe.algorithms.RandomSerialDictatorshipAlgorithm@57e0744f - Profile: [2578, 234] - Unassigned Count: 168
+Algorithm: de.aaronoe.algorithms.RandomSerialDictatorshipAlgorithm@57e0744f - Profile: [2607, 245] - Unassigned Count: 157
+Algorithm: de.aaronoe.algorithms.RandomSerialDictatorshipAlgorithm@57e0744f - Profile: [2552, 209] - Unassigned Count: 185
+Algorithm: de.aaronoe.algorithms.RandomSerialDictatorshipAlgorithm@57e0744f - Profile: [2646, 213] - Unassigned Count: 152
+Algorithm: de.aaronoe.algorithms.RandomSerialDictatorshipAlgorithm@57e0744f - Profile: [2556, 206] - Unassigned Count: 184
+Algorithm: de.aaronoe.algorithms.RandomSerialDictatorshipAlgorithm@57e0744f - Profile: [2639, 204] - Unassigned Count: 159
+Algorithm: de.aaronoe.algorithms.RandomSerialDictatorshipAlgorithm@57e0744f - Profile: [2639, 204] - Unassigned Count: 138
+Algorithm: de.aaronoe.algorithms.RandomSerialDictatorshipAlgorithm@57e0744f - Profile: [2555, 237] - Unassigned Count: 156
+Algorithm: de.aaronoe.algorithms.RandomSerialDictatorshipAlgorithm@57e0744f - Profile: [2494, 270] - Unassigned Count: 181
+Algorithm: de.aaronoe.algorithms.RandomSerialDictatorshipAlgorithm@57e0744f - Profile: [2642, 189] - Unassigned Count: 165
+Algorithm: de.aaronoe.algorithms.HungarianAlgorithm@469e6417 - Profile: [2559, 353] - Unassigned Count: 0
+Algorithm: de.aaronoe.algorithms.HungarianAlgorithm@469e6417 - Profile: [2618, 327] - Unassigned Count: 0
+Algorithm: de.aaronoe.algorithms.HungarianAlgorithm@469e6417 - Profile: [2648, 345] - Unassigned Count: 0
+Algorithm: de.aaronoe.algorithms.HungarianAlgorithm@469e6417 - Profile: [2521, 401] - Unassigned Count: 0
+Algorithm: de.aaronoe.algorithms.HungarianAlgorithm@469e6417 - Profile: [2777, 325] - Unassigned Count: 0
+Algorithm: de.aaronoe.algorithms.HungarianAlgorithm@469e6417 - Profile: [2629, 345] - Unassigned Count: 0
+Algorithm: de.aaronoe.algorithms.HungarianAlgorithm@469e6417 - Profile: [2709, 318] - Unassigned Count: 0
+Algorithm: de.aaronoe.algorithms.HungarianAlgorithm@469e6417 - Profile: [2682, 321] - Unassigned Count: 0
+Algorithm: de.aaronoe.algorithms.HungarianAlgorithm@469e6417 - Profile: [2575, 387] - Unassigned Count: 0
+Algorithm: de.aaronoe.algorithms.HungarianAlgorithm@469e6417 - Profile: [2720, 317] - Unassigned Count: 0
+
+
+_______________________________________________________________________________
+fun getVeryLargeRandomData(): Pair<List<Student>, List<Seminar>> {
+    val seminars = (0 until 100).map {
+        Seminar("$it", Random.nextInt(20, 40))
+    }
+    val totalCapacity = seminars.sumBy { it.capacity }
+
+    val students = (0 until totalCapacity).map {
+        Student("$it", "$it", seminars.shuffled().dropLast(95))
+    }
+
+    return students to seminars
+}
+
+Algorithm: de.aaronoe.algorithms.PopularChaAlgorithm@69d1ef52 - Profile: [2532, 179, 83, 29, 20] - Unassigned Count: 31
+Algorithm: de.aaronoe.algorithms.PopularChaAlgorithm@69d1ef52 - Profile: [2668, 152, 79, 36, 21] - Unassigned Count: 40
+Algorithm: de.aaronoe.algorithms.PopularChaAlgorithm@69d1ef52 - Profile: [2606, 155, 74, 36, 17] - Unassigned Count: 33
+Algorithm: de.aaronoe.algorithms.PopularChaAlgorithm@69d1ef52 - Profile: [2728, 185, 92, 46, 16] - Unassigned Count: 24
+Algorithm: de.aaronoe.algorithms.PopularChaAlgorithm@69d1ef52 - Profile: [2599, 152, 80, 47, 19] - Unassigned Count: 48
+Algorithm: de.aaronoe.algorithms.PopularChaAlgorithm@69d1ef52 - Profile: [2630, 150, 69, 46, 24] - Unassigned Count: 31
+Algorithm: de.aaronoe.algorithms.PopularChaAlgorithm@69d1ef52 - Profile: [2631, 162, 84, 39, 21] - Unassigned Count: 30
+Algorithm: de.aaronoe.algorithms.PopularChaAlgorithm@69d1ef52 - Profile: [2672, 160, 73, 41, 20] - Unassigned Count: 35
+Algorithm: de.aaronoe.algorithms.PopularChaAlgorithm@69d1ef52 - Profile: [2705, 145, 68, 35, 18] - Unassigned Count: 37
+Algorithm: de.aaronoe.algorithms.PopularChaAlgorithm@69d1ef52 - Profile: [2634, 170, 73, 30, 21] - Unassigned Count: 31
+Algorithm: de.aaronoe.algorithms.RandomSerialDictatorshipAlgorithm@a4ff0c5 - Profile: [2624, 196, 73, 39, 20] - Unassigned Count: 69
+Algorithm: de.aaronoe.algorithms.RandomSerialDictatorshipAlgorithm@a4ff0c5 - Profile: [2415, 227, 111, 42, 31] - Unassigned Count: 60
+Algorithm: de.aaronoe.algorithms.RandomSerialDictatorshipAlgorithm@a4ff0c5 - Profile: [2569, 232, 85, 43, 31] - Unassigned Count: 70
+Algorithm: de.aaronoe.algorithms.RandomSerialDictatorshipAlgorithm@a4ff0c5 - Profile: [2488, 249, 91, 47, 27] - Unassigned Count: 60
+Algorithm: de.aaronoe.algorithms.RandomSerialDictatorshipAlgorithm@a4ff0c5 - Profile: [2515, 251, 75, 49, 23] - Unassigned Count: 61
+Algorithm: de.aaronoe.algorithms.RandomSerialDictatorshipAlgorithm@a4ff0c5 - Profile: [2548, 226, 96, 47, 25] - Unassigned Count: 49
+Algorithm: de.aaronoe.algorithms.RandomSerialDictatorshipAlgorithm@a4ff0c5 - Profile: [2592, 223, 85, 51, 20] - Unassigned Count: 56
+Algorithm: de.aaronoe.algorithms.RandomSerialDictatorshipAlgorithm@a4ff0c5 - Profile: [2629, 227, 73, 34, 20] - Unassigned Count: 52
+Algorithm: de.aaronoe.algorithms.RandomSerialDictatorshipAlgorithm@a4ff0c5 - Profile: [2516, 233, 80, 41, 20] - Unassigned Count: 69
+Algorithm: de.aaronoe.algorithms.RandomSerialDictatorshipAlgorithm@a4ff0c5 - Profile: [2521, 248, 87, 38, 25] - Unassigned Count: 57
+Algorithm: de.aaronoe.algorithms.HungarianAlgorithm@1197558d - Profile: [2580, 344, 13] - Unassigned Count: 0
+Algorithm: de.aaronoe.algorithms.HungarianAlgorithm@1197558d - Profile: [2724, 334, 2] - Unassigned Count: 0
+Algorithm: de.aaronoe.algorithms.HungarianAlgorithm@1197558d - Profile: [2627, 331, 4] - Unassigned Count: 0
+Algorithm: de.aaronoe.algorithms.HungarianAlgorithm@1197558d - Profile: [2575, 370, 6] - Unassigned Count: 0
+Algorithm: de.aaronoe.algorithms.HungarianAlgorithm@1197558d - Profile: [2627, 255, 2] - Unassigned Count: 0
+Algorithm: de.aaronoe.algorithms.HungarianAlgorithm@1197558d - Profile: [2616, 284, 5] - Unassigned Count: 0
+Algorithm: de.aaronoe.algorithms.HungarianAlgorithm@1197558d - Profile: [2553, 346, 2] - Unassigned Count: 0
+Algorithm: de.aaronoe.algorithms.HungarianAlgorithm@1197558d - Profile: [2632, 312, 11] - Unassigned Count: 0
+Algorithm: de.aaronoe.algorithms.HungarianAlgorithm@1197558d - Profile: [2633, 312, 5] - Unassigned Count: 0
+Algorithm: de.aaronoe.algorithms.HungarianAlgorithm@1197558d - Profile: [2647, 339, 4] - Unassigned Count: 0

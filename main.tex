@@ -12,14 +12,18 @@
 \gutachter{Prof. Dr. Henning Meyerhenke}{Prof. Dr. Timo Kehrer}
 \betreuer{Dr. Alexander van der Grinten}
 \mitverteidigung % entfernen, falls keine Verteidigung erfolgt
+
+\pagenumbering{alph}
 \makeTitel
 
-\tableofcontents
-
-\newpage
+\pagenumbering{Roman}
 \input{chapters/0_abstract.tex}
 
 \newpage
+\tableofcontents
+
+\newpage
+\pagenumbering{arabic}
 \input{chapters/1_introduction.tex}
 
 \newpage
@@ -44,6 +48,8 @@
 \input{chapters/8_conclusion.tex}
 
 \newpage
+\pagenumbering{Roman}
+
 \bibliography{main}
 \bibliographystyle{ieeetr}
 
