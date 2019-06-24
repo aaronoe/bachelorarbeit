@@ -133,6 +133,10 @@ F.~Diebold, H.~Aziz, M.~Bichler, F.~Matthes, and A.~Schneider, ``Course
   allocation via stable matching,'' {\em Business {\&} Information Systems
   Engineering}, vol.~6, pp.~97--110, Apr 2014.
 
+\bibitem{HungarianGithub}
+C.~Ma, ``hungarian-algorithm-cpp.''
+  \url{https://github.com/mcximing/hungarian-algorithm-cpp}, 2016.
+
 \bibitem{Mehta:Online}
 A.~Mehta, ``Online matching and ad allocation,'' {\em Found. Trends Theor.
   Comput. Sci.}, vol.~8, pp.~265--368, Oct. 2013.

@@ -209,6 +209,12 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/tabulary/tabulary.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/tabulary/tabulary.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
 INPUT /usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlayer-scrpage.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlayer-scrpage.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlayer.sty
@@ -329,6 +335,12 @@ INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/4_algorith
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/4_algorithm_comparison.tex
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/5_implementation.tex
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/5_implementation.tex
+INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/popular.in
+INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/popular.in
+INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/popular.in
+INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/popular.out
+INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/popular.out
+INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/popular.out
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/6_evaluation.tex
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/6_evaluation.tex
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/7_extensions.tex

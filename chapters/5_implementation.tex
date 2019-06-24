@@ -5,9 +5,37 @@ To allow for further experimentation with my findings, I will describe a prototy
 \begin{enumerate}
     \item Allow for adding and deleting student and seminar data.
     \item Allow for computing a match using the previously entered data.
-    \item Output the matching and it's properties.
+    \item Output the matching and its properties.
 \end{enumerate}
+This system produces matchings by using an efficient implementation of the algorithms mentioned in chapter \ref{chapter:algorithms}. While the webserver itself is build in the Kotlin programm language and therefore runs on the JVM, I decided to implement the algorithms in C++ for the performance benefit I noticed when moving from a Kotlin to a C++ implementation. However, the Kotlin server is still used for generating mock testing data, gathering statistics about the results, as well as communicating with the front-end of the system.
 
 \subsection{Algorithm Implementation}
+While prototyping with a Kotlin implementation of a subset of the algorithms from chapter \ref{chapter:algorithms} I noticed that performance could be significantly improved by moving to a C++ implementation of the algorithms. All of the algorithms mentioned chapter \ref{chapter:algorithms} were implemented. Additionally a modified version of the Max-Popular-Algorithm was implemented, which always computes a matching by exluding students matched to their last-resort seminar instead of making the whole computation fail. In detail, for the assignment problem, I used an existing open-source implementation of the \textit{Kuhn-Munkres/Hungarian} algorithm that computes a solution to the assignment problem in $\mathcal{O}(n^3)$ time\cite{HungarianGithub}.
+
+\subsubsection{Input and Execution}
+All five algorithms are compiled into a single binary \lstinline{seminar_assignment} using CMake. No external libraries dynamic or static libraries need to be linked. The program accepts an optional argument which specifies the algorithm to be used and then reads the problem instance on stdin. In detail, a call to the program could look like this: \lstinline{./seminar_assignment mode < instance.in} 
+\newline
+In this call, mode should be replaced by one of the following arguments to select an algorithm for execution: "hungarian", "popular", "popular-modified", "rsd" (default) or "max-pareto". The input format is proprietary and domain-specific and is defined as follows:
+\begin{lstlisting}[frame=single, caption={Program input format},captionpos=b]
+seminar_count student_count
+seminar_id seminar_capacity
+...
+student_id pref_list_length pref_0 pref_1 .. pref_n
+...
+\end{lstlisting}
+
+An example for this is the following instance with 4 students and seminars:
+\lstinputlisting[frame=single, label=lst:sample-input, caption={Example instance input},captionpos=b]{assets/popular.in}
+
+The program expects that the IDs of both students and seminars are enumerated consecutively beginning at zero, because those entities are collected into vectors, where the entities' IDs are being used as an index of the respective vector. The output of the program is written to stdout and consists of the number of matched pairs, followed by a new-line and then a line for each matched pair consisting of the student-ID and space separated seminar-ID. An example of this is the following output, which was produced by executing the Hungarian algorithm on the instance from Listing \ref{lst:sample-input}:
+\lstinputlisting[frame=single, caption={Output for input from Listing \ref{lst:sample-input} with the Hungarian algorithm},captionpos=b]{assets/popular.out}
+
+The C++ program does not produce any statistics or produce any other side-effects. It is the responsibility of the web-server to process the matching and gather statistics. The server uses Java's Runtime API internally to create a process that executes the C++ program, by writing the problem's instance in the previously described format to the new process' stdin. The server launches each new process in a new coroutine that suspends execution until the process terminates. The resulting matching is then collected by parsing the process' stdout and creating an internal representation of it. 
+
+\subsection{Web-Server Implementation}
+For the implementation of the Web-Server I chose the Kotlin programming language in conjunction with the Ktor framework. Just like Java, Kotlin compiles to Java Bytecode, but provides meaningful extensions to the language such as nullable types and coroutines. Ktor is a web-server-framework that is build on top of Kotlin's coroutines to provide a declarative API for defining web-endpoints, while allowing non-blocking execution due to the coroutine's suspending nature. 
+To represent the student and seminar data internally the server utilizes classes to represent students and seminars and persists them to a file by serializing the data model to JSON, whenever a value changes. Ideally, for something other than a research prototype, an alternative persistence solution, such as a database, should be used. The server provides endpoints for creating and deleting students and seminars, downloading all data in JSON-format, computing a match and finally a \textit{WebSocket} endpoint that provides real-time data-updates to the clients. When establishing a connection with the WebSocket, the app's data consisting of a list of the currently saved students and seminars is send through the WebSocket in a JSON-representation. Any updates to the app's data from any connection is then also propagated through any open WebSocket connections. This allows the clients to implement real time updates, while keeping the load of the server low by suspending the execution of each connection until data is updated. In order to compute a matching clients make a GET-request to the server's matching input, by providing the keyword of the algorithm in the request's path. The server then, executes the C++ program using that algorithm and the currently stored student and seminar data. The response of the endpoint is a JSON payload consisting of a map of seminars to students, the profile of the matching and the count of unassigned students.
 
 \subsection{Web-Interface Implementation}
+The Front-End of the system is implemented with the Flutter framework, which is a declarative UI-framework based on Google's Dart programming language that can target the Web, Android, iOS and many desktop platforms. For the Front-End the Dart-code is transpiled into Javascript-code that draws the UI specified in the source code on a canvas in the body of the HTML page. When loading the page, the website established a WebSocket connection with the web-server to fetch the initial data and also to listen for updates. 
+The website consists of three tabs: The first tab lists the students, the second tab lists the seminars and the last tab allows for computing a matching and viewing the results. Additionally the first two tabs allow for creating new student and seminar entities by filling out a simple form with the required data, as well as deleting any of those entities. Create and delete operations don't directly manipulate any data in the browser, but instead make HTTP-requests to change the data on the server, which then propagates the changes through the WebSocket connection to the website again. That way, the website treats the server as the single-source of truth for all app-data and implements real-time capabilities.
