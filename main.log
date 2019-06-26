@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.1)  24 JUN 2019 20:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.1)  26 JUN 2019 16:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -843,16 +843,16 @@ l.27
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.38 \newpage
-             ] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/5_implementation.tex [22]
+             ] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/5_implementation.tex
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 19.
- (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/popular.in) (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/popular.out) [23]) [24] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/6_evaluation.tex) [25] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/7_extensions.tex
+ [22] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/popular.in) (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/popular.out) [23] [24] [25]) [26] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/6_evaluation.tex) [27] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/7_extensions.tex
 LaTeX Font Info:    Try loading font information for OMS+lmr on input line 12.
  (/usr/share/texmf/tex/latex/lm/omslmr.fd
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 12.
- [26] [27]) [28] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/8_conclusion.tex) [29] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.bblpdfTeX warning (ext4): destination with the same identifier (name{page.I}) has been already used, duplicate ignored
+ [28] [29]) [30] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/8_conclusion.tex) [31] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.bblpdfTeX warning (ext4): destination with the same identifier (name{page.I}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.72 
@@ -888,22 +888,22 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 59.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 59.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 59.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 06F42CC80951E85856E33062936E02FD;9833.
+(rerunfilecheck)             Checksum: 921282DB75A0AF89A7A4B61D9BE111D0;11025.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 59.
  ) 
 Here is how much of TeX's memory you used:
- 28510 strings out of 492982
- 528673 string characters out of 6134897
- 710041 words of memory out of 5000000
- 31194 multiletter control sequences out of 15000+600000
- 90345 words of font info for 155 fonts, out of 8000000 for 9000
+ 28530 strings out of 492982
+ 528995 string characters out of 6134897
+ 709142 words of memory out of 5000000
+ 31202 multiletter control sequences out of 15000+600000
+ 90519 words of font info for 157 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 66i,19n,90p,8912b,1036s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 66i,20n,90p,8912b,1948s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmro12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.pdf (39 pages, 408810 bytes).
+Output written on /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.pdf (41 pages, 415466 bytes).
 PDF statistics:
- 834 PDF objects out of 1000 (max. 8388607)
- 767 compressed objects within 8 object streams
- 214 named destinations out of 1000 (max. 500000)
- 31229 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 881 PDF objects out of 1000 (max. 8388607)
+ 811 compressed objects within 9 object streams
+ 222 named destinations out of 1000 (max. 500000)
+ 31277 words of extra memory for PDF output out of 35830 (max. 10000000)
 

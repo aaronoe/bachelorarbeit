@@ -44,20 +44,26 @@
 \contentsline {subsection}{\numberline {6.1}Overview}{22}{subsection.6.1}
 \contentsline {subsection}{\numberline {6.2}Algorithm Implementation}{22}{subsection.6.2}
 \contentsline {subsubsection}{\numberline {6.2.1}Input and Execution}{22}{subsubsection.6.2.1}
-\contentsline {subsection}{\numberline {6.3}Web-Server Implementation}{24}{subsection.6.3}
-\contentsline {subsection}{\numberline {6.4}Web-Interface Implementation}{24}{subsection.6.4}
-\contentsline {section}{\numberline {7}Evaluation}{25}{section.7}
-\contentsline {subsection}{\numberline {7.1}Sample Data}{25}{subsection.7.1}
-\contentsline {subsection}{\numberline {7.2}Methodology}{25}{subsection.7.2}
-\contentsline {subsection}{\numberline {7.3}Results}{25}{subsection.7.3}
-\contentsline {subsection}{\numberline {7.4}Conclusion}{25}{subsection.7.4}
-\contentsline {section}{\numberline {8}Extensions to the problem}{26}{section.8}
-\contentsline {subsection}{\numberline {8.1}Two-Sided preferences}{26}{subsection.8.1}
-\contentsline {subsubsection}{\numberline {8.1.1}Stable matchings}{26}{subsubsection.8.1.1}
-\contentsline {subsubsection}{\numberline {8.1.2}Algorithm}{26}{subsubsection.8.1.2}
-\contentsline {subsection}{\numberline {8.2}Many-to-Many matchings}{27}{subsection.8.2}
-\contentsline {subsubsection}{\numberline {8.2.1}One-sided preferences}{27}{subsubsection.8.2.1}
-\contentsline {subsubsection}{\numberline {8.2.2}Two-sided preferences}{27}{subsubsection.8.2.2}
-\contentsline {subsection}{\numberline {8.3}Online variant}{28}{subsection.8.3}
-\contentsline {subsubsection}{\numberline {8.3.1}Online max-cardinality matching}{28}{subsubsection.8.3.1}
-\contentsline {section}{\numberline {9}Conclusion}{29}{section.9}
+\contentsline {subsubsection}{\numberline {6.2.2}RSD Implementation}{24}{subsubsection.6.2.2}
+\contentsline {subsubsection}{\numberline {6.2.3}Max-Pareto Implementation}{24}{subsubsection.6.2.3}
+\contentsline {subsubsection}{\numberline {6.2.4}Assignment Problem Implementation}{24}{subsubsection.6.2.4}
+\contentsline {subsubsection}{\numberline {6.2.5}Max-Popular Implementation}{24}{subsubsection.6.2.5}
+\contentsline {subsubsection}{\numberline {6.2.6}Modified Max-Popular Implementation}{25}{subsubsection.6.2.6}
+\contentsline {subsection}{\numberline {6.3}Web-Server Implementation}{25}{subsection.6.3}
+\contentsline {subsubsection}{\numberline {6.3.1}Benchmark Tools}{25}{subsubsection.6.3.1}
+\contentsline {subsection}{\numberline {6.4}Web-Interface Implementation}{26}{subsection.6.4}
+\contentsline {section}{\numberline {7}Evaluation}{27}{section.7}
+\contentsline {subsection}{\numberline {7.1}Sample Data}{27}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Methodology}{27}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Results}{27}{subsection.7.3}
+\contentsline {subsection}{\numberline {7.4}Conclusion}{27}{subsection.7.4}
+\contentsline {section}{\numberline {8}Extensions to the problem}{28}{section.8}
+\contentsline {subsection}{\numberline {8.1}Two-Sided preferences}{28}{subsection.8.1}
+\contentsline {subsubsection}{\numberline {8.1.1}Stable matchings}{28}{subsubsection.8.1.1}
+\contentsline {subsubsection}{\numberline {8.1.2}Algorithm}{28}{subsubsection.8.1.2}
+\contentsline {subsection}{\numberline {8.2}Many-to-Many matchings}{29}{subsection.8.2}
+\contentsline {subsubsection}{\numberline {8.2.1}One-sided preferences}{29}{subsubsection.8.2.1}
+\contentsline {subsubsection}{\numberline {8.2.2}Two-sided preferences}{29}{subsubsection.8.2.2}
+\contentsline {subsection}{\numberline {8.3}Online variant}{30}{subsection.8.3}
+\contentsline {subsubsection}{\numberline {8.3.1}Online max-cardinality matching}{30}{subsubsection.8.3.1}
+\contentsline {section}{\numberline {9}Conclusion}{31}{section.9}
