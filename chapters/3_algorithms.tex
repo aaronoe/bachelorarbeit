@@ -35,10 +35,10 @@ Since the order, in which the students get to pick their match is pre-defined, w
     Let $M$ be the matching produced by the algorithm. We assume that there exists a matching $N$ that pareto-dominates $M$. Now, let $s\in S$ be the first student who prefers his match in $N$ over $M$. Since $s$ prefers $N(s)$ over $M(s)$, the seminar $N(s)$ must have been unavailable when he made his pick. That means that another student $s' \in S$ exists, who picked $N(s)$ before $s$ could. However, we required that $s$ was matched to a better seminar in $N$, which means that $s'$ gets a worse match in $N$. This is a contradiction, so $N$ cannot pareto-dominate $M$.
 \end{proof}
 
-We can also easily see that the algorithm is strategy-proof, because every applicant makes his final pick once it's his turn, there is no benefit in misrepresenting preferences.\cite{Klaus}
+We can also easily see that the algorithm is strategy-proof, because every applicant makes his final pick once it is his turn, there is no benefit in misrepresenting preferences.\cite{Klaus}
 
 \subsubsection{Drawbacks}
-When looking at the algorithm, it is clear that it has a strict preference order over students, specified by the order in which students are matched in the for-loop. Additionally, the algorithm makes no effort to match all students: if it's a student's turn to pick his match, and none of the seminars on his preference lists are free, that student will not be matched at all. This problem gets worse when we consider that our problem statement allows for incomplete preference lists, which increases the chances of having a high number of unmatched students. To illustrate this let us consider the following example in Table \ref{table:1}:
+When looking at the algorithm, it is clear that it has a strict preference order over students, specified by the order in which students are matched in the for-loop. Additionally, the algorithm makes no effort to match all students: if it is a student's turn to pick his match, and none of the seminars on his preference lists are free, that student will not be matched at all. This problem gets worse when we consider that our problem statement allows for incomplete preference lists, which increases the chances of having a high number of unmatched students. To illustrate this let us consider the following example in Table \ref{table:1}:
 \begin{table}[h!]
     \centering 
     \begin{tabular}{llll}
@@ -68,7 +68,7 @@ Using these definitions, (TODO) Sng now presents and proofs the following lemma:
     Let $M$ be a matching of a given instance $I$ of $CHA$. Then $M$ is Pareto optimal if and only if $M$ is maximal, trade-in-free and cyclic-coalition-free.\cite{Abraham:Pacha}
 \end{lemma}
 
-Using this lemma, (TODO) Abraham et al \cite{Abraham:Pacha} construct a 3-phased algorithm, where each phase fulfills one of the properties as described in Lemma \ref{lemma-pacha}, like so: Let $I$ be an instance of CHA and $G$ it's underlying graph, then perform the following steps:
+Using this lemma, (TODO) Abraham et al \cite{Abraham:Pacha} construct a 3-phased algorithm, where each phase fulfills one of the properties as described in Lemma \ref{lemma-pacha}, like so: Let $I$ be an instance of CHA and $G$ it is underlying graph, then perform the following steps:
 \begin{enumerate}
     \item \textbf{Phase 1}: In order to guarantee maximality, compute a maximum matching $M$ in $G$ using Gabow's algorithm. \cite{Gabow1983}
     \item \textbf{Phase 2}: Using the matching $M$ produced by step 1, the algorithm now fulfills the trade-in-free criteria as follows: Search for pairs $(s_i, t_j) \in M$ with $s_i \in S$ and $t_j \in T$ and where $t_j$ is undersubscribed in $M$ and $s_i$ prefers $t_j$ over his own match $t_l := M(s_i)$. Whenever such a pair is found, remove the existing assignment $(s_i, t_l)$ and add $(s_i, t_j)$ to $M$. Consequently $t_l$ is now undersubscribed and may be assigned to another student. Therefore, we continue the search for such pairs until no such pair can be found for every student in $S$.
@@ -106,7 +106,7 @@ Given an instance $I$ of the CHA problem, for every student $a_1 \in A$ let $h_j
 \begin{lemma}\label{lemma-popular1}
     Let $M$ be a popular matching in $I$. Then for every f-house $h_j$, $|M(h_j) \cap f(h_j)| = \min\{c_j, f_j\}$.
 \end{lemma} 
-In other words, for a popular matching $M$ in $I$, every f-house $h_j$ is matched to atleast the number of applicants who have $h_j$ as their first-preference but at most $h_j$'s capacity $c_j$. Next, for every applicant $a_i$, we define $s(a_i)$ to be the most-preferred house $h_j$ on his preference list, such that either (i) $h_j$  is not an f-house, meaning that it's not the first choice of any applicant, or (ii) $h_j$ is an f-house, but $h_j \neq f(a_i)$ and $f_j < c_j$. In simple terms, $s(a_i)$ is the first undersubscribed house on $a_i$'s preference list after $f(a_i)$. We will refer to such houses as s-houses. It is important to note that such a house $s(a_i)$ always exists, due to the introduction of $l(a_i)$. In a popular matching, an agent $a_i$ may only be matched to either $f(a_i)$ or $s(a_i)$, as every house in between those two is full according to the defintion of $f(a_i)$ and $s(a_i)$. Manlove and Sng, again prove the following two lemmas \cite{ManlovePopularMatchings}: 
+In other words, for a popular matching $M$ in $I$, every f-house $h_j$ is matched to atleast the number of applicants who have $h_j$ as their first-preference but at most $h_j$'s capacity $c_j$. Next, for every applicant $a_i$, we define $s(a_i)$ to be the most-preferred house $h_j$ on his preference list, such that either (i) $h_j$  is not an f-house, meaning that it is not the first choice of any applicant, or (ii) $h_j$ is an f-house, but $h_j \neq f(a_i)$ and $f_j < c_j$. In simple terms, $s(a_i)$ is the first undersubscribed house on $a_i$'s preference list after $f(a_i)$. We will refer to such houses as s-houses. It is important to note that such a house $s(a_i)$ always exists, due to the introduction of $l(a_i)$. In a popular matching, an agent $a_i$ may only be matched to either $f(a_i)$ or $s(a_i)$, as every house in between those two is full according to the defintion of $f(a_i)$ and $s(a_i)$. Manlove and Sng, again prove the following two lemmas \cite{ManlovePopularMatchings}: 
 
 \newtheorem{lemma-popular-2}[theorem]{Lemma}
 \begin{lemma}\label{lemma-popular2}
@@ -140,7 +140,7 @@ Using Theorem \ref{theorem-popular-4}, Manlove and Sng develop the algorithm Pop
     \item Remove all applicants and their incident edges, that were matched in the previous step, from $G'$. Additionally, update the capacities for each previously matched house $h_j$ as $c'_j = c_j - f_j$. All full and isolated houses and their incident edges are also removed from $G'$.
     \item Compute a maximum cardinality matching $M'$ on $G'$ using the updated capacities. For this step Manlove and Sng use Gabow's algorithm \cite{Gabow1983}.
     \item If $M'$ is not agent complete, then no popular matchings exists. Otherwise merge the matchings $M$ and $M'$.
-    \item As a last step, to fulfill condition \ref{condition1b} of Theorem \ref{theorem-popular-4}, promote any agent $a_i \in M$ who is matched to their s-house to their f-house, if it's undersubscribed. 
+    \item As a last step, to fulfill condition \ref{condition1b} of Theorem \ref{theorem-popular-4}, promote any agent $a_i \in M$ who is matched to their s-house to their f-house, if it is undersubscribed. 
 \end{enumerate}
 
 

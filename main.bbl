@@ -5,6 +5,23 @@ A.~E. Roth, ``The evolution of the labor market for medical interns and
   residents: A case study in game theory,'' {\em Journal of Political Economy},
   vol.~92, no.~6, pp.~991--1016, 1984.
 
+\bibitem{FEKETE2003219}
+S.~P. Fekete, M.~Skutella, and G.~J. Woeginger, ``The complexity of economic
+  equilibria for house allocation markets,'' {\em Information Processing
+  Letters}, vol.~88, no.~5, pp.~219 -- 223, 2003.
+
+\bibitem{SngThesis}
+C.~Thiam Soon~Sng, {\em Efficient Algorithms for Bipartite Matching Problems
+  with Preferences}.
+\newblock PhD thesis, University of Glasgow, 7 2008.
+\newblock A thesis submitted to the Faculty of Information and Mathematical
+  Sciences at the University of Glasgow for the degree of Doctor of Philosophy.
+
+\bibitem{algorithmics}
+D.~F. Manlove, {\em Algorithmics of Matching Under Preferences}, vol.~2 of {\em
+  Series on Theoretical Computer Science}.
+\newblock WorldScientific, 2013.
+
 \bibitem{GaleShapleyOrig}
 D.~Gale and L.~S. Shapley, ``College admissions and the stability of
   marriage,'' {\em The American Mathematical Monthly}, vol.~69, no.~1,
@@ -27,23 +44,6 @@ E.~Ronn, ``Np-complete stable matching problems,'' {\em Journal of Algorithms},
 A.~E. Roth and E.~Peranson, ``The redesign of the matching market for american
   physicians: Some engineering aspects of economic design,'' Working Paper
   6963, National Bureau of Economic Research, February 1999.
-
-\bibitem{FEKETE2003219}
-S.~P. Fekete, M.~Skutella, and G.~J. Woeginger, ``The complexity of economic
-  equilibria for house allocation markets,'' {\em Information Processing
-  Letters}, vol.~88, no.~5, pp.~219 -- 223, 2003.
-
-\bibitem{SngThesis}
-C.~Thiam Soon~Sng, {\em Efficient Algorithms for Bipartite Matching Problems
-  with Preferences}.
-\newblock PhD thesis, University of Glasgow, 7 2008.
-\newblock A thesis submitted to the Faculty of Information and Mathematical
-  Sciences at the University of Glasgow for the degree of Doctor of Philosophy.
-
-\bibitem{algorithmics}
-D.~F. Manlove, {\em Algorithmics of Matching Under Preferences}, vol.~2 of {\em
-  Series on Theoretical Computer Science}.
-\newblock WorldScientific, 2013.
 
 \bibitem{Munkres}
 J.~Munkres, ``Algorithms for the assignment and transportation problems,'' {\em

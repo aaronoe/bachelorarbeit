@@ -25,7 +25,7 @@ Let $P(M', M)$ be the set of students who prefer $M'$ over $M$. A matching $M'$ 
 Using this definition, we can see that every popular matching also is a pareto-optimal matching. Given a popular matching $M'$ and any matching $M$ for an instance $I$ of the problem, $M'$ is pareto-optimal if $P(M, M') = 0$ and $P(M', M) \geq 1$, which obviously implies that $M'$ is popular as well.\cite{Klaus}
 \newline
 It is important to note that a popular matching's cardinality could be smaller than the maximum cardinality, meaning that, in the case of student-seminar matchings, a group of students could be left unassigned in favor of the majority of the students having a match that they prefer.
-Additionally, a popular matching, unlike a pareto-optimal matching, does not always exist. To illustrate this, let's consider the following instance: $S=\{s_1, s_2, s_3\}$, $T=\{t_1, t_2, t_3\}$, where each student has the same preference list, being $t_1 < t_2 < t_3$, and each seminar $t_i \in T$ has a capacity of 1. Given the following matchings, we can confirm that there exists no popular matching for the given instance: 
+Additionally, a popular matching, unlike a pareto-optimal matching, does not always exist. To illustrate this, let us consider the following instance: $S=\{s_1, s_2, s_3\}$, $T=\{t_1, t_2, t_3\}$, where each student has the same preference list, being $t_1 < t_2 < t_3$, and each seminar $t_i \in T$ has a capacity of 1. Given the following matchings, we can confirm that there exists no popular matching for the given instance: 
 \begin{enumerate}
     \item $M_1=\{(s_1, t_1), (s_2, t_2), (s_3, t_3)\}$
     \item $M_2=\{(s_1, t_3), (s_2, t_1), (s_3, t_2)\}$

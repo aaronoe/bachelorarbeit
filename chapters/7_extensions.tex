@@ -1,7 +1,7 @@
 \section{Extensions to the problem}
 For the bulk of this thesis, we have looked at many-to-one matching problems with one-sided preferences, as this settings makes the most sense for the student-seminar application. However, there is a wide range of similar problems and extensions that are also worth mentioning. This section will present some of those problems and key results from the literature. 
 
-\subsection{Two-Sided preferences}
+\subsection{Two-Sided preferences}\label{extensions:two-sided}
 In many practical one-to-many matching schemes, both parties will express preferences over the other. For instance, many countries use such schemes for matching students to university programs, which can be viewed as an instance of a one-to-many matching problem with two-sided preferences. The same problem exists in the US, where graduating medical students need to be matched to residency positions in hospitals. 
 
 Since we are dealing with two-sided preferences now, it is not possible to simply transform this problem into a weighted bipartite graph anymore, since edges now have two weights. It could be possible to use the product of those two weights as an edge weight, however, in practice different mechanisms are being used that don't rely on the graph representation of the problem.
@@ -11,7 +11,7 @@ In the context of two-sided preferences Stability is a commonly used optimality 
 \begin{itemize}
     \item $r_i$ and $h_j$ are on each other's preference lists
     \item either $r_i$ is assigned in $M$, or $r_i$ prefers $h_j$ to $M(r_i)$
-    \item either $h_j$ is undersubscribed in $M$, or $h_j$ prefers $r_i$ to it's least preferred assigned resident in $M(h_j)$
+    \item either $h_j$ is undersubscribed in $M$, or $h_j$ prefers $r_i$ to it is least preferred assigned resident in $M(h_j)$
 \end{itemize}
 Simply put, in a stable matching $M$, no pair of agents $(r_i, h_j)$ should have an incentive to give up their current match to get matched to each other.
 
