@@ -53,17 +53,23 @@
 \contentsline {subsubsection}{\numberline {6.3.1}Benchmark Tools}{25}{subsubsection.6.3.1}
 \contentsline {subsection}{\numberline {6.4}Web-Interface Implementation}{26}{subsection.6.4}
 \contentsline {section}{\numberline {7}Evaluation}{27}{section.7}
-\contentsline {subsection}{\numberline {7.1}Sample Data}{27}{subsection.7.1}
-\contentsline {subsection}{\numberline {7.2}Methodology}{27}{subsection.7.2}
-\contentsline {subsection}{\numberline {7.3}Results}{27}{subsection.7.3}
-\contentsline {subsection}{\numberline {7.4}Conclusion}{27}{subsection.7.4}
-\contentsline {section}{\numberline {8}Extensions to the problem}{28}{section.8}
-\contentsline {subsection}{\numberline {8.1}Two-Sided preferences}{28}{subsection.8.1}
-\contentsline {subsubsection}{\numberline {8.1.1}Stable matchings}{28}{subsubsection.8.1.1}
-\contentsline {subsubsection}{\numberline {8.1.2}Algorithm}{28}{subsubsection.8.1.2}
-\contentsline {subsection}{\numberline {8.2}Many-to-Many matchings}{29}{subsection.8.2}
-\contentsline {subsubsection}{\numberline {8.2.1}One-sided preferences}{29}{subsubsection.8.2.1}
-\contentsline {subsubsection}{\numberline {8.2.2}Two-sided preferences}{29}{subsubsection.8.2.2}
-\contentsline {subsection}{\numberline {8.3}Online variant}{30}{subsection.8.3}
-\contentsline {subsubsection}{\numberline {8.3.1}Online max-cardinality matching}{30}{subsubsection.8.3.1}
-\contentsline {section}{\numberline {9}Conclusion}{31}{section.9}
+\contentsline {subsection}{\numberline {7.1}Research Questions}{27}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Sample Data}{27}{subsection.7.2}
+\contentsline {subsubsection}{\numberline {7.2.1}Using graph generators}{27}{subsubsection.7.2.1}
+\contentsline {subsubsection}{\numberline {7.2.2}Random Uniform Preference Lists}{28}{subsubsection.7.2.2}
+\contentsline {subsubsection}{\numberline {7.2.3}PrefLib Datasets}{28}{subsubsection.7.2.3}
+\contentsline {subsubsection}{\numberline {7.2.4}Random Zipf-Distributed Preference Lists}{29}{subsubsection.7.2.4}
+\contentsline {subsubsection}{\numberline {7.2.5}Carnegie-Mellon Datasets}{29}{subsubsection.7.2.5}
+\contentsline {subsection}{\numberline {7.3}Methodology}{29}{subsection.7.3}
+\contentsline {subsection}{\numberline {7.4}Results}{29}{subsection.7.4}
+\contentsline {subsection}{\numberline {7.5}Conclusion}{29}{subsection.7.5}
+\contentsline {section}{\numberline {8}Extensions to the problem}{30}{section.8}
+\contentsline {subsection}{\numberline {8.1}Two-Sided preferences}{30}{subsection.8.1}
+\contentsline {subsubsection}{\numberline {8.1.1}Stable matchings}{30}{subsubsection.8.1.1}
+\contentsline {subsubsection}{\numberline {8.1.2}Algorithm}{30}{subsubsection.8.1.2}
+\contentsline {subsection}{\numberline {8.2}Many-to-Many matchings}{31}{subsection.8.2}
+\contentsline {subsubsection}{\numberline {8.2.1}One-sided preferences}{31}{subsubsection.8.2.1}
+\contentsline {subsubsection}{\numberline {8.2.2}Two-sided preferences}{31}{subsubsection.8.2.2}
+\contentsline {subsection}{\numberline {8.3}Online variant}{32}{subsection.8.3}
+\contentsline {subsubsection}{\numberline {8.3.1}Online max-cardinality matching}{32}{subsubsection.8.3.1}
+\contentsline {section}{\numberline {9}Conclusion}{33}{section.9}

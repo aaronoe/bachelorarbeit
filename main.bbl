@@ -137,6 +137,16 @@ F.~Diebold, H.~Aziz, M.~Bichler, F.~Matthes, and A.~Schneider, ``Course
 C.~Ma, ``hungarian-algorithm-cpp.''
   \url{https://github.com/mcximing/hungarian-algorithm-cpp}, 2016.
 
+\bibitem{PrefLib}
+N.~Mattei and T.~Walsh, ``Preflib: A library of preference data
+  \textsc{http://preflib.org},'' in {\em Proceedings of the 3rd International
+  Conference on Algorithmic Decision Theory (ADT 2013)}, Lecture Notes in
+  Artificial Intelligence, Springer, 2013.
+
+\bibitem{preflib-dataset}
+``{PrefLib}: A library for preferences - agh course preferences.''
+  \url{http://www.preflib.org/data/election/agh/}.
+
 \bibitem{Mehta:Online}
 A.~Mehta, ``Online matching and ad allocation,'' {\em Found. Trends Theor.
   Comput. Sci.}, vol.~8, pp.~265--368, Oct. 2013.

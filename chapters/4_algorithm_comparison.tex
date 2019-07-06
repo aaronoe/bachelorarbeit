@@ -28,7 +28,7 @@ One interesting observation is that fulfilling maximum cardinality comes at the 
 \subsubsection{Max-PaCHA and the assignment problem}
 Another important thing to notice is the similarity of the properties between the Max-PaCHA and assignment problem algorithm. Except for the fact that the assignment algorithm guarantees rank maximality, the two algorithms produce matchings with very similar characteristics, which then begs the question why one should use the Max-PaCHA algorithm. But looking at the runtime complexity of the algorithms, we see that, while both algorithms run in polynomial time, the assignment problem takes longer to be solved.
 
-\subsection{Practical results in the literature}
+\subsection{Practical results in the literature}\label{sec:practical-results-lit}
 In the past, the technical university of Munich (TUM) assigned students to courses via a first-come first-served mechanism, which resulted in complaints from both students and lecturers.\cite{tum-matching} After Diebold et al. \cite{Diebold2014} at TUM investigated different mechanisms for this matching problem, the university switched to a stable matching mechanism, which is based on Gale \& Shapley's deferred acceptance mechanism. It has to be noted here, that the university uses two-sided preferences for their system, which makes their results less applicable for this thesis, however Diebold et al. have also published an extensive benchmark on matching mechanisms with both one- and two-sided preferences.\cite{DieboldBenchmark} They used real course registration data from TUM, grouped into 28 datasets for investigating properties, including size, rank and popularity, of matchings produced by several mechanisms. 
 
 \subsubsection{Dataset}
