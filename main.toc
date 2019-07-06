@@ -16,7 +16,7 @@
 \contentsline {subsection}{\numberline {3.3}Popularity}{7}{subsection.3.3}
 \contentsline {subsection}{\numberline {3.4}Profile-based optimality}{8}{subsection.3.4}
 \contentsline {subsection}{\numberline {3.5}Strategy-Proofness}{8}{subsection.3.5}
-\contentsline {subsection}{\numberline {3.6}Application to student-seminar matching}{8}{subsection.3.6}
+\contentsline {subsection}{\numberline {3.6}Application to student-seminar matching}{9}{subsection.3.6}
 \contentsline {section}{\numberline {4}Algorithmic Approaches}{10}{section.4}
 \contentsline {subsection}{\numberline {4.1}Greedy with serial dictatorship}{10}{subsection.4.1}
 \contentsline {subsubsection}{\numberline {4.1.1}Properties}{10}{subsubsection.4.1.1}
