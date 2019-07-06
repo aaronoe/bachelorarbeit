@@ -4,12 +4,12 @@
 \contentsline {subsection}{\numberline {2.1}Motivation}{1}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Formal Definition}{2}{subsection.2.2}
 \contentsline {subsection}{\numberline {2.3}The Capacitated House Allocation Problem}{2}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}Related Problems}{2}{subsection.2.4}
-\contentsline {subsubsection}{\numberline {2.4.1}Stable Marriage Problem}{3}{subsubsection.2.4.1}
-\contentsline {subsubsection}{\numberline {2.4.2}Hospitals/Residents Problem}{4}{subsubsection.2.4.2}
-\contentsline {subsubsection}{\numberline {2.4.3}Assignment Problem}{4}{subsubsection.2.4.3}
-\contentsline {subsubsection}{\numberline {2.4.4}The Student-Project Allocation Problem}{4}{subsubsection.2.4.4}
-\contentsline {subsection}{\numberline {2.5}Outline}{5}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.4}Outline}{2}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Related Problems}{3}{subsection.2.5}
+\contentsline {subsubsection}{\numberline {2.5.1}Stable Marriage Problem}{4}{subsubsection.2.5.1}
+\contentsline {subsubsection}{\numberline {2.5.2}Hospitals/Residents Problem}{4}{subsubsection.2.5.2}
+\contentsline {subsubsection}{\numberline {2.5.3}Assignment Problem}{5}{subsubsection.2.5.3}
+\contentsline {subsubsection}{\numberline {2.5.4}The Student-Project Allocation Problem}{5}{subsubsection.2.5.4}
 \contentsline {section}{\numberline {3}Optimality criteria}{6}{section.3}
 \contentsline {subsection}{\numberline {3.1}Maximum cardinality}{6}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Pareto-Optimality}{6}{subsection.3.2}
