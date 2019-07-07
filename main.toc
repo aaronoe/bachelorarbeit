@@ -23,8 +23,8 @@
 \contentsline {subsubsection}{\numberline {4.1.2}Drawbacks}{11}{subsubsection.4.1.2}
 \contentsline {subsection}{\numberline {4.2}Pareto Optimal Maximal Matchings for CHA}{11}{subsection.4.2}
 \contentsline {subsubsection}{\numberline {4.2.1}Properties}{13}{subsubsection.4.2.1}
-\contentsline {subsection}{\numberline {4.3}Assignment Problem}{13}{subsection.4.3}
-\contentsline {subsubsection}{\numberline {4.3.1}Input Transformation}{14}{subsubsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3}Solving CHA as an assignment problem}{13}{subsection.4.3}
+\contentsline {subsubsection}{\numberline {4.3.1}Solving the assignment problem using flow-networks}{14}{subsubsection.4.3.1}
 \contentsline {subsubsection}{\numberline {4.3.2}Properties}{14}{subsubsection.4.3.2}
 \contentsline {subsection}{\numberline {4.4}Maximum Popular Matchings in CHA}{15}{subsection.4.4}
 \contentsline {subsubsection}{\numberline {4.4.1}An alternative characterization of popular matchings}{15}{subsubsection.4.4.1}

@@ -98,11 +98,10 @@ A.~E. Roth, ``Incentive compatibility in a market with indivisible goods,''
 M.~Manea, ``Serial dictatorship and pareto optimality,'' {\em Games and
   Economic Behavior}, vol.~61, no.~2, pp.~316 -- 330, 2007.
 
-\bibitem{Gabow1983}
-H.~N. Gabow, ``An efficient reduction technique for degree-constrained subgraph
-  and bidirected network flow problems,'' in {\em Proceedings of the Fifteenth
-  Annual ACM Symposium on Theory of Computing}, STOC '83, (New York, NY, USA),
-  pp.~448--456, ACM, 1983.
+\bibitem{kun_2015}
+J.~Kun, ``Serial dictatorships and house allocation.''
+  \url{https://jeremykun.com/2015/10/26/serial-dictatorships-and-house-allocation/},
+  Nov 2015.
 
 \bibitem{ShapleyTTC}
 L.~Shapley and H.~Scarf, ``On cores and indivisibility,'' {\em Journal of
@@ -112,6 +111,12 @@ L.~Shapley and H.~Scarf, ``On cores and indivisibility,'' {\em Journal of
 R.~Jonker and A.~Volgenant, ``A shortest augmenting path algorithm for dense
   and sparse linear assignment problems,'' {\em Computing}, vol.~38,
   pp.~325--340, Dec 1987.
+
+\bibitem{Gabow1983}
+H.~N. Gabow, ``An efficient reduction technique for degree-constrained subgraph
+  and bidirected network flow problems,'' in {\em Proceedings of the Fifteenth
+  Annual ACM Symposium on Theory of Computing}, STOC '83, (New York, NY, USA),
+  pp.~448--456, ACM, 1983.
 
 \bibitem{Hopcroft}
 J.~E. {Hopcroft} and R.~M. {Karp}, ``A n5/2 algorithm for maximum matchings in
