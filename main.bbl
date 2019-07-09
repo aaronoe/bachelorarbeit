@@ -128,16 +128,6 @@ F.~Diebold and M.~Bichler, ``Matching with indifferences: A comparison of
   algorithms in the context of course allocation,'' {\em European Journal of
   Operational Research}, vol.~260, no.~1, pp.~268 -- 282, 2017.
 
-\bibitem{tum-matching}
-``{Course Assignment at the Department of Informatics}.''
-  \url{https://matching.in.tum.de/}, 2019.
-\newblock [Online; accessed 09-June-2019].
-
-\bibitem{Diebold2014}
-F.~Diebold, H.~Aziz, M.~Bichler, F.~Matthes, and A.~Schneider, ``Course
-  allocation via stable matching,'' {\em Business {\&} Information Systems
-  Engineering}, vol.~6, pp.~97--110, Apr 2014.
-
 \bibitem{HungarianGithub}
 C.~Ma, ``hungarian-algorithm-cpp.''
   \url{https://github.com/mcximing/hungarian-algorithm-cpp}, 2016.

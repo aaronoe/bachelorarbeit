@@ -7,7 +7,7 @@ Drawing back to the list of desirable properties defined in section \ref{criteri
 \begin{table}[h!]
     \begin{tabular}{lllll}
     \hline
-                        & Greedy & Max Pareto   & Assignment & Popular           \\ \hline
+                        & RSD    & Max-PaCHA    & Assignment & Popular-CHA           \\ \hline
     Maximum Cardinality & no     & yes          & yes        & yes               \\
     Pareto-Optimal      & yes    & yes          & yes        & yes               \\
     Popular             & no     & no           & no         & yes               \\
@@ -29,37 +29,23 @@ One interesting observation is that fulfilling maximum cardinality comes at the 
 Another important thing to notice is the similarity of the properties between the Max-PaCHA and assignment problem algorithm. Except for the fact that the assignment algorithm guarantees rank maximality, the two algorithms produce matchings with very similar characteristics, which then begs the question why one should use the Max-PaCHA algorithm. But looking at the runtime complexity of the algorithms, we see that, while both algorithms run in polynomial time, the assignment problem takes longer to be solved.
 
 \subsection{Practical results in the literature}\label{sec:practical-results-lit}
-In the past, the technical university of Munich (TUM) assigned students to courses via a first-come first-served mechanism, which resulted in complaints from both students and lecturers.\cite{tum-matching} After Diebold et al. \cite{Diebold2014} at TUM investigated different mechanisms for this matching problem, the university switched to a stable matching mechanism, which is based on Gale \& Shapley's deferred acceptance mechanism. It has to be noted here, that the university uses two-sided preferences for their system, which makes their results less applicable for this thesis, however Diebold et al. have also published an extensive benchmark on matching mechanisms with both one- and two-sided preferences.\cite{DieboldBenchmark} They used real course registration data from TUM, grouped into 28 datasets for investigating properties, including size, rank and popularity, of matchings produced by several mechanisms. 
+Diebold et al. have published results for an extensive experiment on matching mechanisms with both one- and two-sided preferences \cite{DieboldBenchmark}. They used real course registration data from TUM, grouped into 28 datasets for investigating properties, including size, rank and popularity, of matchings produced by several mechanisms. Before conducting our own experiment we will study their results.
 
 \subsubsection{Dataset}
 The data with one-sided preferences is comprised of 9 datasets from the official tutorial registration at TUM in the period between October 2012 and October 2015. All of those datasets contain incomplete preference lists and all but two of them contain ties. Each dataset contains between 136 and 1035 students and between 5 and 51 courses with total capacities ranging from 130 to 1282. For the dataset with 51 courses, the authors provide a histogram of the length of student's preference lists, showing that a majority of students gave preferences for between 10 and 15 tutorials.\cite{DieboldBenchmark} Unfortunately the rest of the data is kept private and therefore it is not possible to get information on the distribution of the indiviudal preferences lists, or in other words the popularity of each seminar from the students' perspective.
 
-\subsubsection{Algorithms used}
-Diebold et al. used most of the mechanism described in section \ref{chapter:algorithms}, with some small differences. We will primarily compare their results for the following algorithms:
-\begin{enumerate}
-    \item RSD - Random Serial Dictatorship, see \ref{algo-rsd}
-    \item MPO CHA - Max-Pareto-Optimal CHA, see \ref{algo-max-po}
-    \item ProB CHAT - Profile-based optimal algorithm with ties. Produces the same matching as the assignment problem algorithm, see \ref{algo:assignment}
-    \item Pop CHAT - Max Popular Algorithm with ties. An extension of Pop-CHA, see \ref{algo-max-pop}
-\end{enumerate}
-
 \subsubsection{Methodology}
-The authors implemented all matching mechanisms in Python 3.4.2 and used randomization to break ties. Additionally, every algorithm was run 100 times and the average of the metrics were obtained for each mechanism. Additionally some of the following metrics were used for the one-sided case:
-\begin{enumerate}
-    \item \textbf{Size}: Number of students being matched.
-    \item \textbf{Average Rank}: A rank for a student is the position of the student's assigned course on his preference list. The average is taken over all students for this metric.
-    \item \textbf{Popularity}: The mechanisms are compared against each other to check which mechanism produces more popular matchings. 
-    \item Average \textbf{AUPCR} (Area under the Profile Curve Ratio): This metric was introduced to compare rank profiles of different matchings. In the words of the authors: "The AUPCR up to a specific rank describes the probability that a matching mechanism will rank a randomly chosen student higher than his n-th preference."\cite{DieboldBenchmark}
-\end{enumerate}
+Diebold et al. used most of the mechanism described in section \ref{chapter:algorithms}, with some small differences. Particularly, instead of solving the assignment problem they used the ProB CHAT algorithm that produces the same matchings. They implemented all matching mechanisms in Python 3.4.2 and used randomization to break ties. Additionally, every algorithm was run 100 times and the average of the metrics were obtained for each mechanism. 
+Besides size, average rank and popularity, the authors also used the \emph{area under the profile curve ration (AUPCR)} to compare the rank of the produced matchings. They define it as follows: "The AUPCR up to a specific rank describes the probability that a matching mechanism will rank a randomly chosen student higher than his n-th preference."\cite{DieboldBenchmark}
 
 \subsubsection{Results}
-A summary of the benchmark is provided in Table \ref{tab:diebold-benchmark}. Unsurprisingly the Pop CHAT mechanism produces more popular matchings than all other mechanisms, but it is also interesting to note that ProB CHAT produces more popular matchings than all mechanisms but Pop CHAT. Besides that we can see that all mechanisms achieve an average size of atleast 97.4\%, while MPO CHA and ProB CHAT unsurprisingly find perfect matchings.
+A summary of the benchmark is provided in Table \ref{tab:diebold-benchmark}. Unsurprisingly the Popular CHA mechanism produces more popular matchings than all other mechanisms, but it is also interesting to note that ProB CHAT produces more popular matchings than all mechanisms but Pop CHAT. Besides that we can see that all mechanisms achieve an average size of atleast 97.4\%, while Max-PaCHA and ProB CHAT unsurprisingly find max-cardinality matchings.
 
 \begin{table}[h!]
     \centering 
     \begin{tabular}{|l|l|l|l|l|}
         \hline
-        Metric & RSD & MPO CHA & ProB CHAT & Pop CHAT \\ \hline
+        Metric & RSD & Max PaCHA & ProB CHAT & Popular CHA \\ \hline
         Average AUPCR & 94.95\% & 96.77\% & \cellcolor[HTML]{9AFF99}97.83\% & 97.31\% \\ \hline
         More Popular & 20\% & 0\% & 80\% & \cellcolor[HTML]{9AFF99}100\% \\ \hline
         Average rank & 1.41 & 1.51 & \cellcolor[HTML]{9AFF99}1.26 & 1.33 \\ \hline
@@ -70,7 +56,7 @@ A summary of the benchmark is provided in Table \ref{tab:diebold-benchmark}. Uns
     \label{tab:diebold-benchmark}
 \end{table}
 
-Looking at the profile and rank, we can see that ProB CHAT performs best, which is not a surprise, but at the same time Pop CHAT got very close in terms of average AUPCR and average rank. However it is important to note that Pop CHAT didn't find a matching for one of the 9 datasets. At first glance it would seem that ProB CHAT always produces really good results in terms of the metrics used, however we also need to note that it is maximum runtime in the benchmark was 33.852 seconds for the largest dataset with 915 students and 51 courses with a total capacity of 1080. In contrast, the RSD mechanism still produces acceptable results at runtimes of a fraction of a second, while being strategy-proof.
+Looking at the profile and rank, we can see that ProB CHAT performs best, which is not a surprise, but at the same time Popular CHA got very close in terms of average AUPCR and average rank. However it is important to note that Popular CHA did not find a matching for one of the 9 datasets. At first glance it would seem that ProB CHAT always produces really good results in terms of the metrics used, however we also need to note that it is maximum runtime in the benchmark was 33.852 seconds for the largest dataset with 915 students and 51 courses with a total capacity of 1080. In contrast, the RSD mechanism still produces acceptable results at runtimes of a fraction of a second, while being strategy-proof.
 
 \subsubsection{Learnings}
-In this benchmark, we have seen that the ProB CHAT mechanism unsurprisingly produces some of the best results, while also being limited by its runtime which is worse among all mechanisms. Additionally, we have seen that Pop CHAT also produces good matchings at a more acceptable runtime. One interesting observation is that Pop CHAT produces better results than MPO CHA, if it can find a matching. While these results confirm some of the theoretical observations, it will be interesting to get more insights with different data being used. In this benchmark, most of the data contained ties and we didn't get any insights on the distribution of preferences. 
+In this benchmark, we have seen that the ProB CHAT mechanism unsurprisingly produces some of the best results, while also being limited by its runtime which is worse among all mechanisms. Additionally, we have seen that Popular CHA also produces good matchings at a more acceptable runtime. One interesting observation is that Popular CHA produces better results than MPO CHA, if it can find a matching. While these results confirm some of the theoretical observations, it will be interesting to get more insights with different data being used. In this benchmark, most of the data contained ties and we didn't get any insights on the distribution of preferences. 

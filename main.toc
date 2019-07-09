@@ -36,10 +36,9 @@
 \contentsline {subsubsection}{\numberline {5.1.2}Max-PaCHA and the assignment problem}{19}{subsubsection.5.1.2}
 \contentsline {subsection}{\numberline {5.2}Practical results in the literature}{19}{subsection.5.2}
 \contentsline {subsubsection}{\numberline {5.2.1}Dataset}{19}{subsubsection.5.2.1}
-\contentsline {subsubsection}{\numberline {5.2.2}Algorithms used}{20}{subsubsection.5.2.2}
-\contentsline {subsubsection}{\numberline {5.2.3}Methodology}{20}{subsubsection.5.2.3}
-\contentsline {subsubsection}{\numberline {5.2.4}Results}{21}{subsubsection.5.2.4}
-\contentsline {subsubsection}{\numberline {5.2.5}Learnings}{21}{subsubsection.5.2.5}
+\contentsline {subsubsection}{\numberline {5.2.2}Methodology}{20}{subsubsection.5.2.2}
+\contentsline {subsubsection}{\numberline {5.2.3}Results}{20}{subsubsection.5.2.3}
+\contentsline {subsubsection}{\numberline {5.2.4}Learnings}{20}{subsubsection.5.2.4}
 \contentsline {section}{\numberline {6}Implementation}{22}{section.6}
 \contentsline {subsection}{\numberline {6.1}Overview}{22}{subsection.6.1}
 \contentsline {subsection}{\numberline {6.2}Algorithm Implementation}{22}{subsection.6.2}
