@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.1)  13 JUL 2019 18:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.1)  13 JUL 2019 19:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -858,35 +858,35 @@ Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on inp
  [10] [11] [12] [13] [14] [15] [16]) [17] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/4_algorithm_comparison.tex [18] [19]) [20] [21] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/5_implementation.tex
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 19.
  [22] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/popular.in) (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/popular.out) [23] [24] [25]) [26] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/6_evaluation.tex [27]
-<assets/plots/preflib1-distribution.png, id=740, 722.7pt x 578.16pt>
+<assets/plots/preflib1-distribution.png, id=750, 722.7pt x 578.16pt>
 File: assets/plots/preflib1-distribution.png Graphic file (type png)
 <use assets/plots/preflib1-distribution.png>
 Package pdftex.def Info: assets/plots/preflib1-distribution.png  used on input line 30.
 (pdftex.def)             Requested size: 214.35837pt x 171.48203pt.
-<assets/plots/preflib2-distribution.png, id=741, 722.7pt x 578.16pt>
+<assets/plots/preflib2-distribution.png, id=751, 722.7pt x 578.16pt>
 File: assets/plots/preflib2-distribution.png Graphic file (type png)
 <use assets/plots/preflib2-distribution.png>
 Package pdftex.def Info: assets/plots/preflib2-distribution.png  used on input line 34.
 (pdftex.def)             Requested size: 214.35837pt x 171.48203pt.
  [28 </home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/plots/preflib1-distribution.png (PNG copy)> </home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/plots/preflib2-distribution.png (PNG copy)>]
-<assets/plots/zipfian1-distribution.png, id=751, 722.7pt x 578.16pt>
+<assets/plots/zipfian1-distribution.png, id=761, 722.7pt x 578.16pt>
 File: assets/plots/zipfian1-distribution.png Graphic file (type png)
 <use assets/plots/zipfian1-distribution.png>
 Package pdftex.def Info: assets/plots/zipfian1-distribution.png  used on input line 49.
 (pdftex.def)             Requested size: 214.35837pt x 171.48203pt.
-<assets/plots/zipfian2-distribution.png, id=752, 722.7pt x 578.16pt>
+<assets/plots/zipfian2-distribution.png, id=762, 722.7pt x 578.16pt>
 File: assets/plots/zipfian2-distribution.png Graphic file (type png)
 <use assets/plots/zipfian2-distribution.png>
 Package pdftex.def Info: assets/plots/zipfian2-distribution.png  used on input line 53.
 (pdftex.def)             Requested size: 214.35837pt x 171.48203pt.
-) [29 </home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/plots/zipfian1-distribution.png (PNG copy)> </home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/plots/zipfian2-distribution.png (PNG copy)>] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/7_extensions.tex
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 12.
+ [29 </home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/plots/zipfian1-distribution.png (PNG copy)> </home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/plots/zipfian2-distribution.png (PNG copy)>]
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 87.
  (/usr/share/texmf/tex/latex/lm/omslmr.fd
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 12.
- [30] [31] [32]) [33] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/8_conclusion.tex) [34] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.bblpdfTeX warning (ext4): destination with the same identifier (name{page.I}) has been already used, duplicate ignored
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 87.
+ [30]) [31] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/7_extensions.tex [32] [33] [34]) [35] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/8_conclusion.tex) [36] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.bblpdfTeX warning (ext4): destination with the same identifier (name{page.I}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.72 
@@ -927,22 +927,22 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 58.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 58.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 58.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: B9F043C2AD182670E2ED3FC1A6422EEA;12405.
+(rerunfilecheck)             Checksum: 835A87EBA918CBD61F22B6AABB2BEF3A;12654.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 58.
  ) 
 Here is how much of TeX's memory you used:
- 29645 strings out of 492982
- 549959 string characters out of 6134897
- 731339 words of memory out of 5000000
- 32283 multiletter control sequences out of 15000+600000
+ 29660 strings out of 492982
+ 550131 string characters out of 6134897
+ 730445 words of memory out of 5000000
+ 32287 multiletter control sequences out of 15000+600000
  94079 words of font info for 164 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  66i,20n,90p,8912b,1934s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmro12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.pdf (44 pages, 732543 bytes).
+Output written on /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.pdf (46 pages, 737892 bytes).
 PDF statistics:
- 941 PDF objects out of 1000 (max. 8388607)
- 863 compressed objects within 9 object streams
- 229 named destinations out of 1000 (max. 500000)
- 33385 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 971 PDF objects out of 1000 (max. 8388607)
+ 891 compressed objects within 9 object streams
+ 240 named destinations out of 1000 (max. 500000)
+ 33401 words of extra memory for PDF output out of 35830 (max. 10000000)
 

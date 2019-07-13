@@ -60,15 +60,17 @@
 \contentsline {subsubsection}{\numberline {7.2.4}Random Zipf-Distributed Preference Lists}{29}{subsubsection.7.2.4}
 \contentsline {subsubsection}{\numberline {7.2.5}Carnegie-Mellon Datasets}{29}{subsubsection.7.2.5}
 \contentsline {subsection}{\numberline {7.3}Methodology}{29}{subsection.7.3}
-\contentsline {subsection}{\numberline {7.4}Results}{29}{subsection.7.4}
-\contentsline {subsection}{\numberline {7.5}Conclusion}{29}{subsection.7.5}
-\contentsline {section}{\numberline {8}Extensions to the problem}{30}{section.8}
-\contentsline {subsection}{\numberline {8.1}Two-Sided preferences}{30}{subsection.8.1}
-\contentsline {subsubsection}{\numberline {8.1.1}Stable matchings}{30}{subsubsection.8.1.1}
-\contentsline {subsubsection}{\numberline {8.1.2}Algorithm}{30}{subsubsection.8.1.2}
-\contentsline {subsection}{\numberline {8.2}Many-to-Many matchings}{31}{subsection.8.2}
-\contentsline {subsubsection}{\numberline {8.2.1}One-sided preferences}{31}{subsubsection.8.2.1}
-\contentsline {subsubsection}{\numberline {8.2.2}Two-sided preferences}{31}{subsubsection.8.2.2}
-\contentsline {subsection}{\numberline {8.3}Online variant}{32}{subsection.8.3}
-\contentsline {subsubsection}{\numberline {8.3.1}Online max-cardinality matching}{32}{subsubsection.8.3.1}
-\contentsline {section}{\numberline {9}Conclusion}{34}{section.9}
+\contentsline {subsubsection}{\numberline {7.3.1}Benchmark Setup}{30}{subsubsection.7.3.1}
+\contentsline {subsubsection}{\numberline {7.3.2}Metrics}{30}{subsubsection.7.3.2}
+\contentsline {subsection}{\numberline {7.4}Results}{31}{subsection.7.4}
+\contentsline {subsection}{\numberline {7.5}Conclusion}{31}{subsection.7.5}
+\contentsline {section}{\numberline {8}Extensions to the problem}{32}{section.8}
+\contentsline {subsection}{\numberline {8.1}Two-Sided preferences}{32}{subsection.8.1}
+\contentsline {subsubsection}{\numberline {8.1.1}Stable matchings}{32}{subsubsection.8.1.1}
+\contentsline {subsubsection}{\numberline {8.1.2}Algorithm}{32}{subsubsection.8.1.2}
+\contentsline {subsection}{\numberline {8.2}Many-to-Many matchings}{33}{subsection.8.2}
+\contentsline {subsubsection}{\numberline {8.2.1}One-sided preferences}{33}{subsubsection.8.2.1}
+\contentsline {subsubsection}{\numberline {8.2.2}Two-sided preferences}{33}{subsubsection.8.2.2}
+\contentsline {subsection}{\numberline {8.3}Online variant}{34}{subsection.8.3}
+\contentsline {subsubsection}{\numberline {8.3.1}Online max-cardinality matching}{34}{subsubsection.8.3.1}
+\contentsline {section}{\numberline {9}Conclusion}{36}{section.9}
