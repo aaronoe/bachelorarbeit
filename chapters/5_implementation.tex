@@ -14,7 +14,7 @@ While prototyping with a Kotlin implementation of a subset of the algorithms fro
 
 \subsubsection{Input and Execution}
 All five algorithms are compiled into a single binary \lstinline{seminar_assignment} using CMake. No external libraries dynamic or static libraries need to be linked. The program accepts an optional argument which specifies the algorithm to be used and then reads the problem instance on stdin. In detail, a call to the program could look like this: \lstinline{./seminar_assignment mode < instance.in} 
-\newline
+
 In this call, mode should be replaced by one of the following arguments to select an algorithm for execution: "hungarian", "popular", "popular-modified", "rsd" (default) or "max-pareto". The input format is proprietary and domain-specific and is defined as follows:
 \begin{lstlisting}[frame=single, caption={Program input format},captionpos=b]
 seminar_count student_count

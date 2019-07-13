@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.1)  7 JUL 2019 19:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.1)  13 JUL 2019 18:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -852,10 +852,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--45
 
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [8]) [9] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/3_algorithms.tex
+[8]) [9] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/3_algorithms.tex
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 8.
 \c@theorem=\count153
  [10] [11] [12] [13] [14] [15] [16]) [17] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/4_algorithm_comparison.tex [18] [19]) [20] [21] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/5_implementation.tex
@@ -889,7 +886,7 @@ File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 12.
- [30] [31]) [32] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/8_conclusion.tex) [33] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.bblpdfTeX warning (ext4): destination with the same identifier (name{page.I}) has been already used, duplicate ignored
+ [30] [31] [32]) [33] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/8_conclusion.tex) [34] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.bblpdfTeX warning (ext4): destination with the same identifier (name{page.I}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.72 
@@ -934,18 +931,18 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 58.
  ) 
 Here is how much of TeX's memory you used:
- 29642 strings out of 492982
- 549930 string characters out of 6134897
- 730339 words of memory out of 5000000
+ 29645 strings out of 492982
+ 549959 string characters out of 6134897
+ 731339 words of memory out of 5000000
  32283 multiletter control sequences out of 15000+600000
- 93992 words of font info for 163 fonts, out of 8000000 for 9000
+ 94079 words of font info for 164 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 66i,20n,90p,8912b,1936s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 66i,20n,90p,8912b,1934s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmro12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.pdf (43 pages, 732091 bytes).
+Output written on /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.pdf (44 pages, 732543 bytes).
 PDF statistics:
- 936 PDF objects out of 1000 (max. 8388607)
- 859 compressed objects within 9 object streams
- 228 named destinations out of 1000 (max. 500000)
+ 941 PDF objects out of 1000 (max. 8388607)
+ 863 compressed objects within 9 object streams
+ 229 named destinations out of 1000 (max. 500000)
  33385 words of extra memory for PDF output out of 35830 (max. 10000000)
 

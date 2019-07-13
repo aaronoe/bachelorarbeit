@@ -16,7 +16,7 @@
 \contentsline {subsection}{\numberline {3.3}Popularity}{7}{subsection.3.3}
 \contentsline {subsection}{\numberline {3.4}Profile-based optimality}{8}{subsection.3.4}
 \contentsline {subsection}{\numberline {3.5}Strategy-Proofness}{8}{subsection.3.5}
-\contentsline {subsection}{\numberline {3.6}Application to student-seminar matching}{9}{subsection.3.6}
+\contentsline {subsection}{\numberline {3.6}Application to student-seminar matching}{8}{subsection.3.6}
 \contentsline {section}{\numberline {4}Algorithmic Approaches}{10}{section.4}
 \contentsline {subsection}{\numberline {4.1}Greedy with serial dictatorship}{10}{subsection.4.1}
 \contentsline {subsubsection}{\numberline {4.1.1}Properties}{10}{subsubsection.4.1.1}
@@ -71,4 +71,4 @@
 \contentsline {subsubsection}{\numberline {8.2.2}Two-sided preferences}{31}{subsubsection.8.2.2}
 \contentsline {subsection}{\numberline {8.3}Online variant}{32}{subsection.8.3}
 \contentsline {subsubsection}{\numberline {8.3.1}Online max-cardinality matching}{32}{subsubsection.8.3.1}
-\contentsline {section}{\numberline {9}Conclusion}{33}{section.9}
+\contentsline {section}{\numberline {9}Conclusion}{34}{section.9}
