@@ -1,12 +1,12 @@
 \section{Evaluation}\label{sec:evaluation}
-We have already looked at other results in the literature in section \ref{sec:practical-results-lit} which gave a decent comparison between some of the algorithms. However, we did not get a lot of knowledge about the datasets, especially the structure of the preference list and distribution of those preferences. Therefore we will conduct an experiment, by benchmarking the implemented algorithms with both real and artificial datasets of varying sizes and preference structures.
+We have already looked at other results in the literature in Section \ref{sec:practical-results-lit} which gave a decent comparison between some of the algorithms. However, we did not get a lot of knowledge about the datasets, especially the structure of the preference list and distribution of those preferences. Therefore we will conduct an experiment, by benchmarking the implemented algorithms with both real and artificial datasets of varying sizes and preference structures.
 
 \subsection{Research Questions}\label{sec:research-q}
-Table \ref{tab:algorithm-comparison} already compared and summarized the algorithms from a theoretical perspective, however some of the results would benefit from further quantification and clarity. For instance, we know that the Max-Popular algorithm, as described in section \ref{algo-max-pop}, does not always produce a matching. It would be beneficial to empirically investigate if certain inputs cause this problem. Therefore we will formalize some open questions as research questions, that this experiment hopes to answer:
+Table \ref{tab:algorithm-comparison} already compared and summarized the algorithms from a theoretical perspective, however some of the results would benefit from further quantification and clarity. For instance, we know that the Max-Popular algorithm, as described in Section \ref{algo-max-pop}, does not always produce a matching. It would be beneficial to empirically investigate if certain inputs cause this problem. Therefore we will formalize some open questions as research questions, that this experiment hopes to answer:
 \begin{enumerate}
     \item What is the effect of different preference distributions on the matchings produced by the different algorithms.
     \item How likely is it for the Max-Popular algorithm to not produce a matching using different datasets?
-    \item How does the Modified-Popular algorithm from section \ref{impl:mod-max-pop} compare in terms of popularity to the other algorithms.
+    \item How does the Modified-Popular algorithm from Section \ref{impl:mod-max-pop} compare in terms of popularity to the other algorithms.
     \item What is the cost of giving up on strategy proofness in terms of rank, i.e. how well does RSD perform compared to other mechanisms?
     \item Is Popularity a meaningful metric for the student-seminar use case?
     \item What is the impact of short-preference lists on the quality and existence of matchings?
@@ -62,7 +62,7 @@ To create the dataset, for each student a seminar is randomly drawn using the Zi
 \subsubsection{Carnegie-Mellon Datasets}
 
 \subsection{Methodology}
-The goal of this experiment is quantifying some of the optimality criteria defined in section \ref{sec:optimality} to compare the selection of algorithms empirically and find answers to the research questions proposed in section \ref{sec:research-q}. Due to the fact that real-world data for student enrollments is not widely available, it is important to note that the results of this experiment will be biased by the selection of data available. However, by using the available real datasets and a few different synthetic datasets it should be possible to find answers to the proposed research questions and to better understand the differences of different approaches.
+The goal of this experiment is quantifying some of the optimality criteria defined in Section \ref{sec:optimality} to compare the selection of algorithms empirically and find answers to the research questions proposed in Section \ref{sec:research-q}. Due to the fact that real-world data for student enrollments is not widely available, it is important to note that the results of this experiment will be biased by the selection of data available. However, by using the available real datasets and a few different synthetic datasets it should be possible to find answers to the proposed research questions and to better understand the differences of different approaches.
 
 \subsubsection{Benchmark Setup}
 The benchmark is performed by a Kotlin program that generates test data and then executes each of the algorithms with the same input. The program then collects the results and computes statistics on each matching, which are saved into a file. When using synthetic data, the program will generate 50 different instances to account for the randomness. The following type of instances will be used:
@@ -84,7 +84,7 @@ The benchmark is performed by a Kotlin program that generates test data and then
 We already know that all of the algorithms under considerations produce pareto-optimal matchings, however it will be necessary to measure popularity. If the Popular-CHA algorithm finds a matching, we know that it's the popular matching, however if the algorithm cannot find a matching it could be possible that one of the other algorithms produces such a matching. In general, given the definitions for Popularity that we have used before, it is not possible to check if a given matching is popular without comparing it to all other matchings. However this is infeasable due to the exponential runtime complexity of that comparison, which is why we will just compare the matchings produced by the five algorithms used in the evaluation for Popularity. Given two matchings $m, m' \in \mathcal{M}$, we say that $m$ is more popular than $m'$ if the number of students prefering $m$ is greater than the number of students prefering $m'$. 
 In addition to comparing Popularity, the following other metrics will be used:
 \begin{itemize}
-  \item \textbf{Profile}: The profile of the matching as defined in section \ref{sec:profile} given as an array.
+  \item \textbf{Profile}: The profile of the matching as defined in Section \ref{sec:profile} given as an array.
   \item \textbf{Average Rank \& Standard Deviation}: The average and standard deviation of the matched students' ranks. A matched student's rank corresponds to the position of his match on his preference list.
   \item \textbf{Worst Rank}: In conjunction with the previous metric, we will also look at the worst rank that exists in a matching.
   \item \textbf{Cardinality}: The size of a matching.
