@@ -65,7 +65,7 @@ To create the dataset, for each student a seminar is randomly drawn using the Zi
 The goal of this experiment is quantifying some of the optimality criteria defined in Section \ref{sec:optimality} to compare the selection of algorithms empirically and find answers to the research questions proposed in Section \ref{sec:research-q}. Due to the fact that real-world data for student enrollments is not widely available, it is important to note that the results of this experiment will be biased by the selection of data available. However, by using the available real datasets and a few different synthetic datasets it should be possible to find answers to the proposed research questions and to better understand the differences of different approaches.
 
 \subsubsection{Benchmark Setup}
-The benchmark is performed by a Kotlin program that generates test data and then executes each of the algorithms with the same input. The program then collects the results and computes statistics on each matching, which are saved into a file. When using synthetic data, the program will generate 50 different instances to account for the randomness. The following type of instances will be used:
+The benchmark is performed by a Kotlin program that generates test data and then executes each of the algorithms with the same input. The program then collects the results and computes statistics on each matching, which are saved into a file. When using synthetic data, the program will generate 50 different instances to account for the randomness. The following types of instances will be used:
 \begin{enumerate}
   \item PrefLib Datasets
   \item Medium Sized Random Dataset ($\sim$100 students)
@@ -81,15 +81,14 @@ The benchmark is performed by a Kotlin program that generates test data and then
 \end{enumerate}
 
 \subsubsection{Metrics}
-We already know that all of the algorithms under considerations produce pareto-optimal matchings, however it will be necessary to measure popularity. If the Popular-CHA algorithm finds a matching, we know that it's the popular matching, however if the algorithm cannot find a matching it could be possible that one of the other algorithms produces such a matching. In general, given the definitions for Popularity that we have used before, it is not possible to check if a given matching is popular without comparing it to all other matchings. However this is infeasable due to the exponential runtime complexity of that comparison, which is why we will just compare the matchings produced by the five algorithms used in the evaluation for Popularity. Given two matchings $m, m' \in \mathcal{M}$, we say that $m$ is more popular than $m'$ if the number of students prefering $m$ is greater than the number of students prefering $m'$. 
+We already know that all of the algorithms under considerations produce pareto-optimal matchings, however it will be necessary to measure popularity. If the Popular-CHA algorithm finds a matching, we know that it's the popular matching, however if the algorithm cannot find a matching it could be possible that one of the other algorithms produces such a matching. In general, given the definitions for Popularity that we have used before, it is not possible to check if a given matching is popular without comparing it to all other matchings. However this is infeasable due to the exponential runtime complexity of that comparison, which is why we will just compare the matchings produced by the five algorithms for Popularity. Given two matchings $m, m' \in \mathcal{M}$, we say that $m$ is more popular than $m'$ if the number of students prefering $m$ is greater than the number of students prefering $m'$. 
 In addition to comparing Popularity, the following other metrics will be used:
 \begin{itemize}
   \item \textbf{Profile}: The profile of the matching as defined in Section \ref{sec:profile} given as an array.
-  \item \textbf{Average Rank \& Standard Deviation}: The average and standard deviation of the matched students' ranks. A matched student's rank corresponds to the position of his match on his preference list.
+  \item \textbf{Average Rank \& Standard Deviation}: The average and standard deviation of the matched students' ranks. A matched student's rank corresponds to the position of his match on his preference list. In case there are unassigned students, two numbers will be given for this metric. First the metric excluding unassigned students is given and then in parentheses the metrics including unassigned students, weighted with the maximum rank is given.
   \item \textbf{Worst Rank}: In conjunction with the previous metric, we will also look at the worst rank that exists in a matching.
-  \item \textbf{Cardinality}: The size of a matching.
   \item \textbf{Unassigned-Count}: The number of unassigned students in a matching.
-  \item \textbf{Runtime}: The runtime of the algorithm in milliseconds.
+  \item \textbf{Runtime}: The runtime of the algorithm in milliseconds. Only the runtime of the actual algorithm in C++ is measured without parsing the input data or printing the result.
   \item \textbf{Existence}: This metric is only interesting for the Popular-CHA algorithm and will indicate if the algorithm was able to compute a matching for a given instance.
 \end{itemize}
 
@@ -97,4 +96,123 @@ These metrics should be a sufficient selection to quantify a matching's optimali
 
 \subsection{Results}
 
+\subsubsection{PrefLib1 Dataset}
+The PrefLib datasets contain strict, complete preferences for a small number of students and seminars. Table \ref{tab:results-preflib1} shows results for executing the algorithms on the first dataset. Unfortunately, the Popular CHA algorithm did not compute a matching, however we can also see that the Mod-Popular algorithm computed a matching that ties in popularity with the matching produced by the Hungarian algorithm. Unsurprisingly, in terms of rank the Hungarian algorithm produces the best matching with an average rank of 1.513 and a standard deviation of 0.829.
+
+\begin{table}[h!]
+  \centering
+  \resizebox{\textwidth}{!}{%
+  \begin{tabular}{|l|l|l|l|l|l|}
+  \hline
+  Metric & RSD & Max PaCHA & Hungarian & Popular CHA & Mod-Popular \\ \hline
+  Average Rank & 1.787 & 1.924 & \cellcolor[HTML]{9AFF99}1.513 & \cellcolor[HTML]{FFCCC9}n/a & 1.276 (2.342) \\ \hline
+  Rank SD & 1.136 & 1.426 & \cellcolor[HTML]{9AFF99}0.829 & \cellcolor[HTML]{FFCCC9}n/a & 0.540 (3.079) \\ \hline
+  Unassigned-Count & 0 & 0 & 0 & \cellcolor[HTML]{FFCCC9}146 & \cellcolor[HTML]{FFCCC9}16 \\ \hline
+  Runtime & <1ms & 19ms & 13ms & 1ms & 1ms \\ \hline
+  More Popular & 1.5 & 1.5 & \cellcolor[HTML]{9AFF99}3.5 & 0 & \cellcolor[HTML]{9AFF99}3.5 \\ \hline
+  Worst Rank & 7 & 7 & 4 & - & 3 / Unassigned \\ \hline
+  Exists & yes & yes & yes & \cellcolor[HTML]{FFCCC9}no & yes \\ \hline
+  \end{tabular}%
+  }
+  \caption{Summary of the results for PrefLib1}
+  \label{tab:results-preflib1}
+\end{table}
+
+When not taking the unassigned students into account, the Mod-Popular CHA algorithm performs even better on the rank metrics, however if taking the unassigned students into account it performs worst among all algorithms. Figure \ref{fig:preflib1-rank-distribution} shows the rank distribution for the algorithms that produced a matching and makes clear that, the Mod-Popular CHA algorithm assigns more students to their first rank at the cost of leaving a lot of students unassigned. 
+
+\begin{figure}[h!]
+  \centering
+    \includegraphics[width=0.9\linewidth]{assets/plots/preflib1-ranks.pdf}    
+    \caption{Rank distribution for PrefLib1 Dataset. Note: Popular CHA failed.}
+    \label{fig:preflib1-rank-distribution}
+\end{figure}
+
+What else is surprising with this instance is that the greedy RSD algorithm performs better than Max PaCHA in regards to the rank metric, even though both are of maximum cardinality. Surprisingly the algorithms also tie for popularity for this instance, even though the RSD performs better from a rank perspective. Runtime wise, there are no surprises other than the fact that the Hungarian algorithm is faster than Max PaCHA for this instance. However, with this size of input the runtime results are not that significant.
+
+\subsubsection{PrefLib2 Dataset}
+Table \ref{tab:results-preflib2} shows the results for the PrefLib2 dataset. We can see that the Popular CHA algorithm finds a matching, which is why the last two columns are identical. What's interesting about the results is that the the matchings produced by the Hungarian and Popular CHA algorithm tie in popularity, even though they are different in regards to the rank metrics. 
+
+\begin{table}[h!]
+  \centering
+  \resizebox{\textwidth}{!}{%
+  \begin{tabular}{|l|l|l|l|l|l|}
+  \hline
+  Metric & RSD & Max PaCHA & Hungarian & Popular CHA & Mod-Popular \\ \hline
+  Average Rank & 1.712 & \cellcolor[HTML]{FFCCC9}1.758 & \cellcolor[HTML]{9AFF99}1.640 & 1.686 & 1.686 \\ \hline
+  Rank SD & 0.797 & \cellcolor[HTML]{FFCCC9}0.878 & \cellcolor[HTML]{9AFF99}0.728 & 0.787 & 0.787 \\ \hline
+  Unassigned-Count & 0 & 0 & 0 & 0 & 0 \\ \hline
+  Runtime & <1ms & 41ms & 45ms & 9ms & 10ms \\ \hline
+  More Popular & 1 & 0 & \cellcolor[HTML]{96FFFB}2 (+2 Ties) & \cellcolor[HTML]{96FFFB}2 (+2 Ties) & \cellcolor[HTML]{96FFFB}2 (+2 Ties) \\ \hline
+  Worst Rank & 5 & 5 & 3 & 3 & 3 \\ \hline
+  Exists & yes & yes & yes & yes & yes \\ \hline
+  \end{tabular}%
+  }
+  \caption{Summary of the results for PrefLib2}
+  \label{tab:results-preflib2}
+\end{table}
+
+What else stands out is that RSD again produces a better matching than Max PaCHA in regards to the rank metrics. In fact, the matching produced by the Max PaCHA algorithm performs worst in terms of rank, even though its runtime is the second highest. Overall the runtimes are still low, with all of them being lower than 50ms, which should make all algorithms usable for real world applications for similarly sized instances. However it has to be noted that the matching produced by RSD gets close in terms of rank to the matching produced by the Hungarian algorithm, even though the it is about 50 times faster.
+
+\begin{figure}[h!]
+  \centering
+    \includegraphics[width=0.9\linewidth]{assets/plots/preflib2-ranks.pdf}    
+    \caption{Rank distribution for PrefLib1 Dataset.}
+    \label{fig:preflib2-rank-distribution}
+\end{figure}
+
+Figure \ref{fig:preflib2-rank-distribution} shows the preference distribution of all five algorithms. We can see that RSD and Max-PaCHA assign some students to their 4th or 5th choice, which explains why they perform worse in terms of rank. Unsurprisingly the matching produced by the Hungarian algorithm has the best rank-profile.
+
+\subsubsection{Small Zipfian Datasets}
+
+\begin{table}[h!]
+  \centering
+  \resizebox{\textwidth}{!}{%
+  \begin{tabular}{|l|l|l|l|l|l|}
+  \hline
+  Metric & RSD & Max PaCHA & Hungarian & Popular CHA & Mod-Popular \\ \hline
+  Average Rank & \cellcolor[HTML]{FFCCC9}1.893 (2.014) & 1.910 & \cellcolor[HTML]{9AFF99}1.481 & 1.646 & 1.523 (1.913) \\ \hline
+  Rank SD & \cellcolor[HTML]{FFCCC9}1.451 (1.782) & 1.457 & \cellcolor[HTML]{9AFF99}0.716 & 1.034 & 0.874 (2.121) \\ \hline
+  Unassigned-Count & 2 & 0 & 0 & 0 & \cellcolor[HTML]{FFCCC9}7 \\ \hline
+  Runtime & \textless{}1ms & 54ms & 60ms & 7ms & 10ms \\ \hline
+  More Popular & 1 & 1.65 & 3.05 & 0.7 & \cellcolor[HTML]{9AFF99}3.6 \\ \hline
+  Worst Rank & \cellcolor[HTML]{FFCCC9}8 & \cellcolor[HTML]{FFCCC9}8 & \cellcolor[HTML]{9AFF99}5 & \cellcolor[HTML]{9AFF99}5 & 6 \\ \hline
+  Exists & yes & yes & yes & \cellcolor[HTML]{FFCCC9}4/50 exist & yes \\ \hline
+  \end{tabular}%
+  }
+  \caption{Average results for small Zipfian dataset with 50 runs}
+  \label{tab:results-zipfian-small}
+\end{table}
+
+Since the Zipfian datasets have a somewhat similar preference distribution as the PrefLib datasets we should see similar results, however parameters can be tuned such as preference list length and student count. We will begin by looking at a similarly sized dataset as the Preflib datasets and then begin deviating the preference list length and finally student \& seminar count. Table \ref{tab:results-zipfian-small}
+shows the average results for 50 test runs using the Zipfian Dataset with 10 seminars and about 200 students. Out of the 50 instances, the Popular CHA algorithm only found a matching for four instances. When it found a matching, it did so quite fast and the matching was on average better rank-wise than all other algorithms except for the Hungarian algorithm. In terms of popularity, the Mod-Popular CHA algorithm actually outperformed all algorithms (equal to Popular-CHA if the matching exists) for most instances, even though rank-wise it does not perform as well as the Hungarian algorithm. However, the Hungarian algorithm produced more popular matchings than most other algorithms, and for some instances even more popular than the Mod-Popular CHA algorithm.
+
+\subsubsection{Large Zipfian Datasets}
+
+\begin{table}[h!]
+  \centering
+  \resizebox{\textwidth}{!}{%
+  \begin{tabular}{|l|l|l|l|l|l|}
+  \hline
+  Metric & RSD & Max PaCHA & Hungarian & Popular CHA & Mod-Popular \\ \hline
+  Average Rank & 1.911 (5.287) & \cellcolor[HTML]{FFCCC9}2.109 & \cellcolor[HTML]{9AFF99}1.824 & - & 1.694 (4.746) \\ \hline
+  Rank SD & 1.225 (10.41) & \cellcolor[HTML]{FFCCC9}1.383 & \cellcolor[HTML]{9AFF99}1.029 & - & 1.087 (9.967) \\ \hline
+  Unassigned & \cellcolor[HTML]{FFCCC9}10\% & \cellcolor[HTML]{9AFF99}0\% & \cellcolor[HTML]{9AFF99}0\% & 100\% & \cellcolor[HTML]{FFCCC9}8.6\% \\ \hline
+  Runtime & \cellcolor[HTML]{9AFF99}3ms & 2190ms & \cellcolor[HTML]{FFCCC9}65730ms & - & \cellcolor[HTML]{9AFF99}168ms \\ \hline
+  More Popular & 1.1 & 1.65 & 3 & 0 & \cellcolor[HTML]{9AFF99}4 \\ \hline
+  Worst Rank & 7 & 7 & \cellcolor[HTML]{9AFF99}6 & - & 7 \\ \hline
+  Exists & yes & yes & yes & \cellcolor[HTML]{FFCCC9}0/50 & yes \\ \hline
+  \end{tabular}%
+  }
+  \caption{Average results for medium Zipfian dataset (2500 Students) with 10 runs}
+  \label{tab:results-zipfian-medium}
+\end{table}
+
+\begin{figure}[h!]
+  \centering
+    \includegraphics[width=0.9\linewidth]{assets/plots/zipfian-medium.pdf}
+    \caption{Rank distribution for PrefLib1 Dataset.}
+    \label{fig:preflib2-rank-distribution}
+\end{figure}
+
 \subsection{Conclusion}
+Popular CHA optimizes for popularity, which does not always mean high rank -> unfair?

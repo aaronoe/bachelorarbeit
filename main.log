@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.1)  13 JUL 2019 20:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.1)  16 JUL 2019 21:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -641,6 +641,16 @@ Package caption Info: listings package is loaded.
 )
 \c@subfigure=\count143
 \c@subtable=\count144
+) (/usr/share/texlive/texmf-dist/tex/latex/svg/svg.sty
+Package: svg 2017/11/29 v2.01 (include SVG pictures)
+ (/usr/share/texlive/texmf-dist/tex/latex/tools/shellesc.sty
+Package: shellesc 2016/06/07 v0.02a unified shell escape interface for LaTeX
+Package shellesc Info: Restricted shell escape enabled on input line 69.
+)
+\c@svg@param@lastpage=\count145
+\c@svg@param@currpage=\count146
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/transparent.sty
+Package: transparent 2016/05/16 v1.1 Transparency via pdfTeX's color stack (HO)
 ) (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlayer-scrpage.sty
 Package: scrlayer-scrpage 2017/09/07 v3.24 KOMA-Script package (end user interface for scrlayer)
  (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlayer.sty
@@ -659,7 +669,11 @@ Package scrlayer-scrpage Info: auto-selection of `pagestyleset=KOMA-Script'.
 1: section
 1: section
 1: subsection
-) (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.aux)
+) (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.aux
+
+LaTeX Warning: Label `fig:preflib2-rank-distribution' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
@@ -691,7 +705,7 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count145
+\c@section@level=\count147
 )
 LaTeX Info: Redefining \ref on input line 3.
 LaTeX Info: Redefining \pageref on input line 3.
@@ -702,16 +716,16 @@ LaTeX Info: Redefining \nameref on input line 3.
 
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count146
+\scratchcounter=\count148
 \scratchdimen=\dimen181
 \scratchbox=\box45
-\nofMPsegments=\count147
-\nofMParguments=\count148
+\nofMPsegments=\count149
+\nofMParguments=\count150
 \everyMPshowfont=\toks48
-\MPscratchCnt=\count149
+\MPscratchCnt=\count151
 \MPscratchDim=\dimen182
-\MPnumerator=\count150
-\makeMPintoPDFobject=\count151
+\MPnumerator=\count152
+\makeMPintoPDFobject=\count153
 \everyMPtoPDFconversion=\toks49
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -742,7 +756,7 @@ Package microtype Info: Redefining babel's language switching commands.
  (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
-\c@lstlisting=\count152
+\c@lstlisting=\count154
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
  (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/Institutsvorlage.tex)
@@ -847,37 +861,40 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 22.
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- [3] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/1_introduction.tex [1] [2] [3] [4]) [5] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/2_optimality.tex [6] [7]
+
+Underfull \vbox (badness 1107) has occurred while \output is active []
+
+ [3] [4] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/1_introduction.tex [1] [2] [3] [4]) [5] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/2_optimality.tex [6] [7]
 Underfull \hbox (badness 10000) in paragraph at lines 43--45
 
  []
 
 [8]) [9] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/3_algorithms.tex
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 8.
-\c@theorem=\count153
+\c@theorem=\count155
  [10] [11] [12] [13] [14] [15] [16]) [17] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/4_algorithm_comparison.tex [18] [19]) [20] [21] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/5_implementation.tex
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 19.
  [22] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/popular.in) (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/popular.out) [23] [24]
 Underfull \vbox (badness 5771) has occurred while \output is active []
 
  [25]) [26] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/6_evaluation.tex [27]
-<assets/plots/preflib1-distribution.png, id=750, 722.7pt x 578.16pt>
+<assets/plots/preflib1-distribution.png, id=774, 722.7pt x 578.16pt>
 File: assets/plots/preflib1-distribution.png Graphic file (type png)
 <use assets/plots/preflib1-distribution.png>
 Package pdftex.def Info: assets/plots/preflib1-distribution.png  used on input line 30.
 (pdftex.def)             Requested size: 214.35837pt x 171.48203pt.
-<assets/plots/preflib2-distribution.png, id=751, 722.7pt x 578.16pt>
+<assets/plots/preflib2-distribution.png, id=775, 722.7pt x 578.16pt>
 File: assets/plots/preflib2-distribution.png Graphic file (type png)
 <use assets/plots/preflib2-distribution.png>
 Package pdftex.def Info: assets/plots/preflib2-distribution.png  used on input line 34.
 (pdftex.def)             Requested size: 214.35837pt x 171.48203pt.
  [28 </home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/plots/preflib1-distribution.png (PNG copy)> </home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/plots/preflib2-distribution.png (PNG copy)>]
-<assets/plots/zipfian1-distribution.png, id=761, 722.7pt x 578.16pt>
+<assets/plots/zipfian1-distribution.png, id=785, 722.7pt x 578.16pt>
 File: assets/plots/zipfian1-distribution.png Graphic file (type png)
 <use assets/plots/zipfian1-distribution.png>
 Package pdftex.def Info: assets/plots/zipfian1-distribution.png  used on input line 49.
 (pdftex.def)             Requested size: 214.35837pt x 171.48203pt.
-<assets/plots/zipfian2-distribution.png, id=762, 722.7pt x 578.16pt>
+<assets/plots/zipfian2-distribution.png, id=786, 722.7pt x 578.16pt>
 File: assets/plots/zipfian2-distribution.png Graphic file (type png)
 <use assets/plots/zipfian2-distribution.png>
 Package pdftex.def Info: assets/plots/zipfian2-distribution.png  used on input line 53.
@@ -889,7 +906,40 @@ File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 87.
- [30]) [31] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/7_extensions.tex [32] [33] [34]) [35] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/8_conclusion.tex) [36] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.bblpdfTeX warning (ext4): destination with the same identifier (name{page.I}) has been already used, duplicate ignored
+ [30]
+<assets/plots/preflib1-ranks.pdf, id=812, 736.7525pt x 455.7025pt>
+File: assets/plots/preflib1-ranks.pdf Graphic file (type pdf)
+<use assets/plots/preflib1-ranks.pdf>
+Package pdftex.def Info: assets/plots/preflib1-ranks.pdf  used on input line 125.
+(pdftex.def)             Requested size: 393.71239pt x 243.5168pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[31] [32 </home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/plots/preflib1-ranks.pdf>]
+<assets/plots/preflib2-ranks.pdf, id=836, 602.25pt x 372.39125pt>
+File: assets/plots/preflib2-ranks.pdf Graphic file (type pdf)
+<use assets/plots/preflib2-ranks.pdf>
+Package pdftex.def Info: assets/plots/preflib2-ranks.pdf  used on input line 158.
+(pdftex.def)             Requested size: 393.71239pt x 243.45494pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[33 </home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/plots/preflib2-ranks.pdf>]
+<assets/plots/zipfian-medium.pdf, id=856, 854.19125pt x 527.9725pt>
+File: assets/plots/zipfian-medium.pdf Graphic file (type pdf)
+<use assets/plots/zipfian-medium.pdf>
+Package pdftex.def Info: assets/plots/zipfian-medium.pdf  used on input line 212.
+(pdftex.def)             Requested size: 393.71239pt x 243.34561pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) [34] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/7_extensions.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [35 </home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/plots/zipfian-medium.pdf>] [36] [37]) [38] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/8_conclusion.tex) [39] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.bblpdfTeX warning (ext4): destination with the same identifier (name{page.I}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.72 
@@ -920,7 +970,11 @@ Underfull \hbox (badness 6542) in paragraph at lines 136--140
 <to be read again> 
                    \relax 
 l.56 \selbstaendigkeitserklaerung{\today}
-                                          [3] [4
+                                          [3]pdfTeX warning (ext4): destination with the same identifier (name{page.IV}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.56 \selbstaendigkeitserklaerung{\today}
+                                          [4
 
 
 ] [5]
@@ -930,22 +984,26 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 58.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 58.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 58.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 835A87EBA918CBD61F22B6AABB2BEF3A;12654.
+(rerunfilecheck)             Checksum: 9D246C4BD8B19F32384C6BB9B30E5D19;13324.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 58.
  ) 
 Here is how much of TeX's memory you used:
- 29662 strings out of 492982
- 550153 string characters out of 6134897
- 731445 words of memory out of 5000000
- 32287 multiletter control sequences out of 15000+600000
+ 30016 strings out of 492982
+ 558068 string characters out of 6134897
+ 749071 words of memory out of 5000000
+ 32614 multiletter control sequences out of 15000+600000
  94166 words of font info for 165 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  66i,20n,90p,8912b,1934s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmro12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.pdf (46 pages, 738130 bytes).
+Output written on /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.pdf (50 pages, 786625 bytes).
 PDF statistics:
- 971 PDF objects out of 1000 (max. 8388607)
- 891 compressed objects within 9 object streams
- 240 named destinations out of 1000 (max. 500000)
- 33401 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 1057 PDF objects out of 1200 (max. 8388607)
+ 963 compressed objects within 10 object streams
+ 254 named destinations out of 1000 (max. 500000)
+ 33448 words of extra memory for PDF output out of 35830 (max. 10000000)
 
