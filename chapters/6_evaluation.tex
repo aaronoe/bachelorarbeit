@@ -26,36 +26,22 @@ Preflib.org is an open collection of more than 3000 community-contributed datase
 
 \begin{figure}[h!]
     \centering
-    \begin{subfigure}[b]{0.49\linewidth}
-      \includegraphics[width=\linewidth]{assets/plots/preflib1-distribution.png}
-      \caption{Preference Distribution first dataset.}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.49\linewidth}
-      \includegraphics[width=\linewidth]{assets/plots/preflib2-distribution.png}
-      \caption{Preference Distribution second dataset.}
-    \end{subfigure}
-    \caption{Preference Distributions for first-ranked seminars for both PrefLib datasets}
+    \includegraphics[width=0.8\linewidth]{assets/plots/prelib-distr.pdf}
+    \caption{Preference distributions for first-ranked seminars for both PrefLib datasets}
     \label{fig:preflib-distribution}
-  \end{figure}
+\end{figure}
 
 Figure \ref{fig:preflib-distribution} shows the preference distributions for the student's first choice in both datasets after removing the always first-ranked seminar. We can see that in both datasets, students clearly strongly prefer two seminars. However in the first dataset, there are 3 more seminars that are also decently popular, while in the second dataset the majority of students really prefers the two dominant seminars. Generally, those datasets indicate that the preference structure is perhaps not likely to be uniformly distributed.
 
 \subsubsection{Random Zipf-Distributed Preference Lists}
 To better simulate real-world preference structures than by using a uniform distribution, a power-law distribution can be applied. According to Zipf's law the frequency of a word in a large sample, is proportional to it's position in a frequency table. This law can also be applied for creating synthetic seminar distribution. Using this type of distribution with some additional randomization yields the following preference list structure when seminar and student counts are similar to the first PrefLib dataset:
 
-\begin{figure}[h!]
+  \begin{figure}[h!]
     \centering
-    \begin{subfigure}[b]{0.49\linewidth}
-      \includegraphics[width=\linewidth]{assets/plots/zipfian1-distribution.png}
-      \caption{Preference Distribution first sample.}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.49\linewidth}
-      \includegraphics[width=\linewidth]{assets/plots/zipfian2-distribution.png}
-      \caption{Preference Distribution second sample.}
-    \end{subfigure}
-    \caption{Zipfian Preference Distribution for first-ranked seminars}
+    \includegraphics[width=0.8\linewidth]{assets/plots/zipfian-distr.pdf}
+    \caption{Two sample Zipfian preference distribution for first-ranked seminars}
     \label{fig:zipfian-distribution}
-  \end{figure}
+\end{figure}
 
 To create the dataset, for each student a seminar is randomly drawn using the Zipfian distribution and added to the his preference list until the desired preference-list length has been reached. Comparing Figure \ref{fig:zipfian-distribution} to Figure \ref{fig:preflib-distribution} shows somewhat similar results, which should make this generator relevant for the benchmark. 
 
@@ -130,8 +116,6 @@ When not taking the unassigned students into account, the Mod-Popular CHA algori
 What else is surprising with this instance is that the greedy RSD algorithm performs better than Max PaCHA in regards to the rank metric, even though both are of maximum cardinality. Surprisingly the algorithms also tie for popularity for this instance, even though the RSD performs better from a rank perspective. Runtime wise, there are no surprises other than the fact that the Hungarian algorithm is faster than Max PaCHA for this instance. However, with this size of input the runtime results are not that significant.
 
 \subsubsection{PrefLib2 dataset}
-Table \ref{tab:results-preflib2} shows the results for the PrefLib2 dataset. We can see that the Popular CHA algorithm finds a matching, which is why the last two columns are identical. What's interesting about the results is that the the matchings produced by the Hungarian and Popular CHA algorithm tie in popularity, even though they are different in regards to the rank metrics. 
-
 \begin{table}[h!]
   \centering
   \resizebox{\textwidth}{!}{%
@@ -150,6 +134,8 @@ Table \ref{tab:results-preflib2} shows the results for the PrefLib2 dataset. We 
   \caption{Summary of the results for PrefLib2}
   \label{tab:results-preflib2}
 \end{table}
+
+Table \ref{tab:results-preflib2} shows the results for the PrefLib2 dataset. We can see that the Popular CHA algorithm finds a matching, which is why the last two columns are identical. What's interesting about the results is that the the matchings produced by the Hungarian and Popular CHA algorithm tie in popularity, even though they are different in regards to the rank metrics. 
 
 What else stands out is that RSD again produces a better matching than Max PaCHA in regards to the rank metrics. In fact, the matching produced by the Max PaCHA algorithm performs worst in terms of rank, even though its runtime is the second highest. Overall the runtimes are still low, with all of them being lower than 50ms, which should make all algorithms usable for real world applications for similarly sized instances. However it has to be noted that the matching produced by RSD gets close in terms of rank to the matching produced by the Hungarian algorithm, even though the it is about 50 times faster.
 
