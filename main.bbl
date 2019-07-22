@@ -142,6 +142,13 @@ N.~Mattei and T.~Walsh, ``Preflib: A library of preference data
 ``{PrefLib}: A library for preferences - agh course preferences.''
   \url{http://www.preflib.org/data/election/agh/}.
 
+\bibitem{Zipf}
+D.~M.~W. Powers, ``Applications and explanations of zipf's law,'' in {\em
+  Proceedings of the Joint Conferences on New Methods in Language Processing
+  and Computational Natural Language Learning}, NeMLaP3/CoNLL '98,
+  (Stroudsburg, PA, USA), pp.~151--160, Association for Computational
+  Linguistics, 1998.
+
 \bibitem{Mehta:Online}
 A.~Mehta, ``Online matching and ad allocation,'' {\em Found. Trends Theor.
   Comput. Sci.}, vol.~8, pp.~265--368, Oct. 2013.

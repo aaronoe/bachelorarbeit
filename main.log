@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.1)  22 JUL 2019 12:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.1)  22 JUL 2019 14:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -889,23 +889,23 @@ File: assets/plots/prelib-distr.pdf Graphic file (type pdf)
 Package pdftex.def Info: assets/plots/prelib-distr.pdf  used on input line 29.
 (pdftex.def)             Requested size: 349.97028pt x 216.40755pt.
  [28 </home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/plots/prelib-distr.pdf>]
-<assets/plots/zipfian-distr.pdf, id=852, 602.25pt x 372.39125pt>
+<assets/plots/zipfian-distr.pdf, id=853, 602.25pt x 372.39125pt>
 File: assets/plots/zipfian-distr.pdf Graphic file (type pdf)
 <use assets/plots/zipfian-distr.pdf>
 Package pdftex.def Info: assets/plots/zipfian-distr.pdf  used on input line 41.
 (pdftex.def)             Requested size: 349.97028pt x 216.40755pt.
  [29 </home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/plots/zipfian-distr.pdf>]
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 71.
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 65.
  (/usr/share/texmf/tex/latex/lm/omslmr.fd
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 71.
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 65.
  [30]
 <assets/plots/preflib1-ranks.pdf, id=887, 736.7525pt x 455.7025pt>
 File: assets/plots/preflib1-ranks.pdf Graphic file (type pdf)
 <use assets/plots/preflib1-ranks.pdf>
-Package pdftex.def Info: assets/plots/preflib1-ranks.pdf  used on input line 109.
+Package pdftex.def Info: assets/plots/preflib1-ranks.pdf  used on input line 103.
 (pdftex.def)             Requested size: 393.71239pt x 243.5168pt.
 
 
@@ -915,7 +915,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <assets/plots/preflib2-ranks.pdf, id=907, 602.25pt x 372.39125pt>
 File: assets/plots/preflib2-ranks.pdf Graphic file (type pdf)
 <use assets/plots/preflib2-ranks.pdf>
-Package pdftex.def Info: assets/plots/preflib2-ranks.pdf  used on input line 142.
+Package pdftex.def Info: assets/plots/preflib2-ranks.pdf  used on input line 136.
 (pdftex.def)             Requested size: 393.71239pt x 243.45494pt.
 
 
@@ -925,13 +925,18 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <assets/plots/zipfian-medium.pdf, id=925, 854.19125pt x 527.9725pt>
 File: assets/plots/zipfian-medium.pdf Graphic file (type pdf)
 <use assets/plots/zipfian-medium.pdf>
-Package pdftex.def Info: assets/plots/zipfian-medium.pdf  used on input line 199.
+Package pdftex.def Info: assets/plots/zipfian-medium.pdf  used on input line 193.
 (pdftex.def)             Requested size: 393.71239pt x 243.34561pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[34] [35 </home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/plots/zipfian-medium.pdf>] [36] [37]) [38] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/7_extensions.tex [39] [40] [41]) [42] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/8_discussion.tex
+[34] [35 </home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/plots/zipfian-medium.pdf>] [36]
+Overfull \hbox (1.65567pt too wide) in paragraph at lines 253--254
+[]\T1/lmr/bx/n/12 Failure rate of Popular-CHA: \T1/lmr/m/n/12 (-20) The ex-per-i-ments have shown that []
+ []
+
+[37]) [38] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/7_extensions.tex [39] [40] [41]) [42] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/8_discussion.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [43] [44]) [45] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/9_conclusion.tex) [46] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.bblpdfTeX warning (ext4): destination with the same identifier (name{page.I}) has been already used, duplicate ignored
@@ -988,17 +993,17 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 67.
  ) 
 Here is how much of TeX's memory you used:
  30048 strings out of 492982
- 558602 string characters out of 6134897
- 749497 words of memory out of 5000000
- 32619 multiletter control sequences out of 15000+600000
+ 558603 string characters out of 6134897
+ 749524 words of memory out of 5000000
+ 32620 multiletter control sequences out of 15000+600000
  91139 words of font info for 163 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  66i,20n,90p,8912b,1934s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmro12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.pdf (59 pages, 526725 bytes).
+Output written on /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.pdf (59 pages, 527839 bytes).
 PDF statistics:
  1188 PDF objects out of 1200 (max. 8388607)
  1083 compressed objects within 11 object streams
- 278 named destinations out of 1000 (max. 500000)
+ 277 named destinations out of 1000 (max. 500000)
  31422 words of extra memory for PDF output out of 35830 (max. 10000000)
 
