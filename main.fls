@@ -334,6 +334,12 @@ INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmro12.tfm
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.toc
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.toc
 OUTPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.toc
+INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.lof
+INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.lof
+OUTPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.lof
+INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.lot
+INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.lot
+OUTPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.lot
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/1_introduction.tex
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/1_introduction.tex
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmssbx10.tfm
@@ -374,8 +380,10 @@ INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/plots/zipfia
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/plots/zipfian-medium.pdf
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/7_extensions.tex
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/7_extensions.tex
-INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/8_conclusion.tex
-INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/8_conclusion.tex
+INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/8_discussion.tex
+INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/8_discussion.tex
+INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/9_conclusion.tex
+INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/9_conclusion.tex
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.bbl
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.bbl
 INPUT /usr/share/texmf/tex/latex/lm/t1lmtt.fd

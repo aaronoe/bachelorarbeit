@@ -1,82 +1,81 @@
 \babel@toc {USenglish}{}
-\contentsline {section}{\numberline {1}Abstract}{I}{section.1}
-\contentsline {section}{\numberline {2}Introduction}{1}{section.2}
-\contentsline {subsection}{\numberline {2.1}Motivation}{1}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Formal Definition}{2}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}The Capacitated House Allocation Problem}{2}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}Outline}{2}{subsection.2.4}
-\contentsline {subsection}{\numberline {2.5}Related Problems}{3}{subsection.2.5}
-\contentsline {subsubsection}{\numberline {2.5.1}Stable Marriage Problem}{4}{subsubsection.2.5.1}
-\contentsline {subsubsection}{\numberline {2.5.2}Hospitals/Residents Problem}{4}{subsubsection.2.5.2}
-\contentsline {subsubsection}{\numberline {2.5.3}Assignment Problem}{5}{subsubsection.2.5.3}
-\contentsline {subsubsection}{\numberline {2.5.4}The Student-Project Allocation Problem}{5}{subsubsection.2.5.4}
-\contentsline {section}{\numberline {3}Optimality criteria}{6}{section.3}
-\contentsline {subsection}{\numberline {3.1}Maximum cardinality}{6}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Pareto-Optimality}{6}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Popularity}{7}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}Profile-based optimality}{8}{subsection.3.4}
-\contentsline {subsection}{\numberline {3.5}Strategy-Proofness}{8}{subsection.3.5}
-\contentsline {subsection}{\numberline {3.6}Application to student-seminar matching}{8}{subsection.3.6}
-\contentsline {section}{\numberline {4}Algorithmic Approaches}{10}{section.4}
-\contentsline {subsection}{\numberline {4.1}Greedy with serial dictatorship}{10}{subsection.4.1}
-\contentsline {subsubsection}{\numberline {4.1.1}Properties}{10}{subsubsection.4.1.1}
-\contentsline {subsubsection}{\numberline {4.1.2}Drawbacks}{11}{subsubsection.4.1.2}
-\contentsline {subsection}{\numberline {4.2}Pareto Optimal Maximal Matchings for CHA}{11}{subsection.4.2}
-\contentsline {subsubsection}{\numberline {4.2.1}Properties}{13}{subsubsection.4.2.1}
-\contentsline {subsection}{\numberline {4.3}Solving CHA as an assignment problem}{13}{subsection.4.3}
-\contentsline {subsubsection}{\numberline {4.3.1}Solving the assignment problem using flow-networks}{14}{subsubsection.4.3.1}
-\contentsline {subsubsection}{\numberline {4.3.2}Properties}{14}{subsubsection.4.3.2}
-\contentsline {subsection}{\numberline {4.4}Maximum Popular Matchings in CHA}{15}{subsection.4.4}
-\contentsline {subsubsection}{\numberline {4.4.1}An alternative characterization of popular matchings}{15}{subsubsection.4.4.1}
-\contentsline {subsubsection}{\numberline {4.4.2}Algorithm}{16}{subsubsection.4.4.2}
-\contentsline {subsubsection}{\numberline {4.4.3}Properties}{17}{subsubsection.4.4.3}
-\contentsline {section}{\numberline {5}Comparison of mechanisms}{18}{section.5}
-\contentsline {subsection}{\numberline {5.1}Theoretical results}{18}{subsection.5.1}
-\contentsline {subsubsection}{\numberline {5.1.1}Strategy-proofness and maximum cardinality}{19}{subsubsection.5.1.1}
-\contentsline {subsubsection}{\numberline {5.1.2}Max-PaCHA and the assignment problem}{19}{subsubsection.5.1.2}
-\contentsline {subsection}{\numberline {5.2}Practical results in the literature}{19}{subsection.5.2}
-\contentsline {subsubsection}{\numberline {5.2.1}Dataset}{19}{subsubsection.5.2.1}
-\contentsline {subsubsection}{\numberline {5.2.2}Methodology}{20}{subsubsection.5.2.2}
-\contentsline {subsubsection}{\numberline {5.2.3}Results}{20}{subsubsection.5.2.3}
-\contentsline {subsubsection}{\numberline {5.2.4}Learnings}{20}{subsubsection.5.2.4}
-\contentsline {section}{\numberline {6}Implementation}{22}{section.6}
-\contentsline {subsection}{\numberline {6.1}Overview}{22}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Algorithm Implementation}{22}{subsection.6.2}
-\contentsline {subsubsection}{\numberline {6.2.1}Input and Execution}{22}{subsubsection.6.2.1}
-\contentsline {subsubsection}{\numberline {6.2.2}RSD Implementation}{24}{subsubsection.6.2.2}
-\contentsline {subsubsection}{\numberline {6.2.3}Max-Pareto Implementation}{24}{subsubsection.6.2.3}
-\contentsline {subsubsection}{\numberline {6.2.4}Assignment Problem Implementation}{24}{subsubsection.6.2.4}
-\contentsline {subsubsection}{\numberline {6.2.5}Max-Popular Implementation}{24}{subsubsection.6.2.5}
-\contentsline {subsubsection}{\numberline {6.2.6}Modified Max-Popular Implementation}{25}{subsubsection.6.2.6}
-\contentsline {subsection}{\numberline {6.3}Web-Server Implementation}{25}{subsection.6.3}
-\contentsline {subsubsection}{\numberline {6.3.1}Benchmark Tools}{26}{subsubsection.6.3.1}
-\contentsline {subsection}{\numberline {6.4}Web-Interface Implementation}{26}{subsection.6.4}
-\contentsline {section}{\numberline {7}Evaluation}{27}{section.7}
-\contentsline {subsection}{\numberline {7.1}Research Questions}{27}{subsection.7.1}
-\contentsline {subsection}{\numberline {7.2}Sample Data}{27}{subsection.7.2}
-\contentsline {subsubsection}{\numberline {7.2.1}Using graph generators}{27}{subsubsection.7.2.1}
-\contentsline {subsubsection}{\numberline {7.2.2}Random Uniform Preference Lists}{28}{subsubsection.7.2.2}
-\contentsline {subsubsection}{\numberline {7.2.3}PrefLib Datasets}{28}{subsubsection.7.2.3}
-\contentsline {subsubsection}{\numberline {7.2.4}Random Zipf-Distributed Preference Lists}{29}{subsubsection.7.2.4}
-\contentsline {subsubsection}{\numberline {7.2.5}Carnegie-Mellon Datasets}{29}{subsubsection.7.2.5}
-\contentsline {subsection}{\numberline {7.3}Methodology}{29}{subsection.7.3}
-\contentsline {subsubsection}{\numberline {7.3.1}Benchmark Setup}{30}{subsubsection.7.3.1}
-\contentsline {subsubsection}{\numberline {7.3.2}Metrics}{30}{subsubsection.7.3.2}
-\contentsline {subsection}{\numberline {7.4}Results}{31}{subsection.7.4}
-\contentsline {subsubsection}{\numberline {7.4.1}PrefLib1 dataset}{31}{subsubsection.7.4.1}
-\contentsline {subsubsection}{\numberline {7.4.2}PrefLib2 dataset}{32}{subsubsection.7.4.2}
-\contentsline {subsubsection}{\numberline {7.4.3}Small Zipfian datasets}{33}{subsubsection.7.4.3}
-\contentsline {subsubsection}{\numberline {7.4.4}Large Zipfian datasets}{34}{subsubsection.7.4.4}
-\contentsline {subsubsection}{\numberline {7.4.5}Large uniform dataset with incomplete preferences}{35}{subsubsection.7.4.5}
-\contentsline {subsubsection}{\numberline {7.4.6}Large uniform dataset with complete preferences}{36}{subsubsection.7.4.6}
-\contentsline {subsection}{\numberline {7.5}Conclusion}{36}{subsection.7.5}
-\contentsline {section}{\numberline {8}Extensions to the problem}{39}{section.8}
-\contentsline {subsection}{\numberline {8.1}Two-Sided preferences}{39}{subsection.8.1}
-\contentsline {subsubsection}{\numberline {8.1.1}Stable matchings}{39}{subsubsection.8.1.1}
-\contentsline {subsubsection}{\numberline {8.1.2}Algorithm}{39}{subsubsection.8.1.2}
-\contentsline {subsection}{\numberline {8.2}Many-to-Many matchings}{40}{subsection.8.2}
-\contentsline {subsubsection}{\numberline {8.2.1}One-sided preferences}{40}{subsubsection.8.2.1}
-\contentsline {subsubsection}{\numberline {8.2.2}Two-sided preferences}{40}{subsubsection.8.2.2}
-\contentsline {subsection}{\numberline {8.3}Online variant}{41}{subsection.8.3}
-\contentsline {subsubsection}{\numberline {8.3.1}Online max-cardinality matching}{41}{subsubsection.8.3.1}
-\contentsline {section}{\numberline {9}Conclusion}{43}{section.9}
+\contentsline {section}{\numberline {1}Introduction}{1}{section.1}
+\contentsline {subsection}{\numberline {1.1}Motivation}{1}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Formal Definition}{2}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}The Capacitated House Allocation Problem}{2}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}Outline}{2}{subsection.1.4}
+\contentsline {subsection}{\numberline {1.5}Related Problems}{3}{subsection.1.5}
+\contentsline {subsubsection}{\numberline {1.5.1}Stable Marriage Problem}{4}{subsubsection.1.5.1}
+\contentsline {subsubsection}{\numberline {1.5.2}Hospitals/Residents Problem}{4}{subsubsection.1.5.2}
+\contentsline {subsubsection}{\numberline {1.5.3}Assignment Problem}{5}{subsubsection.1.5.3}
+\contentsline {subsubsection}{\numberline {1.5.4}The Student-Project Allocation Problem}{5}{subsubsection.1.5.4}
+\contentsline {section}{\numberline {2}Optimality criteria}{6}{section.2}
+\contentsline {subsection}{\numberline {2.1}Maximum cardinality}{6}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Pareto-Optimality}{6}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Popularity}{7}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Profile-based optimality}{8}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Strategy-Proofness}{8}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}Application to student-seminar matching}{8}{subsection.2.6}
+\contentsline {section}{\numberline {3}Algorithmic Approaches}{10}{section.3}
+\contentsline {subsection}{\numberline {3.1}Greedy with serial dictatorship}{10}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}Properties}{10}{subsubsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.2}Drawbacks}{11}{subsubsection.3.1.2}
+\contentsline {subsection}{\numberline {3.2}Pareto Optimal Maximal Matchings for CHA}{11}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Properties}{13}{subsubsection.3.2.1}
+\contentsline {subsection}{\numberline {3.3}Solving CHA as an assignment problem}{13}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}Solving the assignment problem using flow-networks}{14}{subsubsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.2}Properties}{14}{subsubsection.3.3.2}
+\contentsline {subsection}{\numberline {3.4}Maximum Popular Matchings in CHA}{15}{subsection.3.4}
+\contentsline {subsubsection}{\numberline {3.4.1}An alternative characterization of popular matchings}{15}{subsubsection.3.4.1}
+\contentsline {subsubsection}{\numberline {3.4.2}Algorithm}{16}{subsubsection.3.4.2}
+\contentsline {subsubsection}{\numberline {3.4.3}Properties}{17}{subsubsection.3.4.3}
+\contentsline {section}{\numberline {4}Comparison of mechanisms}{18}{section.4}
+\contentsline {subsection}{\numberline {4.1}Theoretical results}{18}{subsection.4.1}
+\contentsline {subsubsection}{\numberline {4.1.1}Strategy-proofness and maximum cardinality}{19}{subsubsection.4.1.1}
+\contentsline {subsubsection}{\numberline {4.1.2}Max-PaCHA and the assignment problem}{19}{subsubsection.4.1.2}
+\contentsline {subsection}{\numberline {4.2}Practical results in the literature}{19}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}Dataset}{19}{subsubsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2}Methodology}{20}{subsubsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.3}Results}{20}{subsubsection.4.2.3}
+\contentsline {subsubsection}{\numberline {4.2.4}Learnings}{20}{subsubsection.4.2.4}
+\contentsline {section}{\numberline {5}Implementation}{22}{section.5}
+\contentsline {subsection}{\numberline {5.1}Overview}{22}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Algorithm Implementation}{22}{subsection.5.2}
+\contentsline {subsubsection}{\numberline {5.2.1}Input and Execution}{22}{subsubsection.5.2.1}
+\contentsline {subsubsection}{\numberline {5.2.2}RSD Implementation}{24}{subsubsection.5.2.2}
+\contentsline {subsubsection}{\numberline {5.2.3}Max-Pareto Implementation}{24}{subsubsection.5.2.3}
+\contentsline {subsubsection}{\numberline {5.2.4}Assignment Problem Implementation}{24}{subsubsection.5.2.4}
+\contentsline {subsubsection}{\numberline {5.2.5}Max-Popular Implementation}{24}{subsubsection.5.2.5}
+\contentsline {subsubsection}{\numberline {5.2.6}Modified Max-Popular Implementation}{25}{subsubsection.5.2.6}
+\contentsline {subsection}{\numberline {5.3}Web-Server Implementation}{25}{subsection.5.3}
+\contentsline {subsubsection}{\numberline {5.3.1}Benchmark Tools}{26}{subsubsection.5.3.1}
+\contentsline {subsection}{\numberline {5.4}Web-Interface Implementation}{26}{subsection.5.4}
+\contentsline {section}{\numberline {6}Evaluation}{27}{section.6}
+\contentsline {subsection}{\numberline {6.1}Research Questions}{27}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Sample Data}{27}{subsection.6.2}
+\contentsline {subsubsection}{\numberline {6.2.1}Using graph generators}{27}{subsubsection.6.2.1}
+\contentsline {subsubsection}{\numberline {6.2.2}Random Uniform Preference Lists}{28}{subsubsection.6.2.2}
+\contentsline {subsubsection}{\numberline {6.2.3}PrefLib Datasets}{28}{subsubsection.6.2.3}
+\contentsline {subsubsection}{\numberline {6.2.4}Random Zipf-Distributed Preference Lists}{29}{subsubsection.6.2.4}
+\contentsline {subsection}{\numberline {6.3}Methodology}{29}{subsection.6.3}
+\contentsline {subsubsection}{\numberline {6.3.1}Benchmark Setup}{30}{subsubsection.6.3.1}
+\contentsline {subsubsection}{\numberline {6.3.2}Metrics}{30}{subsubsection.6.3.2}
+\contentsline {subsection}{\numberline {6.4}Results}{31}{subsection.6.4}
+\contentsline {subsubsection}{\numberline {6.4.1}PrefLib1 dataset}{31}{subsubsection.6.4.1}
+\contentsline {subsubsection}{\numberline {6.4.2}PrefLib2 dataset}{32}{subsubsection.6.4.2}
+\contentsline {subsubsection}{\numberline {6.4.3}Small Zipfian datasets}{33}{subsubsection.6.4.3}
+\contentsline {subsubsection}{\numberline {6.4.4}Large Zipfian datasets}{34}{subsubsection.6.4.4}
+\contentsline {subsubsection}{\numberline {6.4.5}Large uniform dataset with incomplete preferences}{35}{subsubsection.6.4.5}
+\contentsline {subsubsection}{\numberline {6.4.6}Large uniform dataset with complete preferences}{36}{subsubsection.6.4.6}
+\contentsline {subsection}{\numberline {6.5}Conclusion}{36}{subsection.6.5}
+\contentsline {section}{\numberline {7}Extensions to the problem}{39}{section.7}
+\contentsline {subsection}{\numberline {7.1}Two-Sided preferences}{39}{subsection.7.1}
+\contentsline {subsubsection}{\numberline {7.1.1}Stable matchings}{39}{subsubsection.7.1.1}
+\contentsline {subsubsection}{\numberline {7.1.2}Algorithm}{39}{subsubsection.7.1.2}
+\contentsline {subsection}{\numberline {7.2}Many-to-Many matchings}{40}{subsection.7.2}
+\contentsline {subsubsection}{\numberline {7.2.1}One-sided preferences}{40}{subsubsection.7.2.1}
+\contentsline {subsubsection}{\numberline {7.2.2}Two-sided preferences}{40}{subsubsection.7.2.2}
+\contentsline {subsection}{\numberline {7.3}Online variant}{41}{subsection.7.3}
+\contentsline {subsubsection}{\numberline {7.3.1}Online max-cardinality matching}{41}{subsubsection.7.3.1}
+\contentsline {section}{\numberline {8}Discussion}{43}{section.8}
+\contentsline {section}{\numberline {9}Conclusion}{44}{section.9}
