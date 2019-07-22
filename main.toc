@@ -78,4 +78,7 @@
 \contentsline {subsection}{\numberline {7.3}Online variant}{41}{subsection.7.3}
 \contentsline {subsubsection}{\numberline {7.3.1}Online max-cardinality matching}{41}{subsubsection.7.3.1}
 \contentsline {section}{\numberline {8}Discussion}{43}{section.8}
-\contentsline {section}{\numberline {9}Conclusion}{44}{section.9}
+\contentsline {subsection}{\numberline {8.1}Discussion of theoretical and practical results}{43}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}Potential algorithmic improvements}{44}{subsection.8.2}
+\contentsline {subsection}{\numberline {8.3}System design recommendations}{44}{subsection.8.3}
+\contentsline {section}{\numberline {9}Conclusion}{46}{section.9}
