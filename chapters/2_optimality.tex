@@ -40,12 +40,9 @@ $r(M) = \max \{rank(s_i, t_j): (s_i, t_j)\in M\, s_i \in S, t_j \in T\}$, where 
 Using the defintion of a matching's profile, it is now possible to define a matching as rank-maximal as follows: A matching $M$ is rank-maximal, if its profile $p(M)$ is lexicographically maximal over all possible matchings in $\mathcal{M}$. That means that the number of students in $M$ who are matched to their first choice is maximal among all $M' \in \mathcal{M}$; taking that into consideration, the number of students who are matched to their 2nd choice is maximum among all matchings, and so on.
 
 \subsection{Strategy-Proofness}
-// TODO: move this to a different section and potentially rewrite as truthful
-\newline
-
+% TODO: move this to a different section and potentially rewrite as truthful
 The aforementioned criteria all primarily consider the structure of a matching to evaluate quality and not the properties of a matching mechanism, i.e. algorithm. An important question to consider, however, is if the agents can manipulate the outcome of an algorithm by not truthfully disclosing their preferences - indeed, in the setting of matching residents to hospitals in the US, a previously used algorithm allowed students to improve their outcome of the algorithm by not supplying their real preferences \cite{Gusfield}. In the literature, the term for a mechanism, wherein no agent can benefit from misrepresenting their preferences, is called strategy-proof \cite{Klaus}. Such mechanisms are of high interest for most matching problems, since preference-based optimality criteria, like the ones previously mentioned, would certainly lose some significance if the mechanism used to compute them is not strategy-proof.
 For instance, it has been shown \cite{ROTH1982127} that for the stable marriage problem with incomplete preferences, there exists no matching mechanism that both produces a popular matching and is strategy-proof.
-To formalize this, we will use a game-theory definition of strategy-proofness, which goes as follows: it is a weakly dominant strategy for each agent to report their true preference list \cite{Klaus}.
 
 \subsection{Application to student-seminar matching}\label{criteria-application}
 Given the problem description of student-seminar matching, it would be desirable to find a matching that has the following properties:
