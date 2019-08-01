@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.1)  22 JUL 2019 15:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.1)  1 AUG 2019 15:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -873,11 +873,8 @@ Package tocbasic Info: character protrusion at lot deactivated on input line 28.
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 8.
 \c@theorem=\count155
  [10] [11] [12] [13] [14] [15] [16]) [17] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/4_algorithm_comparison.tex [18] [19]) [20] [21] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/5_implementation.tex
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 19.
- [22] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/popular.in) (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/popular.out) [23] [24]
-Underfull \vbox (badness 5771) has occurred while \output is active []
-
- [25]) [26] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/6_evaluation.tex [27]
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 21.
+ [22] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/popular.in) (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/popular.out) [23] [24] [25]) [26] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/6_evaluation.tex [27]
 <assets/plots/prelib-distr.pdf, id=833, 602.25pt x 372.39125pt>
 File: assets/plots/prelib-distr.pdf Graphic file (type pdf)
 <use assets/plots/prelib-distr.pdf>
@@ -995,7 +992,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  66i,20n,90p,8912b,1934s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmro12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.pdf (59 pages, 529590 bytes).
+Output written on /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.pdf (59 pages, 529181 bytes).
 PDF statistics:
  1187 PDF objects out of 1200 (max. 8388607)
  1082 compressed objects within 11 object streams
