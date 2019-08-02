@@ -52,22 +52,32 @@
 \contentsline {subsection}{\numberline {5.4}Web-Interface Implementation}{26}{subsection.5.4}
 \contentsline {section}{\numberline {6}Experimental Evaluation}{27}{section.6}
 \contentsline {subsection}{\numberline {6.1}Research Questions}{27}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Sample Data}{27}{subsection.6.2}
-\contentsline {subsubsection}{\numberline {6.2.1}Using graph generators}{27}{subsubsection.6.2.1}
-\contentsline {subsubsection}{\numberline {6.2.2}Random Uniform Preference Lists}{28}{subsubsection.6.2.2}
-\contentsline {subsubsection}{\numberline {6.2.3}PrefLib Datasets}{28}{subsubsection.6.2.3}
-\contentsline {subsubsection}{\numberline {6.2.4}Random Zipf-Distributed Preference Lists}{29}{subsubsection.6.2.4}
-\contentsline {subsection}{\numberline {6.3}Methodology}{29}{subsection.6.3}
-\contentsline {subsubsection}{\numberline {6.3.1}Benchmark Setup}{30}{subsubsection.6.3.1}
-\contentsline {subsubsection}{\numberline {6.3.2}Metrics}{30}{subsubsection.6.3.2}
-\contentsline {subsection}{\numberline {6.4}Results}{31}{subsection.6.4}
-\contentsline {subsubsection}{\numberline {6.4.1}PrefLib1 dataset}{31}{subsubsection.6.4.1}
-\contentsline {subsubsection}{\numberline {6.4.2}PrefLib2 dataset}{32}{subsubsection.6.4.2}
-\contentsline {subsubsection}{\numberline {6.4.3}Small Zipfian datasets}{33}{subsubsection.6.4.3}
-\contentsline {subsubsection}{\numberline {6.4.4}Large Zipfian datasets}{34}{subsubsection.6.4.4}
-\contentsline {subsubsection}{\numberline {6.4.5}Large uniform dataset with incomplete preferences}{35}{subsubsection.6.4.5}
-\contentsline {subsubsection}{\numberline {6.4.6}Large uniform dataset with complete preferences}{36}{subsubsection.6.4.6}
-\contentsline {subsection}{\numberline {6.5}Conclusions of Experiments}{36}{subsection.6.5}
+\contentsline {subsection}{\numberline {6.2}Experimental Setup}{27}{subsection.6.2}
+\contentsline {subsubsection}{\numberline {6.2.1}Benchmark Setup}{28}{subsubsection.6.2.1}
+\contentsline {subsubsection}{\numberline {6.2.2}Sample Data}{28}{subsubsection.6.2.2}
+\contentsline {paragraph}{\nonumberline Using graph generators}{28}{section*.8}
+\contentsline {paragraph}{\nonumberline Random Uniform Preference Lists}{28}{section*.9}
+\contentsline {paragraph}{\nonumberline PrefLib Datasets}{28}{section*.10}
+\contentsline {paragraph}{\nonumberline Random Zipf-Distributed Preference Lists}{29}{section*.12}
+\contentsline {subsubsection}{\numberline {6.2.3}Metrics}{30}{subsubsection.6.2.3}
+\contentsline {subsection}{\numberline {6.3}Experimental Results}{31}{subsection.6.3}
+\contentsline {subsubsection}{\numberline {6.3.1}PrefLib Datasets}{31}{subsubsection.6.3.1}
+\contentsline {paragraph}{\nonumberline PrefLib1 dataset}{31}{section*.14}
+\contentsline {paragraph}{\nonumberline PrefLib2 dataset}{32}{table.caption.18}
+\contentsline {subsubsection}{\numberline {6.3.2}Zipfian datasets}{33}{subsubsection.6.3.2}
+\contentsline {paragraph}{\nonumberline Small Zipfian datasets}{33}{table.caption.21}
+\contentsline {paragraph}{\nonumberline Large Zipfian datasets}{34}{section*.22}
+\contentsline {subsubsection}{\numberline {6.3.3}Large uniform datasets}{35}{subsubsection.6.3.3}
+\contentsline {paragraph}{\nonumberline Datasets with incomplete preferences}{35}{section*.25}
+\contentsline {paragraph}{\nonumberline Datasets with complete preferences}{36}{section*.27}
+\contentsline {subsection}{\numberline {6.4}Conclusions of Experiments}{36}{subsection.6.4}
+\contentsline {paragraph}{\nonumberline Effect of different preference distributions:}{37}{section*.29}
+\contentsline {paragraph}{\nonumberline Failure rate of Popular-CHA:}{37}{section*.30}
+\contentsline {paragraph}{\nonumberline Performance of Mod-Popular-CHA:}{37}{section*.31}
+\contentsline {paragraph}{\nonumberline Cost of giving up on strategy-proofness:}{37}{section*.32}
+\contentsline {paragraph}{\nonumberline Popularity as a meaningful metric:}{37}{section*.33}
+\contentsline {paragraph}{\nonumberline The effect of short preference lists:}{38}{section*.34}
+\contentsline {subsubsection}{\numberline {6.4.1}Summary of results}{38}{subsubsection.6.4.1}
 \contentsline {section}{\numberline {7}Extensions to the problem}{39}{section.7}
 \contentsline {subsection}{\numberline {7.1}Two-Sided preferences}{39}{subsection.7.1}
 \contentsline {subsubsection}{\numberline {7.1.1}Stable matchings}{39}{subsubsection.7.1.1}
