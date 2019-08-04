@@ -14,7 +14,7 @@ Referring back to the list of desirable properties defined in Section \ref{crite
     Rank Maximal        & no     & no           & yes        & no                \\
     Always Exists       & yes    & yes          & yes        & no                \\
     Strategy Proof      & yes    & no           & no         & yes               \\ \hline
-    Time Complexity     & $\mathcal{O}(n)$   & $\mathcal{O}(\sqrt{n}m)$ & $\approx\mathcal{O}(n^3)$    & $\mathcal{O}(\sqrt{C}n_1 + m)$ \\ \hline
+    Time Complexity     & $\mathcal{O}(n)$   & $\mathcal{O}(\sqrt{n} * m)$ & $\approx\mathcal{O}(n^3)$    & $\mathcal{O}(\sqrt{C} * n_1 + m)$ \\ \hline
     \end{tabular}
     \caption{Comparison of different algorithmic approaches}
     \label{tab:algorithm-comparison}
@@ -35,7 +35,7 @@ Diebold et al. have published results for an extensive experiment on matching me
 The data with one-sided preferences is comprised of 9 datasets from the official tutorial registration at TUM in the period between October 2012 and October 2015. All of those datasets contain incomplete preference lists and all but two of them contain ties. Each dataset contains between 136 and 1035 students and between 5 and 51 courses with total capacities ranging from 130 to 1282. For the dataset with 51 courses, the authors provide a histogram of the length of the student's preference lists, showing that a majority of students gave preferences for between 10 and 15 tutorials \cite{DieboldBenchmark}. Unfortunately, the rest of the data is kept private and therefore it is not possible to get information on the distribution of the individual preferences lists, or in other words, the popularity of each seminar from the students' perspective.
 
 \subsubsection{Methodology}
-Diebold et al. used most of the mechanism described in Section \ref{chapter:algorithms}, with some small differences. Particularly, instead of solving the assignment problem they used the ProB CHAT algorithm that produces the same matchings. They implemented all matching mechanisms in Python 3.4.2 and used randomization to break ties. Additionally, every algorithm was run 100 times and the average of the metrics were obtained for each mechanism. 
+Diebold et al. used most of the mechanism described in Section \ref{chapter:algorithms}, with some small differences. Particularly, instead of solving the assignment problem they used the ProB CHAT (CHA with ties) algorithm that produces the same matchings. They implemented all matching mechanisms in Python 3.4.2 and used randomization to break ties. Additionally, every algorithm was run 100 times and the average of the metrics were obtained for each mechanism. 
 Besides size, average rank and popularity, the authors also used the \emph{area under the profile curve ration (AUPCR)} to compare the rank of the produced matchings. They define it as follows: "The AUPCR up to a specific rank describes the probability that a matching mechanism will rank a randomly chosen student higher than his n-th preference."\cite{DieboldBenchmark}
 
 \subsubsection{Results}

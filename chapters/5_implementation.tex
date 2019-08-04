@@ -6,7 +6,7 @@ As part of this thesis, we implement the algorithms from Section \ref{chapter:al
 To allow for further experimentation with our findings, we will describe a prototype for an interactive web-system, built for computing student-seminar matchings. The system consists of a website, which communicates with a server that manages the underlying data and computes the matchings. The requirements can be listed as follows:
 \begin{enumerate}
     \item Allow for adding, editing and deleting student and seminar data.
-    \item Allow for computing a match using the previously entered data.
+    \item Allow for computing a matching using the previously entered data.
     \item Output the matching and its properties.
 \end{enumerate}
 This system produces matchings by using efficient implementations of the algorithms mentioned in Section \ref{chapter:algorithms}. While the web server itself is build in the Kotlin programming language and therefore runs on the JVM, the algorithms are implemented in C++ for performance reasons. However, the Kotlin server is still used for generating mock testing data, gathering statistics about the results, as well as communicating with the front-end of the system.

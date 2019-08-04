@@ -39,6 +39,7 @@ We can also easily see that the algorithm is strategy-proof, because every appli
 
 \subsubsection{Drawbacks}
 When looking at the algorithm, it is clear that it has a strict preference order over students, specified by the order in which students are matched in the for-loop. Additionally, the algorithm makes no effort to match all students: if it is a student's turn to pick his match, and none of the seminars on his preference lists are free, that student will not be matched at all. This problem gets worse when we consider that our problem statement allows for incomplete preference lists, which increases the chances of having a high number of unmatched students. To illustrate this let us consider the following example in Table \ref{table:1}:
+
 \begin{table}[h!]
     \centering 
     \begin{tabular}{llll}
@@ -49,7 +50,8 @@ When looking at the algorithm, it is clear that it has a strict preference order
     \caption{Instance where Serial Dictatorship admits no max cardinality matching}
     \label{table:1}
 \end{table} 
-In this example, each seminar only has a capacity of 1 and both students have seminar $t_1$ as their first preference. If the algorithm first gives $s_1$ a chance to pick, and then $s_2$, $s_1$ will be matched to $t_1$, making $t_1$ full and not allowing $s_2$ to be matched. On the other hand, matching $s_2$ to $t_1$ first and then matching $s_1$ to $t_1$ also yields a pareto optimal matching, however, in this case, all the students are matched.
+
+In this example, each seminar only has a capacity of 1 and both students have seminar $t_1$ as their first preference. If the algorithm first gives $s_1$ a chance to pick, and then $s_2$, $s_1$ will be matched to $t_1$, making $t_1$ full and not allowing $s_2$ to be matched. On the other hand, matching $s_2$ to $t_1$ first and then matching $s_1$ to $t_2$ also yields a pareto optimal matching, however, in this case, all the students are matched.
 
 To address the other problem of preference over students, a simple approach is using the random serial dictatorship mechanism, which instead creates a random order of students as the pick order.
 
