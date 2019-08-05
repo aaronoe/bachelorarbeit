@@ -343,8 +343,8 @@ OUTPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.lot
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/1_introduction.tex
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/1_introduction.tex
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmssbx10.tfm
-INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx12.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmri12.tfm
+INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx12.tfm
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/2_optimality.tex
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/2_optimality.tex
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/3_algorithms.tex
@@ -393,8 +393,8 @@ INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.aux
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.out
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.out
 INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc
-INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc
 INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc
+INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc
 INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc
 INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb
@@ -410,6 +410,7 @@ INPUT /usr/share/texmf/fonts/type1/public/lm/lmss12.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmss17.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb
+INPUT /usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb
