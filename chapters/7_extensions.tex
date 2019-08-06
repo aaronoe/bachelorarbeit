@@ -48,7 +48,13 @@ An advantage of using this algorithm for matching students to seminars is that t
 A natural extension of the many-to-one matching setting is the many-to-many matching problem. It could very well be a requirement that students need to be matched to more than one seminar. We assume that students now also provide a capacity, i.e. the number of courses they want to be matched to. In that case, we need to differentiate between one- and two-sided preferences again:
 
 \subsubsection{One-sided preferences}
-WIP
+Many-to-many matching scenarios with one-sided preferences are also commonly referred to as the \emph{Course allocation} problem, which is a combinatorial assignment problem with the goal of assigning students to courses, based on the students' preferences \cite{CourseAllocation}. Compared to the student and seminar scenario we now allow students to get matched to more than one course. 
+
+A common mechanism for solving course allocation problems is using an \emph{Auction model} or \emph{Bidding points mechanism} in which students are given a set amount of artificial currency, which they then use to bid on seats in classes. After all bids are submitted, the system assigns the seats to the highest bidders. The bids can be used to infer students' preferences; however, the true preferences may differ significantly, which in turn could cause conflicts \cite{Bidding}.
+
+Another commonly used mechanism is the \emph{Draft}, in which students are asked to pick a course with remaining seats based on a draft order. Intuitively, this mechanism is an extension of RSD (Section \ref{algo-rsd}), where the whole process is repeated until no student makes a pick anymore. Such draft mechanisms are commonly used in course allocation settings; one example being Harvard Business School \cite{CourseAllocation}. However, it has been shown that students have successfully manipulated the draft due to the fact that this mechanism is not strategy-proof.
+
+A mechanism that is more robust towards strategic manipulation is a \emph{proxy bidding mechanism} presented by Kominers et al. \cite{CourseAllocation}. The mechanism uses proxies that act on behalf of the students by using their true preferences in the draft.
 
 \subsubsection{Two-sided preferences}
 For the case of two-sided preferences, we have to slightly modify the definition of Stability again to accomodate for the fact that each entity can be assigned more than once: Given the set of hospitals $H$ and residents $R$, let $h \in H$ and $r \in R$, so that $h$ and $r$ are acceptable to each other, unmatched and the following holds true: 

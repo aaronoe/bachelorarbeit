@@ -84,9 +84,9 @@
 \contentsline {subsubsection}{\numberline {7.1.2}Algorithm}{39}{subsubsection.7.1.2}
 \contentsline {subsection}{\numberline {7.2}Many-to-Many matchings}{40}{subsection.7.2}
 \contentsline {subsubsection}{\numberline {7.2.1}One-sided preferences}{40}{subsubsection.7.2.1}
-\contentsline {subsubsection}{\numberline {7.2.2}Two-sided preferences}{40}{subsubsection.7.2.2}
+\contentsline {subsubsection}{\numberline {7.2.2}Two-sided preferences}{41}{subsubsection.7.2.2}
 \contentsline {subsection}{\numberline {7.3}Online variant}{41}{subsection.7.3}
-\contentsline {subsubsection}{\numberline {7.3.1}Online max-cardinality matching}{41}{subsubsection.7.3.1}
+\contentsline {subsubsection}{\numberline {7.3.1}Online max-cardinality matching}{42}{subsubsection.7.3.1}
 \contentsline {section}{\numberline {8}Discussion}{43}{section.8}
 \contentsline {subsection}{\numberline {8.1}Discussion of theoretical and practical results}{43}{subsection.8.1}
 \contentsline {subsection}{\numberline {8.2}Potential algorithmic improvements}{44}{subsection.8.2}
