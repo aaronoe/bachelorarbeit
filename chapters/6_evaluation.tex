@@ -38,10 +38,17 @@ Probably the simplest way to synthetically generate data is picking a size for t
 Preflib.org is an open collection of more than 3000 community-contributed datasets of preference data for different domains \cite{PrefLib}. Fortunately, there exist two datasets of students' course preferences at the Polish AGU University \cite{preflib-dataset}. The two datasets contain strict and complete preference orders for each dataset with 9 courses and 146 students, or 7 courses and 153 students respectively. Unfortunately, there are no capacities given; however, those can easily be computed synthetically. An interesting characteristic of those datasets is that in each dataset, all students rank the same seminar with their first preference. We remove these seminars from the dataset, as to not assume such a preference distribution in the real world.
 
 \begin{figure}[h!]
-    \centering
-    \includegraphics[width=0.8\linewidth]{assets/plots/prelib-distr.pdf}
-    \caption{Preference distributions for first-ranked seminars for both PrefLib datasets}
-    \label{fig:preflib-distribution}
+  \centering
+  \begin{subfigure}[b]{0.49\linewidth}
+    \includegraphics[width=\linewidth]{assets/plots/preflib1-distr.pdf}
+    \caption{PrefLib1 Dataset}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.49\linewidth}
+    \includegraphics[width=\linewidth]{assets/plots/preflib2-distr.pdf}
+    \caption{PrefLib2 Dataset}
+  \end{subfigure}
+  \caption{Preference distributions for first-ranked seminars for both PrefLib datasets}
+  \label{fig:preflib-distribution}
 \end{figure}
 
 Figure \ref{fig:preflib-distribution} shows the preference distribution for the student's first choice seminars in both datasets after removing the always first-ranked seminar. We can see that in both datasets, students clearly strongly prefer two seminars. In the first dataset, however, there are 3 more seminars that are also decently popular, while in the second dataset the majority of students really prefers the two dominant seminars. Generally, those datasets indicate that the preference structure of real-world datasets is not likely to be uniformly distributed.
@@ -70,7 +77,7 @@ In addition to comparing Popularity, the following other metrics will be used:
   \item \textbf{Existence}: This metric is only interesting for the Popular-CHA algorithm and will indicate if the algorithm was able to compute a matching for a given instance.
 \end{itemize}
 
-These metrics should be a sufficient selection to quantify a matching's optimality and therefore should make it possible to answer the research questions from Section \ref{sec:research-q}.
+These metrics should be a sufficient selection to quantify a matching's optimality and therefore should make it possible to answer the research questions from \mbox{Section \ref{sec:research-q}.}
 
 \subsection{Experimental Results}
 The following subsections provide a detailed summary of the results, grouped by the type of dataset being used. Afterwards, the research questions from Section \ref{sec:research-q} are answered and a summary of results is drawn.
@@ -104,7 +111,7 @@ When not taking the unassigned students into account, the Mod-Popular CHA algori
 
 \begin{figure}[h!]
   \centering
-    \includegraphics[width=0.9\linewidth]{assets/plots/preflib1-ranks.pdf}    
+    \includegraphics[width=0.9\linewidth]{assets/plots/preflib1-cropped.png}
     \caption{Rank distribution for PrefLib1 Dataset. Note: Popular CHA failed.}
     \label{fig:preflib1-rank-distribution}
 \end{figure}

@@ -59,7 +59,7 @@
 \contentsline {paragraph}{\nonumberline Random Uniform Preference Lists}{28}{section*.9}
 \contentsline {paragraph}{\nonumberline PrefLib Datasets}{28}{section*.10}
 \contentsline {paragraph}{\nonumberline Random Zipf-Distributed Preference Lists}{29}{section*.12}
-\contentsline {subsubsection}{\numberline {6.2.3}Metrics}{30}{subsubsection.6.2.3}
+\contentsline {subsubsection}{\numberline {6.2.3}Metrics}{29}{subsubsection.6.2.3}
 \contentsline {subsection}{\numberline {6.3}Experimental Results}{31}{subsection.6.3}
 \contentsline {subsubsection}{\numberline {6.3.1}PrefLib Datasets}{31}{subsubsection.6.3.1}
 \contentsline {paragraph}{\nonumberline PrefLib1 dataset}{31}{section*.14}
