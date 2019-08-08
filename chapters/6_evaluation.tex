@@ -177,6 +177,15 @@ Since the Zipfian datasets have a somewhat similar preference distribution as th
 
 We begin by looking at a similarly sized dataset as the Preflib datasets, and then begin deviating the student \& seminar count. Table \ref{tab:results-zipfian-small} shows the average results for 50 test runs using the Zipfian Dataset with 10 seminars and about 200 students. Out of the 50 instances, the Popular-CHA algorithm only finds a matching for four instances. When it finds a matching, it did so quite fast and the matching was, on average, better rank-wise than all matchings produced by the other algorithms, except for the ones produced by the Hungarian algorithm. In terms of popularity, the Mod-Popular-CHA algorithm actually outperforms all algorithms (equal to Popular-CHA if the matching exists) for most instances, even though rank-wise it does not perform as well as the Hungarian algorithm. However, the Hungarian algorithm produces more popular matchings than most other algorithms, and, for some instances, even more popular ones than the Mod-Popular-CHA algorithm.
 
+\begin{figure}[h!]
+  \centering
+    \includegraphics[width=0.9\linewidth]{assets/plots/small-zipfian-cropped.png}
+    \caption{Rank distribution for small Zipfian dataset.}
+    \label{fig:zipfian-small-distribution}
+\end{figure}
+
+Figure \ref{fig:zipfian-small-distribution} shows the average ranks for all algorithms, but Popular-CHA. We can clearly see that the Hungarian algorithm performs best in terms of worst-rank and profile in general. 
+
 \paragraph{Large Zipfian datasets}
 Using a large dataset with a Zipfian distribution yields similar results. Table \ref{tab:results-zipfian-medium} summarizes the average results for 10 test runs with datasets that contain about 2500 students and 35 seminars.
 
@@ -272,3 +281,12 @@ The experiments reveal some interesting insights that should help answering the 
 
 \subsubsection{Summary of results}
 In summary, the matchings produced by the Hungarian algorithm usually perform best in all of the metrics, except for runtime, where it performs the worst by far. However, for the student seminar use case, that should not be a problem, because most instances will be smaller than what we have tested with. In fact, when using the real world datasets (see Table \ref{tab:results-preflib1} and \ref{tab:results-preflib2}), the runtime differences for the different mechanisms are insignificant. For large instances, the modified Popular-CHA algorithm performs well and it could still be optimized even further for matching more students. The algorithm as it was in described in Section \ref{impl:mod-max-pop}, does not try to assign students that were left unmatched by the Hopcroft-Karp algorithm, which could easily be done by either using a simple mechanism like RSD or even using the Hungarian algorithm on the set of unassigned students. Neither modification guarantees that the final matching would be popular or of maximum cardinality, but it could improve the result. Therefore it would make the Mod-Popular-CHA algorithm a fast heuristic that should, according to the experiments, perform better than RSD and Max-PaCHA for most instances, while still keeping the runtime low.
+
+\begin{figure}[h!]
+  \centering
+    \includegraphics[width=0.99\linewidth]{assets/plots/average_ranks_all.pdf}
+    \caption{Average Rank comparison between algorithms and datasets.}
+    \label{fig:average_ranks}
+\end{figure}
+
+In terms of average rank, Figure \ref{fig:average_ranks} summarizes the average ranks for each dataset and algorithm, except for Popular-CHA. We can see that for some instances the differences in rank are not very significant, but for other instances there is a bigger difference. Generally, the Hungarian algorithm unsurprisngly performs the best; however, for two types of datasets Mod-Popular-CHA beats the Hungarian algorithm in the average rank metric at the cost of leaving students unassigned. At the same time, the Hungarian algorithm also produces matchings with the lowest rank standard deviation, i.e. lowest fluctuation of rank, which makes this mechanism fair towards all students.

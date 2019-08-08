@@ -3,4 +3,6 @@
 \contentsline {figure}{\numberline {2}{\ignorespaces Two sample Zipfian preference distribution for first-ranked seminars\relax }}{30}{figure.caption.13}
 \contentsline {figure}{\numberline {3}{\ignorespaces Rank distribution for PrefLib1 Dataset. Note: Popular-CHA failed.\relax }}{32}{figure.caption.16}
 \contentsline {figure}{\numberline {4}{\ignorespaces Rank distribution for PrefLib2 Dataset.\relax }}{33}{figure.caption.19}
-\contentsline {figure}{\numberline {5}{\ignorespaces Rank distribution for large Zipfian dataset.\relax }}{35}{figure.caption.24}
+\contentsline {figure}{\numberline {5}{\ignorespaces Rank distribution for small Zipfian dataset.\relax }}{34}{figure.caption.22}
+\contentsline {figure}{\numberline {6}{\ignorespaces Rank distribution for large Zipfian dataset.\relax }}{35}{figure.caption.25}
+\contentsline {figure}{\numberline {7}{\ignorespaces Average Rank comparison between algorithms and datasets.\relax }}{39}{figure.caption.36}
