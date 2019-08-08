@@ -78,17 +78,18 @@
 \contentsline {paragraph}{\nonumberline Popularity as a meaningful metric:}{37}{section*.33}
 \contentsline {paragraph}{\nonumberline The effect of short preference lists:}{37}{section*.34}
 \contentsline {subsubsection}{\numberline {6.4.1}Summary of results}{38}{subsubsection.6.4.1}
-\contentsline {section}{\numberline {7}Extensions to the problem}{39}{section.7}
-\contentsline {subsection}{\numberline {7.1}Two-Sided preferences}{39}{subsection.7.1}
-\contentsline {subsubsection}{\numberline {7.1.1}Stable matchings}{39}{subsubsection.7.1.1}
-\contentsline {subsubsection}{\numberline {7.1.2}Algorithm}{39}{subsubsection.7.1.2}
-\contentsline {subsection}{\numberline {7.2}Many-to-Many matchings}{40}{subsection.7.2}
-\contentsline {subsubsection}{\numberline {7.2.1}One-sided preferences}{40}{subsubsection.7.2.1}
-\contentsline {subsubsection}{\numberline {7.2.2}Two-sided preferences}{41}{subsubsection.7.2.2}
-\contentsline {subsection}{\numberline {7.3}Online variant}{41}{subsection.7.3}
-\contentsline {subsubsection}{\numberline {7.3.1}Online max-cardinality matching}{42}{subsubsection.7.3.1}
-\contentsline {section}{\numberline {8}Discussion}{43}{section.8}
-\contentsline {subsection}{\numberline {8.1}Discussion of theoretical and practical results}{43}{subsection.8.1}
-\contentsline {subsection}{\numberline {8.2}Potential algorithmic improvements}{44}{subsection.8.2}
-\contentsline {subsection}{\numberline {8.3}System design recommendations}{44}{subsection.8.3}
-\contentsline {section}{\numberline {9}Conclusion}{46}{section.9}
+\contentsline {section}{\numberline {7}Discussion}{39}{section.7}
+\contentsline {subsection}{\numberline {7.1}Discussion of theoretical and practical results}{39}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Potential algorithmic improvements}{40}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}System design recommendations}{40}{subsection.7.3}
+\contentsline {section}{\numberline {8}Conclusion}{42}{section.8}
+\contentsline {section}{Appendices}{43}{section*.35}
+\contentsline {section}{\numberline {A}Extensions to the problem}{43}{Appendix.1.A}
+\contentsline {subsection}{\numberline {A.1}Two-Sided preferences}{43}{subsection.1.A.1}
+\contentsline {subsubsection}{\numberline {A.1.1}Stable matchings}{43}{subsubsection.1.A.1.1}
+\contentsline {subsubsection}{\numberline {A.1.2}Algorithm}{44}{subsubsection.1.A.1.2}
+\contentsline {subsection}{\numberline {A.2}Many-to-Many matchings}{44}{subsection.1.A.2}
+\contentsline {subsubsection}{\numberline {A.2.1}One-sided preferences}{45}{subsubsection.1.A.2.1}
+\contentsline {subsubsection}{\numberline {A.2.2}Two-sided preferences}{45}{subsubsection.1.A.2.2}
+\contentsline {subsection}{\numberline {A.3}Online variant}{45}{subsection.1.A.3}
+\contentsline {subsubsection}{\numberline {A.3.1}Online max-cardinality matching}{46}{subsubsection.1.A.3.1}

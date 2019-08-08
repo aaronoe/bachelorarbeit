@@ -231,6 +231,8 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlayer-scrpage.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlayer-scrpage.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlayer.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlayer.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/appendix/appendix.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/appendix/appendix.sty
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.aux
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.aux
 OUTPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.aux
@@ -382,12 +384,14 @@ INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/plots/prefli
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/plots/zipfian-medium.pdf
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/plots/zipfian-medium.pdf
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/plots/zipfian-medium.pdf
-INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/7_extensions.tex
-INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/7_extensions.tex
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/8_discussion.tex
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/8_discussion.tex
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/9_conclusion.tex
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/9_conclusion.tex
+INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmr17.tfm
+INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx12.tfm
+INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/7_extensions.tex
+INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/7_extensions.tex
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.bbl
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.bbl
 INPUT /usr/share/texmf/tex/latex/lm/t1lmtt.fd
