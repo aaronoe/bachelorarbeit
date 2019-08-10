@@ -29,67 +29,63 @@
 \contentsline {subsubsection}{\numberline {3.4.1}An alternative characterization of popular matchings}{15}{subsubsection.3.4.1}
 \contentsline {subsubsection}{\numberline {3.4.2}Algorithm}{16}{subsubsection.3.4.2}
 \contentsline {subsubsection}{\numberline {3.4.3}Properties}{17}{subsubsection.3.4.3}
-\contentsline {section}{\numberline {4}Comparison of mechanisms}{18}{section.4}
-\contentsline {subsection}{\numberline {4.1}Theoretical results}{18}{subsection.4.1}
-\contentsline {subsubsection}{\numberline {4.1.1}Strategy-proofness and maximum cardinality}{19}{subsubsection.4.1.1}
-\contentsline {subsubsection}{\numberline {4.1.2}Max-PaCHA and the assignment problem}{19}{subsubsection.4.1.2}
-\contentsline {subsection}{\numberline {4.2}Practical results in the literature}{19}{subsection.4.2}
-\contentsline {subsubsection}{\numberline {4.2.1}Dataset}{19}{subsubsection.4.2.1}
-\contentsline {subsubsection}{\numberline {4.2.2}Methodology}{20}{subsubsection.4.2.2}
-\contentsline {subsubsection}{\numberline {4.2.3}Results}{20}{subsubsection.4.2.3}
-\contentsline {subsubsection}{\numberline {4.2.4}Learnings}{20}{subsubsection.4.2.4}
-\contentsline {section}{\numberline {5}Implementation}{22}{section.5}
-\contentsline {subsection}{\numberline {5.1}Overview}{22}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Algorithm Implementation}{22}{subsection.5.2}
-\contentsline {subsubsection}{\numberline {5.2.1}Input and Execution}{22}{subsubsection.5.2.1}
-\contentsline {subsubsection}{\numberline {5.2.2}RSD Implementation}{23}{subsubsection.5.2.2}
-\contentsline {subsubsection}{\numberline {5.2.3}Max-Pareto Implementation}{24}{subsubsection.5.2.3}
-\contentsline {subsubsection}{\numberline {5.2.4}Assignment Problem Implementation}{24}{subsubsection.5.2.4}
-\contentsline {subsubsection}{\numberline {5.2.5}Max-Popular-CHA Implementation}{24}{subsubsection.5.2.5}
-\contentsline {subsubsection}{\numberline {5.2.6}Modified Max-Popular-CHA Implementation}{25}{subsubsection.5.2.6}
-\contentsline {subsection}{\numberline {5.3}Web Server Implementation}{25}{subsection.5.3}
-\contentsline {subsubsection}{\numberline {5.3.1}Benchmark Tools}{25}{subsubsection.5.3.1}
-\contentsline {subsection}{\numberline {5.4}Web-Interface Implementation}{26}{subsection.5.4}
-\contentsline {section}{\numberline {6}Experimental Evaluation}{27}{section.6}
-\contentsline {subsection}{\numberline {6.1}Research Questions}{27}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Experimental Setup}{27}{subsection.6.2}
-\contentsline {subsubsection}{\numberline {6.2.1}Benchmark Setup}{28}{subsubsection.6.2.1}
-\contentsline {subsubsection}{\numberline {6.2.2}Sample Data}{28}{subsubsection.6.2.2}
-\contentsline {paragraph}{\nonumberline Using graph generators}{28}{section*.8}
-\contentsline {paragraph}{\nonumberline Random Uniform Preference Lists}{28}{section*.9}
-\contentsline {paragraph}{\nonumberline PrefLib Datasets}{28}{section*.10}
-\contentsline {paragraph}{\nonumberline Random Zipf-Distributed Preference Lists}{29}{section*.12}
-\contentsline {subsubsection}{\numberline {6.2.3}Metrics}{29}{subsubsection.6.2.3}
-\contentsline {subsection}{\numberline {6.3}Experimental Results}{31}{subsection.6.3}
-\contentsline {subsubsection}{\numberline {6.3.1}PrefLib Datasets}{31}{subsubsection.6.3.1}
-\contentsline {paragraph}{\nonumberline PrefLib1 dataset}{31}{section*.14}
-\contentsline {paragraph}{\nonumberline PrefLib2 dataset}{32}{table.caption.18}
-\contentsline {subsubsection}{\numberline {6.3.2}Zipfian datasets}{33}{subsubsection.6.3.2}
-\contentsline {paragraph}{\nonumberline Small Zipfian datasets}{33}{table.caption.21}
-\contentsline {paragraph}{\nonumberline Large Zipfian datasets}{35}{section*.23}
-\contentsline {subsubsection}{\numberline {6.3.3}Large uniform datasets}{36}{subsubsection.6.3.3}
-\contentsline {paragraph}{\nonumberline Datasets with incomplete preferences}{36}{section*.26}
-\contentsline {paragraph}{\nonumberline Datasets with complete preferences}{36}{section*.28}
-\contentsline {subsection}{\numberline {6.4}Conclusions of Experiments}{37}{subsection.6.4}
-\contentsline {subsubsection}{\numberline {6.4.1}Answers to the research questions}{38}{subsubsection.6.4.1}
-\contentsline {paragraph}{\nonumberline Effect of different preference distributions:}{38}{section*.31}
-\contentsline {paragraph}{\nonumberline Failure rate of Popular-CHA:}{38}{section*.32}
-\contentsline {paragraph}{\nonumberline Performance of Mod-Popular-CHA:}{39}{section*.33}
-\contentsline {paragraph}{\nonumberline Cost of giving up on strategy-proofness:}{39}{section*.34}
-\contentsline {paragraph}{\nonumberline Popularity as a meaningful metric:}{39}{section*.35}
-\contentsline {paragraph}{\nonumberline The effect of short preference lists:}{39}{section*.36}
-\contentsline {section}{\numberline {7}Discussion}{40}{section.7}
-\contentsline {subsection}{\numberline {7.1}Discussion of theoretical and practical results}{40}{subsection.7.1}
-\contentsline {subsection}{\numberline {7.2}Potential algorithmic improvements}{41}{subsection.7.2}
-\contentsline {subsection}{\numberline {7.3}System design recommendations}{41}{subsection.7.3}
-\contentsline {section}{\numberline {8}Conclusion}{43}{section.8}
-\contentsline {section}{Appendices}{44}{section*.37}
-\contentsline {section}{\numberline {A}Extensions to the problem}{44}{Appendix.1.A}
-\contentsline {subsection}{\numberline {A.1}Two-Sided preferences}{44}{subsection.1.A.1}
-\contentsline {subsubsection}{\numberline {A.1.1}Stable matchings}{44}{subsubsection.1.A.1.1}
-\contentsline {subsubsection}{\numberline {A.1.2}Algorithm}{45}{subsubsection.1.A.1.2}
-\contentsline {subsection}{\numberline {A.2}Many-to-Many matchings}{45}{subsection.1.A.2}
-\contentsline {subsubsection}{\numberline {A.2.1}One-sided preferences}{46}{subsubsection.1.A.2.1}
-\contentsline {subsubsection}{\numberline {A.2.2}Two-sided preferences}{46}{subsubsection.1.A.2.2}
-\contentsline {subsection}{\numberline {A.3}Online variant}{46}{subsection.1.A.3}
-\contentsline {subsubsection}{\numberline {A.3.1}Online max-cardinality matching}{47}{subsubsection.1.A.3.1}
+\contentsline {subsection}{\numberline {3.5}Comparison of mechanisms}{18}{subsection.3.5}
+\contentsline {subsubsection}{\numberline {3.5.1}Theoretical results}{18}{subsubsection.3.5.1}
+\contentsline {paragraph}{\nonumberline Strategy-proofness and maximum cardinality:}{18}{section*.7}
+\contentsline {paragraph}{\nonumberline Max-PaCHA and the assignment problem:}{19}{section*.8}
+\contentsline {subsubsection}{\numberline {3.5.2}Practical results in the literature}{19}{subsubsection.3.5.2}
+\contentsline {section}{\numberline {4}Implementation}{20}{section.4}
+\contentsline {subsection}{\numberline {4.1}Overview}{20}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Algorithm Implementation}{20}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}Input and Execution}{20}{subsubsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2}RSD Implementation}{21}{subsubsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.3}Max-Pareto Implementation}{22}{subsubsection.4.2.3}
+\contentsline {subsubsection}{\numberline {4.2.4}Assignment Problem Implementation}{22}{subsubsection.4.2.4}
+\contentsline {subsubsection}{\numberline {4.2.5}Max-Popular-CHA Implementation}{22}{subsubsection.4.2.5}
+\contentsline {subsubsection}{\numberline {4.2.6}Modified Max-Popular-CHA Implementation}{23}{subsubsection.4.2.6}
+\contentsline {subsection}{\numberline {4.3}Web Server Implementation}{23}{subsection.4.3}
+\contentsline {subsubsection}{\numberline {4.3.1}Benchmark Tools}{23}{subsubsection.4.3.1}
+\contentsline {subsection}{\numberline {4.4}Web-Interface Implementation}{24}{subsection.4.4}
+\contentsline {section}{\numberline {5}Experimental Evaluation}{25}{section.5}
+\contentsline {subsection}{\numberline {5.1}Research Questions}{25}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Experimental Setup}{25}{subsection.5.2}
+\contentsline {subsubsection}{\numberline {5.2.1}Benchmark Setup}{26}{subsubsection.5.2.1}
+\contentsline {subsubsection}{\numberline {5.2.2}Sample Data}{26}{subsubsection.5.2.2}
+\contentsline {paragraph}{\nonumberline Using graph generators}{26}{section*.9}
+\contentsline {paragraph}{\nonumberline Random Uniform Preference Lists}{26}{section*.10}
+\contentsline {paragraph}{\nonumberline PrefLib Datasets}{26}{section*.11}
+\contentsline {paragraph}{\nonumberline Random Zipf-Distributed Preference Lists}{27}{section*.13}
+\contentsline {subsubsection}{\numberline {5.2.3}Metrics}{27}{subsubsection.5.2.3}
+\contentsline {subsection}{\numberline {5.3}Experimental Results}{29}{subsection.5.3}
+\contentsline {subsubsection}{\numberline {5.3.1}PrefLib Datasets}{29}{subsubsection.5.3.1}
+\contentsline {paragraph}{\nonumberline PrefLib1 dataset}{29}{section*.15}
+\contentsline {paragraph}{\nonumberline PrefLib2 dataset}{30}{table.caption.19}
+\contentsline {subsubsection}{\numberline {5.3.2}Zipfian datasets}{31}{subsubsection.5.3.2}
+\contentsline {paragraph}{\nonumberline Small Zipfian datasets}{31}{table.caption.22}
+\contentsline {paragraph}{\nonumberline Large Zipfian datasets}{33}{section*.24}
+\contentsline {subsubsection}{\numberline {5.3.3}Large uniform datasets}{34}{subsubsection.5.3.3}
+\contentsline {paragraph}{\nonumberline Datasets with incomplete preferences}{34}{section*.27}
+\contentsline {paragraph}{\nonumberline Datasets with complete preferences}{34}{section*.29}
+\contentsline {subsection}{\numberline {5.4}Conclusions of Experiments}{35}{subsection.5.4}
+\contentsline {subsubsection}{\numberline {5.4.1}Answers to the research questions}{36}{subsubsection.5.4.1}
+\contentsline {paragraph}{\nonumberline Effect of different preference distributions:}{36}{section*.32}
+\contentsline {paragraph}{\nonumberline Failure rate of Popular-CHA:}{36}{section*.33}
+\contentsline {paragraph}{\nonumberline Performance of Mod-Popular-CHA:}{37}{section*.34}
+\contentsline {paragraph}{\nonumberline Cost of giving up on strategy-proofness:}{37}{section*.35}
+\contentsline {paragraph}{\nonumberline Popularity as a meaningful metric:}{37}{section*.36}
+\contentsline {paragraph}{\nonumberline The effect of short preference lists:}{37}{section*.37}
+\contentsline {section}{\numberline {6}Discussion}{38}{section.6}
+\contentsline {subsection}{\numberline {6.1}Discussion of theoretical and practical results}{38}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Potential algorithmic improvements}{39}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}System design recommendations}{39}{subsection.6.3}
+\contentsline {section}{\numberline {7}Conclusion}{41}{section.7}
+\contentsline {section}{Appendices}{42}{section*.38}
+\contentsline {section}{\numberline {A}Extensions to the problem}{42}{Appendix.1.A}
+\contentsline {subsection}{\numberline {A.1}Two-Sided preferences}{42}{subsection.1.A.1}
+\contentsline {subsubsection}{\numberline {A.1.1}Stable matchings}{42}{subsubsection.1.A.1.1}
+\contentsline {subsubsection}{\numberline {A.1.2}Algorithm}{43}{subsubsection.1.A.1.2}
+\contentsline {subsection}{\numberline {A.2}Many-to-Many matchings}{43}{subsection.1.A.2}
+\contentsline {subsubsection}{\numberline {A.2.1}One-sided preferences}{44}{subsubsection.1.A.2.1}
+\contentsline {subsubsection}{\numberline {A.2.2}Two-sided preferences}{44}{subsubsection.1.A.2.2}
+\contentsline {subsection}{\numberline {A.3}Online variant}{44}{subsection.1.A.3}
+\contentsline {subsubsection}{\numberline {A.3.1}Online max-cardinality matching}{45}{subsubsection.1.A.3.1}

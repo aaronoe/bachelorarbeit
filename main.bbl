@@ -1,10 +1,5 @@
 \begin{thebibliography}{10}
 
-\bibitem{DieboldBenchmark}
-F.~Diebold and M.~Bichler, ``Matching with indifferences: A comparison of
-  algorithms in the context of course allocation,'' {\em European Journal of
-  Operational Research}, vol.~260, no.~1, pp.~268 -- 282, 2017.
-
 \bibitem{Roth-NRMP}
 A.~E. Roth, ``The evolution of the labor market for medical interns and
   residents: A case study in game theory,'' {\em Journal of Political Economy},
@@ -127,6 +122,11 @@ H.~N. Gabow, ``An efficient reduction technique for degree-constrained subgraph
 J.~E. {Hopcroft} and R.~M. {Karp}, ``A n5/2 algorithm for maximum matchings in
   bipartite graphs,'' in {\em 12th Annual Symposium on Switching and Automata
   Theory (swat 1971)}, pp.~122--125, Oct 1971.
+
+\bibitem{DieboldBenchmark}
+F.~Diebold and M.~Bichler, ``Matching with indifferences: A comparison of
+  algorithms in the context of course allocation,'' {\em European Journal of
+  Operational Research}, vol.~260, no.~1, pp.~268 -- 282, 2017.
 
 \bibitem{HungarianGithub}
 C.~Ma, ``hungarian-algorithm-cpp.''
