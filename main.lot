@@ -1,9 +1,9 @@
 \babel@toc {USenglish}{}
 \contentsline {table}{\numberline {1}{\ignorespaces Instance where Serial Dictatorship admits no max cardinality matching\relax }}{11}{table.caption.5}
 \contentsline {table}{\numberline {2}{\ignorespaces Comparison of different algorithmic approaches\relax }}{18}{table.caption.6}
-\contentsline {table}{\numberline {3}{\ignorespaces Summary of the results for PrefLib1\relax }}{29}{table.caption.17}
-\contentsline {table}{\numberline {4}{\ignorespaces Summary of the results for PrefLib2\relax }}{30}{table.caption.20}
-\contentsline {table}{\numberline {5}{\ignorespaces Average results for small Zipfian dataset with 50 runs\relax }}{31}{table.caption.23}
-\contentsline {table}{\numberline {6}{\ignorespaces Average results for large Zipfian dataset (2500 Students) with 10 runs\relax }}{32}{table.caption.26}
-\contentsline {table}{\numberline {7}{\ignorespaces Average results for large uniform dataset with incomplete preferences.\relax }}{33}{table.caption.29}
-\contentsline {table}{\numberline {8}{\ignorespaces Average results for large uniform dataset with complete preferences.\relax }}{34}{table.caption.32}
+\contentsline {table}{\numberline {3}{\ignorespaces Summary of the results for PrefLib1\relax }}{30}{table.caption.18}
+\contentsline {table}{\numberline {4}{\ignorespaces Summary of the results for PrefLib2\relax }}{31}{table.caption.21}
+\contentsline {table}{\numberline {5}{\ignorespaces Average results for small Zipfian dataset with 50 runs\relax }}{32}{table.caption.24}
+\contentsline {table}{\numberline {6}{\ignorespaces Average results for large Zipfian dataset (2500 Students) with 10 runs\relax }}{33}{table.caption.27}
+\contentsline {table}{\numberline {7}{\ignorespaces Average results for large uniform dataset with incomplete preferences.\relax }}{34}{table.caption.30}
+\contentsline {table}{\numberline {8}{\ignorespaces Average results for large uniform dataset with complete preferences.\relax }}{35}{table.caption.33}
