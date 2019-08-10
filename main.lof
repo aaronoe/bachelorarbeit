@@ -5,4 +5,6 @@
 \contentsline {figure}{\numberline {4}{\ignorespaces Rank distribution for PrefLib2 Dataset.\relax }}{31}{figure.caption.20}
 \contentsline {figure}{\numberline {5}{\ignorespaces Rank distribution for small Zipfian dataset.\relax }}{32}{figure.caption.23}
 \contentsline {figure}{\numberline {6}{\ignorespaces Rank distribution for large Zipfian dataset.\relax }}{33}{figure.caption.26}
-\contentsline {figure}{\numberline {7}{\ignorespaces Average Rank comparison between algorithms and datasets.\relax }}{36}{figure.caption.31}
+\contentsline {figure}{\numberline {7}{\ignorespaces Rank distribution on log-scale for uniform dataset with incomplete preferences, with ranks greater than 5 being grouped.\relax }}{34}{figure.caption.29}
+\contentsline {figure}{\numberline {8}{\ignorespaces Rank distribution on log-scale for uniform dataset with complete preferences, with ranks greater than 5 being grouped.\relax }}{35}{figure.caption.32}
+\contentsline {figure}{\numberline {9}{\ignorespaces Average Rank comparison between algorithms and datasets.\relax }}{36}{figure.caption.33}

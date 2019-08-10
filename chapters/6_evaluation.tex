@@ -111,7 +111,7 @@ When not taking the unassigned students into account, the Mod-Popular-CHA algori
 
 \begin{figure}[h!]
   \centering
-    \includegraphics[width=0.9\linewidth]{assets/plots/preflib1-cropped.png}
+    \includegraphics[width=0.75\linewidth]{assets/plots/preflib1-cropped.png}
     \caption{Rank distribution for PrefLib1 Dataset. Note: Popular-CHA failed.}
     \label{fig:preflib1-rank-distribution}
 \end{figure}
@@ -144,7 +144,7 @@ What also stands out is that RSD again produces a better matching than Max-PaCHA
 
 \begin{figure}[h!]
   \centering
-    \includegraphics[width=0.9\linewidth]{assets/plots/preflib2-ranks.pdf}    
+    \includegraphics[width=0.9\linewidth]{assets/plots/preflib2-ranks.pdf}
     \caption{Rank distribution for PrefLib2 Dataset.}
     \label{fig:preflib2-rank-distribution}
 \end{figure}
@@ -179,7 +179,7 @@ We begin by looking at a similarly sized dataset as the Preflib datasets, and th
 
 \begin{figure}[h!]
   \centering
-    \includegraphics[width=0.9\linewidth]{assets/plots/small-zipfian-cropped.png}
+    \includegraphics[width=0.75\linewidth]{assets/plots/small-zipfian-cropped.png}
     \caption{Rank distribution for small Zipfian dataset.}
     \label{fig:zipfian-small-distribution}
 \end{figure}
@@ -212,7 +212,7 @@ Again, the Popular-CHA algorithm is not very successful and finds no matching in
 
 \begin{figure}[h!]
   \centering
-    \includegraphics[width=0.9\linewidth]{assets/plots/zipfian-medium.pdf}
+    \includegraphics[width=0.8\linewidth]{assets/plots/zipfian-medium.pdf}
     \caption{Rank distribution for large Zipfian dataset.}
     \label{fig:zipfian-medium-distribution}
 \end{figure}
@@ -243,6 +243,13 @@ This large uniform dataset contains 50 seminars and 5000 students, who each rand
   \label{tab:results-uniform-large}
 \end{table}
 
+\begin{figure}[h!]
+  \centering
+    \includegraphics[width=0.75\linewidth]{assets/plots/uniform_incompl_distr.pdf}
+    \caption{Rank distribution on log-scale for uniform dataset with incomplete preferences, with ranks greater than 5 being grouped.}
+    \label{fig:uniform-incomplete-distribution}
+\end{figure}
+
 Table \ref{tab:results-uniform-large} shows the average results when executing each algorithm 10 times using incomplete preference lists. Unfortunately, the Popular-CHA algorithm only finds a matching for one out of the 10 instances, but when it does, it performs quite well in terms of rank. However, the Mod-Popular-CHA algorithm is on average able to find better matchings in less time than the Popular-CHA mechanism. What also stands out is that Mod-Popular-CHA and the Hungarian algorithm are tied for popularity for every instance, but runtime-wise, Mod-Popular-CHA performs far better than the Hungarian algorithm. What needs to be noted, though, is that the Hunarian algorithm outperforms all other algorithms in terms of profile by having the worst rank in all matchings be two. All algorithms assign more than 94\% of the students to their first choice, but the Hungarian algorithm only assigns students to their first or second choice.  
 
 \paragraph{Datasets with complete preferences}
@@ -267,6 +274,13 @@ When using the same size dataset as before, but with complete preference lists, 
   \label{tab:results-uniform-large-complete}
 \end{table}
 
+\begin{figure}[h!]
+  \centering
+    \includegraphics[width=0.75\linewidth]{assets/plots/uniform_compl_distr.pdf}
+    \caption{Rank distribution on log-scale for uniform dataset with complete preferences, with ranks greater than 5 being grouped.}
+    \label{fig:uniform-complete-distribution}
+\end{figure}
+
 Another thing that stands out is the fact that RSD and Max-PaCHA produce matchings with high worst-ranks of 30 and 27 respectively. Overall, these two algorithms perform worse than or equal to the Popular-CHA and Hungarian algorithm on all metrics, which makes them less appealing for this kind of dataset. Given the low average runtime of 219ms, the Mod-Popular-CHA algorithm seems to be a good option when the size of the instance is too large for the Hungarian, while still performing well on the rank-related metrics. Even though Popular-CHA and the Hungarian algorithm tie in popularity, it should be assumed that a matching with the worst rank of 2 is more popular among the students than a matching of worst rank 9. 
 
 \subsection{Conclusions of Experiments}
@@ -274,7 +288,7 @@ In summary, the matchings produced by the Hungarian algorithm usually perform be
 
 \begin{figure}[h!]
   \centering
-    \includegraphics[width=0.99\linewidth]{assets/plots/average_ranks_all.pdf}
+    \includegraphics[width=0.8\linewidth]{assets/plots/average_ranks_all.pdf}
     \caption{Average Rank comparison between algorithms and datasets.}
     \label{fig:average_ranks}
 \end{figure}
