@@ -90,7 +90,7 @@ In Section \ref{intro_assignment}, we briefly presented the assignment problem: 
 
 Formally, we define the assignment problem as follows: Given a set of agents $A$, tasks $T$ and a map $W(a, t) = w$, with $\forall a \in A, \forall t \in T$, find a bijective map $M$ with: $\forall a \in A, \exists t \in T: M(a) = t$, so that the following objective function is minimized: $\sum_{a \in A} W(a, M(a))$. 
 
-It is important to note that the assignment problem tries to find a perfect matching, meaning that all agents are assigned and that a one-to-one (HA), contrary to one-to-many (CHA), matching is found.
+It is important to note that the assignment problem tries to find a perfect matching, meaning that all agents are assigned, and that a one-to-one (HA), contrary to one-to-many (CHA), matching is found.
 
 For this problem, there exist algorithms \cite{Munkres, Jonker1987} that find perfect, min-weight assignments in $\mathcal{O}(n^3)$ time. Using these algorithms for the one-to-many case with incomplete preference lists requires a transformation of the input, by introducing artificial edges with large weights, where no edges exist. Additionally, in the case of student-seminar matchings, seminars have to be duplicated according to their capacities to allow for performing one-to-many matchings.
   

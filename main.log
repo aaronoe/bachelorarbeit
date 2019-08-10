@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.1)  10 AUG 2019 10:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.1)  10 AUG 2019 10:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -959,10 +959,6 @@ Package pdftex.def Info: assets/plots/average_ranks_all.pdf  used on input line 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [35] [36 </home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/plots/average_ranks_all.pdf>]) [37] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/8_discussion.tex
-
-LaTeX Warning: Reference `tab:diebold-benchmark' on page 38 undefined on input line 6.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [38] [39]) [40] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/9_conclusion.tex) [41] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/7_extensions.tex [42]
@@ -1018,25 +1014,21 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 69.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 69.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 6DCFEC8A7F008D6BD11EEA71F8C4709D;12832.
-
-
-LaTeX Warning: There were undefined references.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 69.
  ) 
 Here is how much of TeX's memory you used:
- 30179 strings out of 492982
- 560889 string characters out of 6134897
+ 30178 strings out of 492982
+ 560866 string characters out of 6134897
  751109 words of memory out of 5000000
- 32734 multiletter control sequences out of 15000+600000
+ 32733 multiletter control sequences out of 15000+600000
  100521 words of font info for 169 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  66i,20n,90p,8912b,1934s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmro12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.pdf (57 pages, 596003 bytes).
+Output written on /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.pdf (57 pages, 595798 bytes).
 PDF statistics:
- 1167 PDF objects out of 1200 (max. 8388607)
- 1056 compressed objects within 11 object streams
+ 1168 PDF objects out of 1200 (max. 8388607)
+ 1057 compressed objects within 11 object streams
  279 named destinations out of 1000 (max. 500000)
  34421 words of extra memory for PDF output out of 35830 (max. 10000000)
 
