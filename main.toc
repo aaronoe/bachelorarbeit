@@ -38,7 +38,7 @@
 \contentsline {subsection}{\numberline {4.1}Overview}{20}{subsection.4.1}
 \contentsline {subsection}{\numberline {4.2}Algorithm Implementation}{20}{subsection.4.2}
 \contentsline {subsubsection}{\numberline {4.2.1}Input and Execution}{20}{subsubsection.4.2.1}
-\contentsline {subsubsection}{\numberline {4.2.2}RSD Implementation}{21}{subsubsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.2}RSD Implementation}{22}{subsubsection.4.2.2}
 \contentsline {subsubsection}{\numberline {4.2.3}Max-Pareto Implementation}{22}{subsubsection.4.2.3}
 \contentsline {subsubsection}{\numberline {4.2.4}Assignment Problem Implementation}{22}{subsubsection.4.2.4}
 \contentsline {subsubsection}{\numberline {4.2.5}Max-Popular-CHA Implementation}{22}{subsubsection.4.2.5}
@@ -51,41 +51,41 @@
 \contentsline {subsection}{\numberline {5.2}Experimental Setup}{25}{subsection.5.2}
 \contentsline {subsubsection}{\numberline {5.2.1}Benchmark Setup}{26}{subsubsection.5.2.1}
 \contentsline {subsubsection}{\numberline {5.2.2}Sample Data}{26}{subsubsection.5.2.2}
-\contentsline {paragraph}{\nonumberline Using graph generators}{26}{section*.9}
-\contentsline {paragraph}{\nonumberline Random Uniform Preference Lists}{26}{section*.10}
-\contentsline {paragraph}{\nonumberline PrefLib Datasets}{26}{section*.11}
-\contentsline {paragraph}{\nonumberline Random Zipf-Distributed Preference Lists}{27}{section*.13}
+\contentsline {paragraph}{\nonumberline Using graph generators}{26}{section*.10}
+\contentsline {paragraph}{\nonumberline Random Uniform Preference Lists}{26}{section*.11}
+\contentsline {paragraph}{\nonumberline PrefLib Datasets}{26}{section*.12}
+\contentsline {paragraph}{\nonumberline Random Zipf-Distributed Preference Lists}{27}{section*.14}
 \contentsline {subsubsection}{\numberline {5.2.3}Metrics}{27}{subsubsection.5.2.3}
 \contentsline {subsection}{\numberline {5.3}Experimental Results}{29}{subsection.5.3}
 \contentsline {subsubsection}{\numberline {5.3.1}PrefLib Datasets}{29}{subsubsection.5.3.1}
-\contentsline {paragraph}{\nonumberline PrefLib1 dataset}{29}{section*.15}
-\contentsline {paragraph}{\nonumberline PrefLib2 dataset}{29}{table.caption.19}
+\contentsline {paragraph}{\nonumberline PrefLib1 dataset}{29}{section*.16}
+\contentsline {paragraph}{\nonumberline PrefLib2 dataset}{29}{table.caption.20}
 \contentsline {subsubsection}{\numberline {5.3.2}Zipfian datasets}{31}{subsubsection.5.3.2}
-\contentsline {paragraph}{\nonumberline Small Zipfian datasets}{31}{table.caption.22}
-\contentsline {paragraph}{\nonumberline Large Zipfian datasets}{32}{section*.24}
+\contentsline {paragraph}{\nonumberline Small Zipfian datasets}{31}{table.caption.23}
+\contentsline {paragraph}{\nonumberline Large Zipfian datasets}{32}{section*.25}
 \contentsline {subsubsection}{\numberline {5.3.3}Large uniform datasets}{33}{subsubsection.5.3.3}
-\contentsline {paragraph}{\nonumberline Datasets with incomplete preferences}{33}{section*.27}
-\contentsline {paragraph}{\nonumberline Datasets with complete preferences}{34}{section*.30}
+\contentsline {paragraph}{\nonumberline Datasets with incomplete preferences}{33}{section*.28}
+\contentsline {paragraph}{\nonumberline Datasets with complete preferences}{34}{section*.31}
 \contentsline {subsection}{\numberline {5.4}Conclusions of Experiments}{35}{subsection.5.4}
 \contentsline {subsubsection}{\numberline {5.4.1}Answers to the research questions}{36}{subsubsection.5.4.1}
-\contentsline {paragraph}{\nonumberline Effect of different preference distributions:}{36}{section*.34}
-\contentsline {paragraph}{\nonumberline Failure rate of Popular-CHA:}{36}{section*.35}
-\contentsline {paragraph}{\nonumberline Performance of Mod-Popular-CHA:}{36}{section*.36}
-\contentsline {paragraph}{\nonumberline Cost of giving up on strategy-proofness:}{37}{section*.37}
-\contentsline {paragraph}{\nonumberline Popularity as a meaningful metric:}{37}{section*.38}
-\contentsline {paragraph}{\nonumberline The effect of short preference lists:}{37}{section*.39}
+\contentsline {paragraph}{\nonumberline Effect of different preference distributions:}{36}{section*.35}
+\contentsline {paragraph}{\nonumberline Failure rate of Popular-CHA:}{36}{section*.36}
+\contentsline {paragraph}{\nonumberline Performance of Mod-Popular-CHA:}{36}{section*.37}
+\contentsline {paragraph}{\nonumberline Cost of giving up on strategy-proofness:}{37}{section*.38}
+\contentsline {paragraph}{\nonumberline Popularity as a meaningful metric:}{37}{section*.39}
+\contentsline {paragraph}{\nonumberline The effect of short preference lists:}{37}{section*.40}
 \contentsline {section}{\numberline {6}Discussion}{38}{section.6}
 \contentsline {subsection}{\numberline {6.1}Discussion of theoretical and practical results}{38}{subsection.6.1}
 \contentsline {subsection}{\numberline {6.2}Potential algorithmic improvements}{39}{subsection.6.2}
 \contentsline {subsection}{\numberline {6.3}System design recommendations}{39}{subsection.6.3}
 \contentsline {section}{\numberline {7}Conclusion}{41}{section.7}
-\contentsline {section}{Appendices}{42}{section*.40}
+\contentsline {section}{Appendices}{42}{section*.41}
 \contentsline {section}{\numberline {A}Extensions to the problem}{42}{Appendix.1.A}
 \contentsline {subsection}{\numberline {A.1}Two-Sided preferences}{42}{subsection.1.A.1}
 \contentsline {subsubsection}{\numberline {A.1.1}Stable matchings}{42}{subsubsection.1.A.1.1}
-\contentsline {subsubsection}{\numberline {A.1.2}Algorithm}{43}{subsubsection.1.A.1.2}
+\contentsline {subsubsection}{\numberline {A.1.2}Algorithm}{42}{subsubsection.1.A.1.2}
 \contentsline {subsection}{\numberline {A.2}Many-to-Many matchings}{43}{subsection.1.A.2}
-\contentsline {subsubsection}{\numberline {A.2.1}One-sided preferences}{44}{subsubsection.1.A.2.1}
+\contentsline {subsubsection}{\numberline {A.2.1}One-sided preferences}{43}{subsubsection.1.A.2.1}
 \contentsline {subsubsection}{\numberline {A.2.2}Two-sided preferences}{44}{subsubsection.1.A.2.2}
 \contentsline {subsection}{\numberline {A.3}Online variant}{44}{subsection.1.A.3}
 \contentsline {subsubsection}{\numberline {A.3.1}Online max-cardinality matching}{45}{subsubsection.1.A.3.1}

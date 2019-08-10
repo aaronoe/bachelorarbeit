@@ -17,16 +17,17 @@ All of the algorithms mentioned in \mbox{Section \ref{chapter:algorithms}} are i
 \subsubsection{Input and Execution}
 All five algorithms are compiled into a single binary \lstinline{seminar_assignment} using CMake. No external libraries need to be linked. The program accepts an optional argument which specifies the algorithm to be used and then reads the problem instance on stdin. In detail, a call to the program looks like this: \lstinline{./seminar_assignment mode < instance.in} 
 
-In this call, \emph{mode} should be replaced by one of the following arguments to select an algorithm for execution: "hungarian", "popular", "popular-modified", "rsd" (default) or "max-pareto". The input format is proprietary and domain-specific and is defined as follows:
-\begin{lstlisting}[frame=single, caption={Program input format},captionpos=b]
-seminar_count student_count
-seminar_id seminar_capacity
+In this call, \emph{mode} should be replaced by one of the following arguments to select an algorithm for execution: "hungarian", "popular", "popular-modified", "rsd" (default) or "max-pareto". The input format is proprietary and domain-specific and is defined as in Listing \ref{lst:input-format}.
+
+\begin{lstlisting}[frame=single, float, label=lst:input-format, caption={Program input format},captionpos=b]
+d seminar_count student_count
+t seminar_id seminar_capacity
 ...
-student_id pref_list_length pref_0 pref_1 .. pref_n
+s student_id pref_list_length pref_0 pref_1 .. pref_n
 ...
 \end{lstlisting}
 
-An example for this is the following instance with 4 students and seminars:
+Each line begins with a character indicating what type of information the line contains, where d represents metadata about the instance, t represents seminar data and s represents student data. An example for this is the following instance in \mbox{Listing \ref{lst:sample-input}} with 4 students and seminars:
 \lstinputlisting[frame=single, label=lst:sample-input, caption={Example instance input},captionpos=b]{assets/popular.in}
 
 The program expects that the IDs of both students and seminars are enumerated consecutively beginning at zero. The output of the program is written to stdout and consists of the algorithms runtime in milliseconds, followed by a newline, then the number of matched pairs, followed by a new-line and then a line for each matched pair consisting of the student-ID and space separated seminar-ID. An example of this is the following Listing \ref{lst:sample-output}, which was produced by executing the Hungarian algorithm on the instance from Listing \ref{lst:sample-input}:

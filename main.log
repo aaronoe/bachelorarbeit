@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.1)  10 AUG 2019 13:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.1)  10 AUG 2019 14:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -79,12 +79,12 @@ Package typearea Info: You've used standard option `pdftex'.
 \footheight=\skip46
 Package typearea Info: These are the values describing the layout:
 (typearea)             DIV  = 12
-(typearea)             BCOR = 14.22636pt
+(typearea)             BCOR = 0.0pt
 (typearea)             \paperwidth      = 597.50793pt
-(typearea)              \textwidth      = 437.46118pt
-(typearea)              DIV departure   = -3%
-(typearea)              \evensidemargin = 24.9436pt
-(typearea)              \oddsidemargin  = -9.43683pt
+(typearea)              \textwidth      = 448.13095pt
+(typearea)              DIV departure   = -6%
+(typearea)              \evensidemargin = 2.4185pt
+(typearea)              \oddsidemargin  = 2.4185pt
 (typearea)             \paperheight     = 845.04694pt
 (typearea)              \textheight     = 635.5pt
 (typearea)              \topmargin      = -41.72441pt
@@ -763,12 +763,12 @@ Package caption Info: End \AtBeginDocument code.
  (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/Institutsvorlage.tex)
 Package typearea Info: These are the values describing the layout:
 (typearea)             DIV  = 12
-(typearea)             BCOR = 14.22636pt
+(typearea)             BCOR = 0.0pt
 (typearea)             \paperwidth      = 597.50793pt
-(typearea)              \textwidth      = 437.46118pt
-(typearea)              DIV departure   = -3%
-(typearea)              \evensidemargin = 14.86656pt
-(typearea)              \oddsidemargin  = 14.86656pt
+(typearea)              \textwidth      = 448.13095pt
+(typearea)              DIV departure   = -6%
+(typearea)              \evensidemargin = 2.4185pt
+(typearea)              \oddsidemargin  = 2.4185pt
 (typearea)             \paperheight     = 845.04694pt
 (typearea)              \textheight     = 635.5pt
 (typearea)              \topmargin      = -41.72441pt
@@ -830,18 +830,15 @@ Package microtype Info: Loading generic protrusion settings for font family
  [1
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
-
-
-]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 Package typearea Info: These are the values describing the layout:
 (typearea)             DIV  = 12
-(typearea)             BCOR = 14.22636pt
+(typearea)             BCOR = 0.0pt
 (typearea)             \paperwidth      = 597.50793pt
-(typearea)              \textwidth      = 437.46118pt
-(typearea)              DIV departure   = -3%
-(typearea)              \evensidemargin = 24.9436pt
-(typearea)              \oddsidemargin  = -9.43683pt
+(typearea)              \textwidth      = 448.13095pt
+(typearea)              DIV departure   = -6%
+(typearea)              \evensidemargin = 2.4185pt
+(typearea)              \oddsidemargin  = 2.4185pt
 (typearea)             \paperheight     = 845.04694pt
 (typearea)              \textheight     = 635.5pt
 (typearea)              \topmargin      = -41.72441pt
@@ -854,6 +851,7 @@ Package typearea Info: These are the values describing the layout:
 Package typearea Info: Using dirty hack to recalculate internal output
 (typearea)             dimensions of LaTeX on input line 16.
  (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/0_abstract.tex) [1
+
 
 
 ]
@@ -878,23 +876,23 @@ Package tocbasic Info: character protrusion at lot deactivated on input line 28.
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 8.
 \c@theorem=\count158
  [10] [11] [12] [13] [14] [15] [16]) [17] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/4_algorithm_comparison.tex [18]) [19] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/5_implementation.tex
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 21.
- [20] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/popular.in) (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/popular.out) [21] [22]) [23] [24] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/6_evaluation.tex [25] [26]
-<assets/plots/preflib1-distr.pdf, id=789, 602.25pt x 372.39125pt>
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 22.
+ [20] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/popular.in) (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/popular.out) [21] [22] [23]) [24] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/6_evaluation.tex [25] [26]
+<assets/plots/preflib1-distr.pdf, id=788, 602.25pt x 372.39125pt>
 File: assets/plots/preflib1-distr.pdf Graphic file (type pdf)
 <use assets/plots/preflib1-distr.pdf>
 Package pdftex.def Info: assets/plots/preflib1-distr.pdf  used on input line 43.
-(pdftex.def)             Requested size: 214.35837pt x 132.54358pt.
-<assets/plots/preflib2-distr.pdf, id=790, 602.25pt x 372.39125pt>
+(pdftex.def)             Requested size: 219.58662pt x 135.77678pt.
+<assets/plots/preflib2-distr.pdf, id=789, 602.25pt x 372.39125pt>
 File: assets/plots/preflib2-distr.pdf Graphic file (type pdf)
 <use assets/plots/preflib2-distr.pdf>
 Package pdftex.def Info: assets/plots/preflib2-distr.pdf  used on input line 47.
-(pdftex.def)             Requested size: 214.35837pt x 132.54358pt.
-<assets/plots/zipfian-distr.pdf, id=793, 619.31375pt x 319.1925pt>
+(pdftex.def)             Requested size: 219.58662pt x 135.77678pt.
+<assets/plots/zipfian-distr.pdf, id=792, 619.31375pt x 319.1925pt>
 File: assets/plots/zipfian-distr.pdf Graphic file (type pdf)
 <use assets/plots/zipfian-distr.pdf>
 Package pdftex.def Info: assets/plots/zipfian-distr.pdf  used on input line 61.
-(pdftex.def)             Requested size: 349.97028pt x 180.37819pt.
+(pdftex.def)             Requested size: 358.50612pt x 184.7811pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -910,11 +908,11 @@ File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 72.
  [28 </home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/plots/zipfian-distr.pdf>]
-<assets/plots/preflib1-cropped.png, id=842, 541.27219pt x 295.1025pt>
+<assets/plots/preflib1-cropped.png, id=841, 541.27219pt x 295.1025pt>
 File: assets/plots/preflib1-cropped.png Graphic file (type png)
 <use assets/plots/preflib1-cropped.png>
 Package pdftex.def Info: assets/plots/preflib1-cropped.png  used on input line 114.
-(pdftex.def)             Requested size: 328.09589pt x 178.88202pt.
+(pdftex.def)             Requested size: 336.0982pt x 183.24533pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -923,79 +921,70 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [29]
-<assets/plots/preflib2-ranks.pdf, id=851, 680.5425pt x 307.1475pt>
+<assets/plots/preflib2-ranks.pdf, id=850, 680.5425pt x 307.1475pt>
 File: assets/plots/preflib2-ranks.pdf Graphic file (type pdf)
 <use assets/plots/preflib2-ranks.pdf>
 Package pdftex.def Info: assets/plots/preflib2-ranks.pdf  used on input line 147.
-(pdftex.def)             Requested size: 393.71239pt x 177.69106pt.
+(pdftex.def)             Requested size: 403.31511pt x 182.02625pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [30 </home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/plots/preflib1-cropped.png>]
-<assets/plots/small-zipfian-cropped.png, id=860, 665.48625pt x 330.48468pt>
+[30 </home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/plots/preflib1-cropped.png>]
+<assets/plots/small-zipfian-cropped.png, id=858, 665.48625pt x 330.48468pt>
 File: assets/plots/small-zipfian-cropped.png Graphic file (type png)
 <use assets/plots/small-zipfian-cropped.png>
 Package pdftex.def Info: assets/plots/small-zipfian-cropped.png  used on input line 182.
-(pdftex.def)             Requested size: 328.09589pt x 162.93738pt.
+(pdftex.def)             Requested size: 336.0982pt x 166.91109pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [31 </home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/plots/preflib2-ranks.pdf>]
-<assets/plots/zipfian-medium.pdf, id=878, 800.9925pt x 395.4775pt>
+<assets/plots/zipfian-medium.pdf, id=877, 800.9925pt x 395.4775pt>
 File: assets/plots/zipfian-medium.pdf Graphic file (type pdf)
 <use assets/plots/zipfian-medium.pdf>
 Package pdftex.def Info: assets/plots/zipfian-medium.pdf  used on input line 215.
-(pdftex.def)             Requested size: 349.97028pt x 172.79167pt.
+(pdftex.def)             Requested size: 358.50612pt x 177.00978pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [32 </home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/plots/small-zipfian-cropped.png>]
-<assets/plots/uniform_incompl_distr.pdf, id=886, 632.3625pt x 357.335pt>
+<assets/plots/uniform_incompl_distr.pdf, id=885, 632.3625pt x 357.335pt>
 File: assets/plots/uniform_incompl_distr.pdf Graphic file (type pdf)
 <use assets/plots/uniform_incompl_distr.pdf>
 Package pdftex.def Info: assets/plots/uniform_incompl_distr.pdf  used on input line 248.
-(pdftex.def)             Requested size: 328.09589pt x 185.40088pt.
+(pdftex.def)             Requested size: 336.0982pt x 189.92644pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [33 </home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/plots/zipfian-medium.pdf>]
-<assets/plots/uniform_compl_distr.pdf, id=904, 632.3625pt x 357.335pt>
+<assets/plots/uniform_compl_distr.pdf, id=903, 632.3625pt x 357.335pt>
 File: assets/plots/uniform_compl_distr.pdf Graphic file (type pdf)
 <use assets/plots/uniform_compl_distr.pdf>
 Package pdftex.def Info: assets/plots/uniform_compl_distr.pdf  used on input line 279.
-(pdftex.def)             Requested size: 328.09589pt x 185.40088pt.
+(pdftex.def)             Requested size: 336.0982pt x 189.92644pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [34 </home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/plots/uniform_incompl_distr.pdf>]
-<assets/plots/average_ranks_all.pdf, id=923, 678.535pt x 357.335pt>
+<assets/plots/average_ranks_all.pdf, id=922, 678.535pt x 357.335pt>
 File: assets/plots/average_ranks_all.pdf Graphic file (type pdf)
 <use assets/plots/average_ranks_all.pdf>
 Package pdftex.def Info: assets/plots/average_ranks_all.pdf  used on input line 291.
-(pdftex.def)             Requested size: 349.97028pt x 184.29947pt.
+(pdftex.def)             Requested size: 358.50612pt x 188.79778pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[35 </home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/plots/uniform_compl_distr.pdf>] [36 </home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/plots/average_ranks_all.pdf>]) [37] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/8_discussion.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [38] [39]) [40] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/9_conclusion.tex) [41] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/7_extensions.tex [42]
-Underfull \vbox (badness 1552) has occurred while \output is active []
-
- [43] [44]) [45] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.bblpdfTeX warning (ext4): destination with the same identifier (name{page.I}) has been already used, duplicate ignored
+[35 </home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/plots/uniform_compl_distr.pdf>] [36 </home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/plots/average_ranks_all.pdf>]) [37] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/8_discussion.tex [38] [39]) [40] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/9_conclusion.tex) [41] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/7_extensions.tex [42] [43] [44]) [45] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.bblpdfTeX warning (ext4): destination with the same identifier (name{page.I}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.72 
-      [1]
+l.73 \bibitem{ManlovePopularMatchings}
+                                       [1]
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 103.
  (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1014,8 +1003,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.II}) has 
                    \relax 
 l.134 
        [2]
-Underfull \hbox (badness 6542) in paragraph at lines 136--140
+Underfull \hbox (badness 10000) in paragraph at lines 136--140
 []\T1/lmr/m/n/12 (+20) N. Mat-tei and T. Walsh, ``Pre-flib: A li-brary of pref-er-ence data
+ []
+
+
+Underfull \hbox (badness 1033) in paragraph at lines 136--140
+\T1/lmr/m/sc/12/100ls (+20) http://preflib.org\T1/lmr/m/n/12 (+20) ,'' in \T1/lmr/m/it/12 (+20) Pro-ceed-ings of the 3rd In-ter-na-tional Con-fer-
  []
 
 )pdfTeX warning (ext4): destination with the same identifier (name{page.III}) has been already used, duplicate ignored
@@ -1025,37 +1019,33 @@ l.67 \selbstaendigkeitserklaerung{\today}
                                           [3]pdfTeX warning (ext4): destination with the same identifier (name{page.IV}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.67 \selbstaendigkeitserklaerung{\today}
-                                          [4
-
-
-]pdfTeX warning (ext4): destination with the same identifier (name{page.V}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
 l.69 \end{document}
-                    [5]
+                    [4
+
+
+]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 69.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 69.
  (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 69.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 69.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 0273E60FAEFEBE9863C9D0254D53633D;12832.
+(rerunfilecheck)             Checksum: 800DDD177E71044F21787EDDB9E79F09;12832.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 69.
  ) 
 Here is how much of TeX's memory you used:
- 30192 strings out of 492982
- 561402 string characters out of 6134897
- 751413 words of memory out of 5000000
- 32743 multiletter control sequences out of 15000+600000
- 100521 words of font info for 169 fonts, out of 8000000 for 9000
+ 30196 strings out of 492982
+ 561444 string characters out of 6134897
+ 752393 words of memory out of 5000000
+ 32737 multiletter control sequences out of 15000+600000
+ 101127 words of font info for 175 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 66i,20n,90p,8912b,1934s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 66i,20n,90p,8912b,1138s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmro12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.pdf (57 pages, 618394 bytes).
+Output written on /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.pdf (55 pages, 617127 bytes).
 PDF statistics:
- 1196 PDF objects out of 1200 (max. 8388607)
- 1079 compressed objects within 11 object streams
+ 1192 PDF objects out of 1200 (max. 8388607)
+ 1077 compressed objects within 11 object streams
  281 named destinations out of 1000 (max. 500000)
  34431 words of extra memory for PDF output out of 35830 (max. 10000000)
 

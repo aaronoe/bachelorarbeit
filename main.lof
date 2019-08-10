@@ -1,10 +1,10 @@
 \babel@toc {USenglish}{}
-\contentsline {figure}{\numberline {1}{\ignorespaces Preference distributions for first-ranked seminars for both PrefLib datasets\relax }}{27}{figure.caption.12}
-\contentsline {figure}{\numberline {2}{\ignorespaces Two sample Zipfian preference distribution for first-ranked seminars\relax }}{28}{figure.caption.14}
-\contentsline {figure}{\numberline {3}{\ignorespaces Rank distribution for PrefLib1 Dataset. Note: Popular-CHA failed.\relax }}{30}{figure.caption.17}
-\contentsline {figure}{\numberline {4}{\ignorespaces Rank distribution for PrefLib2 Dataset.\relax }}{31}{figure.caption.20}
-\contentsline {figure}{\numberline {5}{\ignorespaces Rank distribution for small Zipfian dataset.\relax }}{32}{figure.caption.23}
-\contentsline {figure}{\numberline {6}{\ignorespaces Rank distribution for large Zipfian dataset.\relax }}{33}{figure.caption.26}
-\contentsline {figure}{\numberline {7}{\ignorespaces Rank distribution on log-scale for uniform dataset with incomplete preferences, with ranks greater than 5 being grouped.\relax }}{34}{figure.caption.29}
-\contentsline {figure}{\numberline {8}{\ignorespaces Rank distribution on log-scale for uniform dataset with complete preferences, with ranks greater than 5 being grouped.\relax }}{35}{figure.caption.32}
-\contentsline {figure}{\numberline {9}{\ignorespaces Average Rank comparison between algorithms and datasets.\relax }}{36}{figure.caption.33}
+\contentsline {figure}{\numberline {1}{\ignorespaces Preference distributions for first-ranked seminars for both PrefLib datasets\relax }}{27}{figure.caption.13}
+\contentsline {figure}{\numberline {2}{\ignorespaces Two sample Zipfian preference distribution for first-ranked seminars\relax }}{28}{figure.caption.15}
+\contentsline {figure}{\numberline {3}{\ignorespaces Rank distribution for PrefLib1 Dataset. Note: Popular-CHA failed.\relax }}{30}{figure.caption.18}
+\contentsline {figure}{\numberline {4}{\ignorespaces Rank distribution for PrefLib2 Dataset.\relax }}{31}{figure.caption.21}
+\contentsline {figure}{\numberline {5}{\ignorespaces Rank distribution for small Zipfian dataset.\relax }}{32}{figure.caption.24}
+\contentsline {figure}{\numberline {6}{\ignorespaces Rank distribution for large Zipfian dataset.\relax }}{33}{figure.caption.27}
+\contentsline {figure}{\numberline {7}{\ignorespaces Rank distribution on log-scale for uniform dataset with incomplete preferences, with ranks greater than 5 being grouped.\relax }}{34}{figure.caption.30}
+\contentsline {figure}{\numberline {8}{\ignorespaces Rank distribution on log-scale for uniform dataset with complete preferences, with ranks greater than 5 being grouped.\relax }}{35}{figure.caption.33}
+\contentsline {figure}{\numberline {9}{\ignorespaces Average Rank comparison between algorithms and datasets.\relax }}{36}{figure.caption.34}
