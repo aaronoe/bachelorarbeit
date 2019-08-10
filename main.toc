@@ -71,13 +71,13 @@
 \contentsline {paragraph}{\nonumberline Datasets with incomplete preferences}{36}{section*.26}
 \contentsline {paragraph}{\nonumberline Datasets with complete preferences}{36}{section*.28}
 \contentsline {subsection}{\numberline {6.4}Conclusions of Experiments}{37}{subsection.6.4}
-\contentsline {paragraph}{\nonumberline Effect of different preference distributions:}{37}{section*.30}
-\contentsline {paragraph}{\nonumberline Failure rate of Popular-CHA:}{37}{section*.31}
-\contentsline {paragraph}{\nonumberline Performance of Mod-Popular-CHA:}{37}{section*.32}
-\contentsline {paragraph}{\nonumberline Cost of giving up on strategy-proofness:}{38}{section*.33}
-\contentsline {paragraph}{\nonumberline Popularity as a meaningful metric:}{38}{section*.34}
-\contentsline {paragraph}{\nonumberline The effect of short preference lists:}{38}{section*.35}
-\contentsline {subsubsection}{\numberline {6.4.1}Summary of results}{38}{subsubsection.6.4.1}
+\contentsline {subsubsection}{\numberline {6.4.1}Answers to the research questions}{38}{subsubsection.6.4.1}
+\contentsline {paragraph}{\nonumberline Effect of different preference distributions:}{38}{section*.31}
+\contentsline {paragraph}{\nonumberline Failure rate of Popular-CHA:}{38}{section*.32}
+\contentsline {paragraph}{\nonumberline Performance of Mod-Popular-CHA:}{39}{section*.33}
+\contentsline {paragraph}{\nonumberline Cost of giving up on strategy-proofness:}{39}{section*.34}
+\contentsline {paragraph}{\nonumberline Popularity as a meaningful metric:}{39}{section*.35}
+\contentsline {paragraph}{\nonumberline The effect of short preference lists:}{39}{section*.36}
 \contentsline {section}{\numberline {7}Discussion}{40}{section.7}
 \contentsline {subsection}{\numberline {7.1}Discussion of theoretical and practical results}{40}{subsection.7.1}
 \contentsline {subsection}{\numberline {7.2}Potential algorithmic improvements}{41}{subsection.7.2}

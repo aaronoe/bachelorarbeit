@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.1)  10 AUG 2019 09:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.1)  10 AUG 2019 09:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -948,13 +948,17 @@ Package pdftex.def Info: assets/plots/zipfian-medium.pdf  used on input line 215
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[36] [37]
-<assets/plots/average_ranks_all.pdf, id=964, 771.88374pt x 506.89375pt>
+[36]
+<assets/plots/average_ranks_all.pdf, id=950, 771.88374pt x 506.89375pt>
 File: assets/plots/average_ranks_all.pdf Graphic file (type pdf)
 <use assets/plots/average_ranks_all.pdf>
-Package pdftex.def Info: assets/plots/average_ranks_all.pdf  used on input line 287.
+Package pdftex.def Info: assets/plots/average_ranks_all.pdf  used on input line 277.
 (pdftex.def)             Requested size: 433.08896pt x 284.40771pt.
- [38]) [39 </home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/plots/average_ranks_all.pdf>] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/8_discussion.tex
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[37] [38 </home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/plots/average_ranks_all.pdf>]) [39] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/8_discussion.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [40] [41]) [42] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/9_conclusion.tex) [43] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/7_extensions.tex [44]
@@ -1009,7 +1013,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 69.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 69.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 69.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: E6B52600C3D93AD72DBAF5CE6DB929EA;13706.
+(rerunfilecheck)             Checksum: FEA34004423E47721E017445795731A7;13787.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 69.
  ) 
 Here is how much of TeX's memory you used:
@@ -1021,7 +1025,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  66i,20n,90p,8912b,1934s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmro12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.pdf (59 pages, 600015 bytes).
+Output written on /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.pdf (59 pages, 600319 bytes).
 PDF statistics:
  1212 PDF objects out of 1440 (max. 8388607)
  1098 compressed objects within 11 object streams
