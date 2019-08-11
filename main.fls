@@ -361,6 +361,9 @@ INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/popular.in
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/popular.out
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/popular.out
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/popular.out
+INPUT /usr/share/texmf/tex/latex/lm/t1lmtt.fd
+INPUT /usr/share/texmf/tex/latex/lm/t1lmtt.fd
+INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmtt12.tfm
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/6_evaluation.tex
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/6_evaluation.tex
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/plots/preflib1-distr.pdf
@@ -406,9 +409,6 @@ INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/7_extensio
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/7_extensions.tex
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.bbl
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.bbl
-INPUT /usr/share/texmf/tex/latex/lm/t1lmtt.fd
-INPUT /usr/share/texmf/tex/latex/lm/t1lmtt.fd
-INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmtt12.tfm
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.aux
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.out
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.out
