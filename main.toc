@@ -25,7 +25,7 @@
 \contentsline {subsection}{\numberline {3.3}Solving CHA as an Assignment Problem}{13}{subsection.3.3}
 \contentsline {subsubsection}{\numberline {3.3.1}Solving the Assignment Problem Using Flow-Networks}{14}{subsubsection.3.3.1}
 \contentsline {subsubsection}{\numberline {3.3.2}Properties}{14}{subsubsection.3.3.2}
-\contentsline {subsection}{\numberline {3.4}Maximum Popular Matchings in CHA}{15}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.4}Maximum Popular Matchings in CHA}{14}{subsection.3.4}
 \contentsline {subsubsection}{\numberline {3.4.1}An Alternative Characterization of Popular Matchings}{15}{subsubsection.3.4.1}
 \contentsline {subsubsection}{\numberline {3.4.2}Algorithm}{16}{subsubsection.3.4.2}
 \contentsline {subsubsection}{\numberline {3.4.3}Properties}{17}{subsubsection.3.4.3}
