@@ -22,15 +22,15 @@ D.~F. Manlove, {\em Algorithmics of Matching Under Preferences}, vol.~2 of {\em
   Series on Theoretical Computer Science}.
 \newblock WorldScientific, 2013.
 
-\bibitem{GaleShapleyOrig}
-D.~Gale and L.~S. Shapley, ``College admissions and the stability of
-  marriage,'' {\em The American Mathematical Monthly}, vol.~69, no.~1,
-  pp.~9--15, 1962.
-
 \bibitem{Gusfield}
 D.~Gusfield and R.~W. Irving, {\em The Stable Marriage Problem: Structure and
   Algorithms}.
 \newblock Cambridge, MA, USA: MIT Press, 1989.
+
+\bibitem{GaleShapleyOrig}
+D.~Gale and L.~S. Shapley, ``College admissions and the stability of
+  marriage,'' {\em The American Mathematical Monthly}, vol.~69, no.~1,
+  pp.~9--15, 1962.
 
 \bibitem{RePEc:ris:nobelp:2012_005}
 A.~Roth, ``The theory and practice of market design,'' Nobel Prize in Economics
