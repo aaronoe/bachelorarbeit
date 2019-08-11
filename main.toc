@@ -29,10 +29,10 @@
 \contentsline {subsubsection}{\numberline {3.4.1}An Alternative Characterization of Popular Matchings}{15}{subsubsection.3.4.1}
 \contentsline {subsubsection}{\numberline {3.4.2}Algorithm}{16}{subsubsection.3.4.2}
 \contentsline {subsubsection}{\numberline {3.4.3}Properties}{17}{subsubsection.3.4.3}
-\contentsline {subsection}{\numberline {3.5}Comparison of Mechanisms}{18}{subsection.3.5}
-\contentsline {subsubsection}{\numberline {3.5.1}Theoretical Results}{18}{subsubsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5}Comparison of Mechanisms}{17}{subsection.3.5}
+\contentsline {subsubsection}{\numberline {3.5.1}Theoretical Results}{17}{subsubsection.3.5.1}
 \contentsline {paragraph}{\nonumberline Strategy-proofness and Maximum Cardinality:}{18}{section*.7}
-\contentsline {paragraph}{\nonumberline Max-PaCHA and the Assignment Problem:}{19}{section*.8}
+\contentsline {paragraph}{\nonumberline Max-PaCHA and the Assignment Problem:}{18}{section*.8}
 \contentsline {subsubsection}{\numberline {3.5.2}Practical Results in the Literature}{19}{subsubsection.3.5.2}
 \contentsline {section}{\numberline {4}Implementation}{20}{section.4}
 \contentsline {subsection}{\numberline {4.1}Overview}{20}{subsection.4.1}

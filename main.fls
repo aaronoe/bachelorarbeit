@@ -355,6 +355,8 @@ INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/4_algorith
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/4_algorithm_comparison.tex
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/5_implementation.tex
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/5_implementation.tex
+INPUT /usr/share/texmf/tex/latex/lm/omslmr.fd
+INPUT /usr/share/texmf/tex/latex/lm/omslmr.fd
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/popular.in
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/popular.in
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/popular.in
@@ -376,8 +378,6 @@ INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/plots/prefli
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/plots/zipfian-distr.pdf
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/plots/zipfian-distr.pdf
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/plots/zipfian-distr.pdf
-INPUT /usr/share/texmf/tex/latex/lm/omslmr.fd
-INPUT /usr/share/texmf/tex/latex/lm/omslmr.fd
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/plots/preflib1-cropped.png
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/plots/preflib1-cropped.png
 INPUT /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/plots/preflib1-cropped.png
