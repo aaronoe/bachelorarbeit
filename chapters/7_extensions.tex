@@ -1,12 +1,12 @@
-\section{Extensions to the problem}
+\section{Extensions to the Problem}
 For the bulk of this thesis, we have looked at many-to-one matching problems with one-sided preferences, as this settings makes the most sense for the student-seminar application. However, there is a wide range of similar problems and extensions that are also worth mentioning. This section will present some of those problems and key results from the literature. 
 
-\subsection{Two-Sided preferences}\label{extensions:two-sided}
+\subsection{Two-Sided Preferences}\label{extensions:two-sided}
 In many practical one-to-many matching schemes, both parties will express preferences over the other. For instance, many countries use such schemes for matching students to university programs, which can be viewed as an instance of a one-to-many matching problem with two-sided preferences. A similar problem exists in the United States, where graduating medical students need to be matched to residency positions in hospitals. 
 
 Since we are considering two-sided preferences now, it is not possible to simply transform this problem into a weighted bipartite graph anymore, since edges now have two weights. It could be possible to use the product of those two weights as an edge weight; however, in practice different mechanisms are being used that do not rely on the graph representation of the problem.
 
-\subsubsection{Stable matchings}
+\subsubsection{Stable Matchings}
 In the context of two-sided preferences, \emph{Stability} is a commonly used optimality criteria that matchings should fulfill. It can be seen as the two-sided preference extension to Pareto-optimality and is defined as follows. Given a set $H$ of hospitals and a set $R$ of residents, a matching $M$ of an instance $I$ is stable iff there is no pair $(r_i, h_j) \in M, r_i \in R, h_j \in H$ with:
 \begin{itemize}
     \item $r_i$ and $h_j$ are on each other's preference lists
@@ -44,10 +44,10 @@ Gale and Shapley \cite{GaleShapleyOrig} proved that for every instance of the pr
 
 An advantage of using this algorithm for matching students to seminars is that the order in which students are processed does not matter. Gusfield shows that for any permutation of the input, each hospital is assigned the same number of residents, the same set of residents is unassigned and each undersubscribed hospital is matched to the same set of residents \cite{Gusfield}.
 
-\subsection{Many-to-Many matchings}
+\subsection{Many-to-Many Matchings}
 A natural extension of the many-to-one matching setting is the many-to-many matching problem. It could very well be a requirement that students need to be matched to more than one seminar. We assume that students now also provide a capacity, i.e. the number of courses they want to be matched to. In that case, we need to differentiate between one- and two-sided preferences again:
 
-\subsubsection{One-sided preferences}
+\subsubsection{One-sided Preferences}
 Many-to-many matching scenarios with one-sided preferences are also commonly referred to as the \emph{Course allocation} problem, which is a combinatorial assignment problem with the goal of assigning students to courses, based on the students' preferences \cite{CourseAllocation}. Compared to the student and seminar scenario we now allow students to get matched to more than one course. 
 
 A common mechanism for solving course allocation problems is using an \emph{Auction model} or \emph{Bidding points mechanism} in which students are given a set amount of artificial currency, which they then use to bid on seats in classes. After all bids are submitted, the system assigns the seats to the highest bidders. The bids can be used to infer students' preferences; however, the true preferences may differ significantly, which in turn could cause conflicts \cite{Bidding}.
@@ -56,7 +56,7 @@ Another commonly used mechanism is the \emph{Draft}, in which students are asked
 
 A mechanism that is more robust towards strategic manipulation is a \emph{proxy bidding mechanism} presented by Kominers et al. \cite{CourseAllocation}. The mechanism uses proxies that act on behalf of the students by using their true preferences in the draft.
 
-\subsubsection{Two-sided preferences}
+\subsubsection{Two-sided Preferences}
 For the case of two-sided preferences, we have to slightly modify the definition of Stability again to accomodate for the fact that each entity can be assigned more than once: Given the set of hospitals $H$ and residents $R$, let $h \in H$ and $r \in R$, so that $h$ and $r$ are acceptable to each other, unmatched and the following holds true: 
 \begin{itemize}
     \item either $h$ has unfilled places or prefers $r$ to one of his matched partners \textbf{and}
@@ -64,12 +64,12 @@ For the case of two-sided preferences, we have to slightly modify the definition
 \end{itemize}
 Using this definition of stability, Gusfield\cite{Gusfield} proposes that an algorithm can be constructed using ideas from the hospital-oriented and resident-oriented (see Algorithm \ref{alg:resident-oriented-algorithm}) algorithm that finds a stable matching that's optimal for either of the sets. Again, such a stable matching exists for any instance of the problem \cite{Gusfield}.
 
-\subsection{Online variant}
+\subsection{Online Variants}
 When solving the online-variant of the problem, the whole input is not available from the start. That means that the input needs to be processed piece by piece, or more formally: Given a bipartite weighted graph $(U, V, E)$, where $U$ is known to the algorithm, vertices in $V$ are unknown, but arrive one at a time, while also revealing their incident edges, find a matching that maximizes some objective function. These algorithms could be of interest in the case of a first-come first-serve course allocation system, or in other areas such as DVD-rental or online-advertisement allocation systems \cite{Mehta:Online}.
 
 In the case of student-seminar assignments, we would assume that the set of courses and their capacities is known beforehand, and the students arrive later. One of the algorithms we have seen in Section \ref{chapter:algorithms} can be used for this problem, namely the RSD-algorithm. As a matter of fact, the algorithm will produce the same results for the offline and online case, given that the order in which students are processed is identical.
 
-\subsubsection{Online max-cardinality matching}
+\subsubsection{Online Maximum Cardinality Matching}
 There has been lots of research in particular on finding maximum-cardinality matchings with online inputs. The online-inputs are classified by how much information the algorithm possesses about the input order. For now, we will only consider the \emph{adversarial order}, where we assume no knowledge of the query sequence, which means that only $U$ is known at the beginning of the algorithm, while we have no knowledge of $V$ and $E$ or the order they appear in \cite{Mehta:Online}. To measure performance we will use the \emph{competitive ratio} of an algorithm which is defined as follows. Given an instance of the problem $I$, the value of the objective function for the online algorithm is given as $ALG(I)$, and the value of the objective function for the best offline algorithm is given as $OPT(I)$. The competitive ratio is now computed as follows: $C.R.=\frac{ALG(I)}{OPT(I)}$ \cite{Mehta:Online}.
 
 A simple algorithm for this online problem is a greedy algorithm, which matches arriving vertices to any available neighbor, or a random approach that matches arriving vertices to a random neighbor. These mechanisms achieve a competitive ratio of $\frac{1}{2}$ \cite{Mehta:Online}. An optimal yet simple algorithm was introduced by Karp et al. \cite{Karp:Online}, which achieves a competitive ratio of $1 - \frac{1}{e} \simeq 0.63$. The algorithm, called Ranking, begins by permuting the known vertices of $U$ in a random permutation $\pi$, i.e. we assign a random priority number to each $u \in U$. Each incoming vertex $v \in V$ is then assigned to an available neighbor, with the smallest value of $\pi(u)$. In detail, the algorithm looks like this:

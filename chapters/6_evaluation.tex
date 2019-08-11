@@ -28,7 +28,7 @@ The experiments are performed by a Kotlin program that generates test data and t
 \subsubsection{Sample Data}
 Due to the fact that real data for seminar registrations is mostly kept private, a majority of the benchmark will rely on synthetic data. However, there are a few publicly available datasets available that will be used for evaluation and also for better understanding real-world preference distributions.
 
-\paragraph{Using graph generators}
+\paragraph{Using Graph Generators}
 Using graph generators to synthetically create instances to the seminar-student matching problem turns out to be a big challenge. Essentially, we need a graph generator for bipartite, weighted graphs, that also considers seminar capacities. One option is generating as many nodes as the total capacity of all seminars plus students, but that could result in having duplicate edges, i.e. preferences in the generated instance. Therefore we will use a custom, domain specific mechanism for generating instances.
 
 \paragraph{Random Uniform Preference Lists}
@@ -85,7 +85,7 @@ The following subsections provide a detailed summary of the results, grouped by 
 \subsubsection{PrefLib Datasets}
 The two PrefLib datasets contain strict, complete preferences for a small number of students and seminars.
 
-\paragraph{PrefLib1 dataset}
+\paragraph{PrefLib1 Dataset}
 Figure \ref{fig:preflib1-rank-distribution} shows the rank distribution for the algorithms that find a matching.
 
 \begin{figure}[h!]
@@ -119,7 +119,7 @@ The result makes clear that Mod-Popular-CHA assigns more students to their first
 Table \ref{tab:results-preflib1} shows the results in detail. Unfortunately, the Popular-CHA algorithm does not find a matching, but we can also see that the Mod-Popular-CHA algorithm finds a matching that ties in popularity with the matching produced by the Hungarian algorithm. Unsurprisingly, in terms of rank, the Hungarian algorithm produces the best matching with an average rank of 1.513 and a standard deviation of 0.829.When not taking the unassigned students into account, the Mod-Popular-CHA algorithm performs even better on the rank metrics; however, when taking the unassigned students into account, it performs worst among all algorithms.
 
 
-\paragraph{PrefLib2 dataset}
+\paragraph{PrefLib2 Dataset}
 Figure \ref{fig:preflib2-rank-distribution} shows the preference distribution of all five algorithms using the PrefLib2 dataset. We can see that RSD and Max-PaCHA assign some students to their 4th or 5th choice, which explains why they perform worse in terms of rank. Unsurprisingly, the matching produced by the Hungarian algorithm has the best rank-profile; however the differences in profile among the algorithms are not that significant compared to the PrefLib1 dataset.
 
 \begin{figure}[h!]
@@ -152,10 +152,10 @@ Table \ref{tab:results-preflib2} shows the results for the PrefLib2 dataset in m
 
 What also stands out is that RSD again produces a better matching than Max-PaCHA in regards to the rank metrics. In fact, the matching produced by Max-PaCHA performs worst in terms of rank, even though its runtime is the second highest. Overall, the runtimes are still low, with all of them being lower than 50ms, which should make all algorithms usable for real world applications for similarly sized instances. However, it should be noted that the matching produced by RSD gets close in terms of rank to the matching produced by the Hungarian algorithm, even though it is about 50 times faster.
 
-\subsubsection{Zipfian datasets}
+\subsubsection{Zipfian Datasets}
 Since the Zipfian datasets have a somewhat similar preference distribution as the PrefLib datasets, we should see similar results; however, parameters can be tuned such as preference list length and student count.
 
-\paragraph{Small Zipfian datasets}
+\paragraph{Small Zipfian Datasets}
 We begin by looking at a similarly sized dataset as the Preflib datasets, and then begin deviating the student \& seminar count. We begin by looking at a similarly sized dataset as the Preflib datasets, and then begin deviating the student \& seminar count. Figure \ref{fig:zipfian-small-distribution} shows the average ranks for 50 test runs using the Zipfian Dataset with 10 seminars and about 200 students. 
 
 \begin{figure}[h!]
@@ -188,7 +188,7 @@ We can clearly see that the Hungarian algorithm performs best in terms of worst-
 
 Table \ref{tab:results-zipfian-small} shows the average results in more detail and shows that, out of the 50 instances, Popular-CHA only finds a matching for four instances. When it finds a matching, it does so quite fast and the matching is, on average, better rank-wise than all matchings produced by the other algorithms, except for the ones produced by the Hungarian algorithm. In terms of popularity, Mod-Popular-CHA actually outperforms all algorithms (equal to Popular-CHA if the matching exists) for most instances, even though rank-wise it does not perform as well as the Hungarian algorithm. However, the Hungarian algorithm produces more popular matchings than most other algorithms, and, for some instances, even more popular ones than the Mod-Popular-CHA algorithm.
 
-\paragraph{Large Zipfian datasets}
+\paragraph{Large Zipfian Datasets}
 Using a large dataset with a Zipfian distribution yields similar results. Figure \ref{fig:zipfian-medium-distribution} shows the rank distributions for 10 test runs with datasets that contain about 2500 students and 35 seminars. We can see that Mod Popular-CHA is able to outperform the other algorithms in terms of popularity by maximizing the number of students being assigned to their first choice. However, the Hungarian algorithm produces more balanced matchings, where most students are assigned to their top three choices, while also leaving no student unassigned.
 
 \begin{figure}[h!]
@@ -219,9 +219,9 @@ Using a large dataset with a Zipfian distribution yields similar results. Figure
 
 Table \ref{tab:results-zipfian-medium} summarizes the results in detail and shows that Popular-CHA is not very successful and finds no matching in any of the test runs. However, Mod-Popular-CHA always produces more popular matchings than all of the other algorithms, even though 8.6\% of the students were left unassigned on average. When taking the unassigned students out of the rank metrics, Mod-Popular-CHA produces matchings with the best average rank and standard deviation, while having the second lowest runtime. In contrast to that, the Hungarian algorithm always assigns all students, even though it takes, on average, 65 seconds to do so. This confirms the theoretical observations about runtime and shows that using the Hungarian algorithm is potentially less desirable for large instances.
 
-\subsubsection{Large uniform datasets}
+\subsubsection{Large Uniform Datasets}
 
-\paragraph{Datasets with incomplete preferences}
+\paragraph{Datasets with Incomplete Preferences}
 This large uniform dataset contains 50 seminars and 5000 students, who each randomly pick 10 seminars with equal probability.
 
 \begin{figure}[h!]
@@ -254,7 +254,7 @@ Figure \ref{fig:uniform-incomplete-distribution} shows the average ranks when ex
 
 In Table \ref{tab:results-uniform-large} we can see that Popular-CHA only finds a matching for one out of the 10 instances, but when it does, it performs quite well in terms of rank. However, Mod-Popular-CHA is on average able to find better matchings in less time than Popular-CHA. What also stands out is that Mod-Popular-CHA and the Hungarian algorithm are tied for popularity for every instance, but runtime-wise, Mod-Popular-CHA performs far better than the Hungarian algorithm.
 
-\paragraph{Datasets with complete preferences}
+\paragraph{Datasets with Complete Preferences}
 When using the same size dataset as before, but with complete preference lists, the results show some interesting insights.
 
 \begin{figure}[h!]
@@ -301,12 +301,12 @@ In summary, the matchings produced by the Hungarian algorithm usually perform be
 
 In terms of average rank, Figure \ref{fig:average_ranks} summarizes the average ranks for each dataset and algorithm, except for Popular-CHA. We can see that for some instances the differences in rank are not very significant, but for other instances there is a bigger difference. Generally, the Hungarian algorithm unsurprisngly performs the best; however, for two types of datasets Mod-Popular-CHA beats the Hungarian algorithm in the average rank metric at the cost of leaving students unassigned. At the same time, the Hungarian algorithm also produces matchings with the lowest rank standard deviation, i.e. lowest fluctuation of rank, which makes this mechanism fair towards all students.
 
-\subsubsection{Answers to the research questions}
+\subsubsection{Answers to the Research Questions}
 The experiments reveal some interesting insights that should help answering the research questions from Section \ref{sec:research-q}.
 
-\paragraph{Effect of different preference distributions:} Unsurprisingly, the algorithms perform better on the rank metrics, when the preferences are distributed uniformly - in fact, the Hungarian algorithm is able to assign on average more than 94\% (Table \ref{tab:results-uniform-large-complete}) of the students to their first choice when the preference distribution was uniform.
-\paragraph{Failure rate of Popular-CHA:} The experiments show that \mbox{Popular-CHA} fails to find a matching quite often, especially if the preference lists are short and not uniformly distributed. When using the Zipfian datasets (Tables \ref{tab:results-zipfian-medium}, \ref{tab:results-zipfian-small}), Popular-CHA only finds a matching for 4/50 instances. Even for uniform distributions and incomplete preference lists (Table \ref{tab:results-uniform-large}), the algorithm only finds a matching for 1/10 instances. Making the preference lists complete makes it easier for the algorithm to find matchings as shown in Table \ref{tab:results-uniform-large-complete}.
+\paragraph{Effect of Different Preference Distributions:} Unsurprisingly, the algorithms perform better on the rank metrics, when the preferences are distributed uniformly - in fact, the Hungarian algorithm is able to assign on average more than 94\% (Table \ref{tab:results-uniform-large-complete}) of the students to their first choice when the preference distribution was uniform.
+\paragraph{Failure Rate of Popular-CHA:} The experiments show that \mbox{Popular-CHA} fails to find a matching quite often, especially if the preference lists are short and not uniformly distributed. When using the Zipfian datasets (Tables \ref{tab:results-zipfian-medium}, \ref{tab:results-zipfian-small}), Popular-CHA only finds a matching for 4/50 instances. Even for uniform distributions and incomplete preference lists (Table \ref{tab:results-uniform-large}), the algorithm only finds a matching for 1/10 instances. Making the preference lists complete makes it easier for the algorithm to find matchings as shown in Table \ref{tab:results-uniform-large-complete}.
 \paragraph{Performance of Mod-Popular-CHA:} The modified version of Popular-CHA was able to find comparatively good matchings in a short amount of time, while typically also producing more or equally popular matchings as the other algorithms. For many instances, Mod-Popular-CHA ties the Hungarian algorithm for popularity and was able to produce good matchings in terms of the rank metrics in a fraction of the time.
-\paragraph{Cost of giving up on strategy-proofness:} Surprisingly, RSD produces, on average, better matchings on most metrics than Max-PaCHA, while also being by far the fastest algorithm. However, RSD usually produces the highest percentage of unassigned students. Additionally, the modified Popular-CHA algorithm typically outperforms RSD on most metrics, while also having a relatively low runtime. In the real-world datasets (PrefLib), RSD leaves no students unassigned and got close to the Hungarian algorithm in terms of rank, but also produced 7 as the worst rank, compared to 4 for the Hungarian algorithm. 
-\paragraph{Popularity as a meaningful metric:} For many instances, we cannot find the one popular matching, as Popular-CHA simply fails - but when it finds a matching, the worst rank, average rank and rank standard deviation is higher than what the Hungarian algorithm produes. Another interesting insight is that matchings produced by Mod-Popular-CHA usually tie in popularity with those produced by the Hungarian algorithm, even though Mod-Popular-CHA often left a few students unassigned. For instance, in Figure \ref{fig:zipfian-medium-distribution}, Mod-Popular-CHA leaves, on average, 8.6\% of the students unassigned, but the matchings are still classified as more popular than, or, just as popular as the matchings produced by the Hungarian algorithm. This shows that a popular matching can maximize the number of students ranked to their first choice at the cost of some students being matched to a low-ranking seminar, or even no seminar at all. This makes it questionable as to whether or not popularity is a meaningful optimality criteria for the student and seminar use case, as it should be a goal to assign as many students as possible and to make all students equally satisfied with their match, instead of finding the biggest possible subset of satisfied students.
-\paragraph{The effect of short preference lists:} The experiments show that short preference lists make it more likely for Popular-CHA to not find a matching, as well as making it more likely for RSD to produce matchings with more unassigned students.
+\paragraph{Cost of Giving up on Strategy-proofness:} Surprisingly, RSD produces, on average, better matchings on most metrics than Max-PaCHA, while also being by far the fastest algorithm. However, RSD usually produces the highest percentage of unassigned students. Additionally, the modified Popular-CHA algorithm typically outperforms RSD on most metrics, while also having a relatively low runtime. In the real-world datasets (PrefLib), RSD leaves no students unassigned and got close to the Hungarian algorithm in terms of rank, but also produced 7 as the worst rank, compared to 4 for the Hungarian algorithm. 
+\paragraph{Popularity as a Meaningful Metric:} For many instances, we cannot find the one popular matching, as Popular-CHA simply fails - but when it finds a matching, the worst rank, average rank and rank standard deviation is higher than what the Hungarian algorithm produes. Another interesting insight is that matchings produced by Mod-Popular-CHA usually tie in popularity with those produced by the Hungarian algorithm, even though Mod-Popular-CHA often left a few students unassigned. For instance, in Figure \ref{fig:zipfian-medium-distribution}, Mod-Popular-CHA leaves, on average, 8.6\% of the students unassigned, but the matchings are still classified as more popular than, or, just as popular as the matchings produced by the Hungarian algorithm. This shows that a popular matching can maximize the number of students ranked to their first choice at the cost of some students being matched to a low-ranking seminar, or even no seminar at all. This makes it questionable as to whether or not popularity is a meaningful optimality criteria for the student and seminar use case, as it should be a goal to assign as many students as possible and to make all students equally satisfied with their match, instead of finding the biggest possible subset of satisfied students.
+\paragraph{The Effect of Short Preference Lists:} The experiments show that short preference lists make it more likely for Popular-CHA to not find a matching, as well as making it more likely for RSD to produce matchings with more unassigned students.

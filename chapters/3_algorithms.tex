@@ -1,7 +1,7 @@
 \section{Algorithmic Approaches}\label{chapter:algorithms}
 In the previous section, we discussed several optimality criteria that apply to the problem of matching students to seminars. This chapter will present algorithms for computing matchings that fulfill some of those criteria, as well as evaluating them against each other. We will see that each of the algorithms has some draw-backs, which makes it necessary to consider the trade-offs when picking one for implementation. However, each of the algorithms also produces pareto-optimal matchings. 
 
-\subsection{Greedy with serial dictatorship}\label{algo-rsd}
+\subsection{Greedy with Serial Dictatorship}\label{algo-rsd}
 One of the simplest algorithms for the student-seminar matching problem is a greedy approach that iterates over the set of students and assigns each of the students to their most preferred seminar that still has some capacity left. In contrast to Gale \& Shapley's deferred acceptance algorithm for the stable marriage problem, this algorithm does not tentatively match students once they make their selection, but makes a final assignment for those students. Because of this, the algorithm finds a matching in $\mathcal{O}(n)$ time with $n$ being the number of students. This mechanism of letting students successively pick their highest available preference in order is known as serial dictatorship \cite{MANEA2007316}. In detail the algorithm is as follows: 
 
 \begin{algorithm} % enter the algorithm environment
@@ -82,7 +82,7 @@ Since all modifications to the matching in phase 1 and 2 are limited to swaps an
 
 The runtime of the algorithm is dominated by finding a maximum cardinality matching (phase 1), which yields a time complexity of $\mathcal{O}(E\sqrt{V})$ \cite{Abraham:Pacha} when using the Hopcroft-Karp algorithm. Phase 1 and 2 both take $\mathcal{O}(|E|)$ of time \cite{SngThesis}, which in total yields a worst-case complexity of $\mathcal{O}(E\sqrt{V})$ for finding a maximum cardinality pareto-optimal matching given any instance $I$ of the problem.
 
-\subsection{Solving CHA as an assignment problem}\label{algo:assignment}
+\subsection{Solving CHA as an Assignment Problem}\label{algo:assignment}
 In order to find a rank-maximal matching, we will investigate a set of algorithmic methods that compute a maximum-cardinality, min-weight matching. We can easily see that such a matching must also be rank-maximal, since the min-weight property guarantees that the profile of the matching is lexicographically maximal among all matchings.
 In Section \ref{intro_assignment}, we briefly presented the assignment problem: it is a combinatorial optimization problem, which assigns a set of agents to a set of tasks, wherein each agent-task tuple is assigned a cost, and to minimize the total cost of the assignment. 
 
@@ -96,7 +96,7 @@ For this problem, there exist algorithms \cite{Munkres, Jonker1987} that find pe
   
 However, we can see that the assignment problem is equivalent to finding a perfect, minimum-weight matching in bipartite, weighted graph. Therefore, we can construct such a graph, given the set of students, preference lists and seminars and apply graph algorithms that find such matchings for us. In fact, we can simply transform the student-seminar matching problem into an instance of the minimum-cost flow problem. The goal of this algorithm will be to send $|S|$ units of flow through the network, while minimizing the cost of the flow, which is indicated by a seminar's rank on the student's preference lists.
 
-\subsubsection{Solving the assignment problem using flow-networks}
+\subsubsection{Solving the Assignment Problem Using Flow-Networks}
 The problem of matching students as seminars can be given as a bipartite graph $G=(V=(S, T), E)$, where $S$ is the set of students and $T$ the set of seminars. The set of edges $E$ is defined as follows: $E:= \{(s, t) \mid s \in S \land t \in T \land \mbox{t is on the preference list of s}\}$. Additionally, a weight function $W: E \rightarrow  \mathbb{N}$ is specified, which maps each edge to the position of the seminar on the student's preference list. In order to transform this bipartite graph into an input for the minimum-cost flow problem, a flow network has to be constructed using the bipartite graph.
 
 To transform the bipartite graph into a flow network, we first add a source and sink vertex to the graph. Then, we add weights, capacities and edges from and to the source and sink. Specifically, we create an edge from the source to each of the student vertices with a capacity of 1 and a cost of 0. These edges indicate that a student can only be assigned once. Next, for every student we re-use the edges from the bipartite graph $G$, where each edge $e \in E$ is assigned a capacity of 1 and a cost of $W(e)$. The capacity, again indicates that a student can only be assigned once and the weight indicates the position of the seminar on the student's preference list. Finally, one edge is added from each seminar $s \in S$ to the sink with a capacity of $C(s)$ and a cost of 0. 
@@ -108,7 +108,7 @@ The matching $M$ computed by the algorithm is Pareto optimal \cite{SngThesis} an
 Abraham et al \cite{AbrahamPopular} presented an algorithm for finding a popular matching in the house allocation problem (without capacities), which either finds such a popular matching or reports that none exists in $\mathcal{O}(|V| + |E|)$ time. Manlove and Sng \cite{ManlovePopularMatchings} extended this algorithm for the many-to-one case, the Capacitated House Allocation problem, by developing a characterization of such popular matchings in CHA and then using it to construct an algorithm that finds a maximum popular matching for any given instance, if it exists. 
 Intuitively, the algorithm will try to match as many applicants as possible to their most-preferred choice to fulfill the popularity criteria. Formally, Manlove and Sng \cite{ManlovePopularMatchings} define and proof an alternative characterisation of Popularity in order to develop their algorithm:
 
-\subsubsection{An alternative characterization of popular matchings}
+\subsubsection{An Alternative Characterization of Popular Matchings}
 Given an instance $I$ of the CHA problem, for every applicant $a_i \in A$ let $h_j := f(a_i)$ be the first ranked house on $a_i$'s preference list. In this case, we call $h_j$ an f-house. For each house $h_j \in H$, define the set of applicants, who named $h_j$ as their first choice, as $f(h_j) = \{a_i \in A: f(a_i) = h_j\}$ and the size of that set as $f_j = |f(h_j)|$. For a matching $M$ in $I$, we now say that a house $h_j \in H$ is full if $|M^{-1}(h_j)| = c_j$, i.e. the maximum number of applicants is matched to that house, and undersubscribed if $|M(h_j)| < c_j$. Additionally, for every applicant $a_i \in A$, we append a last-resort house $l(a_i)$ with capacity 1 to $a_i$'s preference list \cite{ManlovePopularMatchings}. The authors prove the following lemma \cite{ManlovePopularMatchings}:
 \newtheorem{lemma-popular-1}[theorem]{Lemma}
 \begin{lemma}\label{lemma-popular1}
