@@ -5,7 +5,7 @@ In the previous section, we discussed several optimality criteria that apply to 
 One of the simplest algorithms for the student-seminar matching problem is a greedy approach that iterates over the set of students and assigns each of the students to their most preferred seminar that still has some capacity left. In contrast to Gale \& Shapley's deferred acceptance algorithm for the stable marriage problem, this algorithm does not tentatively match students once they make their selection, but makes a final assignment for those students. Because of this, the algorithm finds a matching in $\mathcal{O}(n)$ time with $n$ being the number of students. This mechanism of letting students successively pick their highest available preference in order is known as serial dictatorship \cite{MANEA2007316}. In detail, the algorithm goes as follows: 
 
 \begin{algorithm} % enter the algorithm environment
-    \caption{Greedy serial dictatorship matching} 
+    \caption{Random Serial Dictatorship Algorithm} 
     \label{alg1} % and a label for \ref{} commands later in the document
     \begin{algorithmic} % enter the algorithmic environment
         \Require set of Students with preferences $S$, set of Seminars $T$
@@ -47,7 +47,7 @@ When looking at the algorithm, it is clear that it has a strict preference order
     $s_1$   & $t_1$, $t_2$  & $t_1$     & 1        \\
     $s_2$   & $t_1$         & $t_2$     & 1       
     \end{tabular}
-    \caption{Instance where Serial Dictatorship admits no max cardinality matching}
+    \caption{Instance Where Serial Dictatorship Admits no Maximum Cardinality Matching}
     \label{table:1}
 \end{table} 
 

@@ -18,7 +18,7 @@ Simply put, in a stable matching $M$, no pair of agents $(r_i, h_j)$ should have
 \subsubsection{Algorithm}
 Gale and Shapley \cite{GaleShapleyOrig} proved that for every instance of the problem, there exists a stable matching that can be computed using a linear-time algorithm. There are two variants of the algorithm, one that computes a resident-optimal, hospital pessimal matching and one that does the opposite. That means that in the first case, each resident is matched to the best hospital among all stable matchings, while each hospital is matched to the worst set of residents among all stable matchings \cite{Gusfield}. In the context of student seminar matchings, it would make sense to use the resident/student optimal algorithm, which goes as follows \cite{Gusfield}:
 \begin{algorithm} % enter the algorithm environment
-    \caption{Resident-oriented deferred acceptance algorithm} 
+    \caption{Resident-oriented Deferred Acceptance Algorithm} 
     \label{alg:resident-oriented-algorithm} 
     \begin{algorithmic} % enter the algorithmic environment
         \Require set of Residents with preferences $R$, set of Seminars $T$

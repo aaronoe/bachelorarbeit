@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.1)  12 AUG 2019 16:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.1)  12 AUG 2019 18:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -893,17 +893,17 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 ) [24] (/home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/chapters/6_evaluation.tex [25] [26]
-<assets/plots/preflib1-distr.pdf, id=793, 602.25pt x 372.39125pt>
+<assets/plots/preflib1-distr.pdf, id=794, 602.25pt x 372.39125pt>
 File: assets/plots/preflib1-distr.pdf Graphic file (type pdf)
 <use assets/plots/preflib1-distr.pdf>
 Package pdftex.def Info: assets/plots/preflib1-distr.pdf  used on input line 43.
 (pdftex.def)             Requested size: 201.65755pt x 124.69075pt.
-<assets/plots/preflib2-distr.pdf, id=794, 602.25pt x 372.39125pt>
+<assets/plots/preflib2-distr.pdf, id=795, 602.25pt x 372.39125pt>
 File: assets/plots/preflib2-distr.pdf Graphic file (type pdf)
 <use assets/plots/preflib2-distr.pdf>
 Package pdftex.def Info: assets/plots/preflib2-distr.pdf  used on input line 47.
 (pdftex.def)             Requested size: 201.65755pt x 124.69075pt.
-<assets/plots/zipfian-distr.pdf, id=798, 619.31375pt x 319.1925pt>
+<assets/plots/zipfian-distr.pdf, id=799, 619.31375pt x 319.1925pt>
 File: assets/plots/zipfian-distr.pdf Graphic file (type pdf)
 <use assets/plots/zipfian-distr.pdf>
 Package pdftex.def Info: assets/plots/zipfian-distr.pdf  used on input line 61.
@@ -915,63 +915,67 @@ pdfTeX warning: pdflatex (file /home/aaron/Documents/studium/ba/arbeit/bachelora
 
 pdfTeX warning: pdflatex (file /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/plots/zipfian-distr.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >] [28]
-<assets/plots/preflib1-cropped.png, id=845, 541.27219pt x 295.1025pt>
+<assets/plots/preflib1-cropped.png, id=846, 734.745pt x 415.5525pt>
 File: assets/plots/preflib1-cropped.png Graphic file (type png)
 <use assets/plots/preflib1-cropped.png>
 Package pdftex.def Info: assets/plots/preflib1-cropped.png  used on input line 93.
-(pdftex.def)             Requested size: 336.0982pt x 183.24533pt.
+(pdftex.def)             Requested size: 336.0982pt x 190.0912pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [29 </home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/plots/preflib1-cropped.png>]
-<assets/plots/preflib2-ranks.pdf, id=855, 680.5425pt x 307.1475pt>
+<assets/plots/preflib2-ranks.pdf, id=856, 728.7225pt x 338.26375pt>
 File: assets/plots/preflib2-ranks.pdf Graphic file (type pdf)
 <use assets/plots/preflib2-ranks.pdf>
 Package pdftex.def Info: assets/plots/preflib2-ranks.pdf  used on input line 127.
-(pdftex.def)             Requested size: 403.31511pt x 182.02625pt.
+(pdftex.def)             Requested size: 403.31511pt x 187.21211pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [30 </home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/plots/preflib2-ranks.pdf>]
-<assets/plots/small-zipfian-cropped.png, id=873, 665.48625pt x 330.48468pt>
-File: assets/plots/small-zipfian-cropped.png Graphic file (type png)
-<use assets/plots/small-zipfian-cropped.png>
-Package pdftex.def Info: assets/plots/small-zipfian-cropped.png  used on input line 163.
-(pdftex.def)             Requested size: 336.0982pt x 166.91109pt.
+<assets/plots/small-zipfian-cropped.pdf, id=874, 723.70375pt x 338.26375pt>
+File: assets/plots/small-zipfian-cropped.pdf Graphic file (type pdf)
+<use assets/plots/small-zipfian-cropped.pdf>
+Package pdftex.def Info: assets/plots/small-zipfian-cropped.pdf  used on input line 163.
+(pdftex.def)             Requested size: 358.50612pt x 167.56752pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[31 </home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/plots/small-zipfian-cropped.png>]
-<assets/plots/zipfian-medium.pdf, id=883, 800.9925pt x 395.4775pt>
+[31 </home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/plots/small-zipfian-cropped.pdf>]
+<assets/plots/zipfian-medium.pdf, id=893, 728.7225pt x 338.26375pt>
 File: assets/plots/zipfian-medium.pdf Graphic file (type pdf)
 <use assets/plots/zipfian-medium.pdf>
 Package pdftex.def Info: assets/plots/zipfian-medium.pdf  used on input line 196.
-(pdftex.def)             Requested size: 358.50612pt x 177.00978pt.
+(pdftex.def)             Requested size: 358.50612pt x 166.41135pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [32 </home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/plots/zipfian-medium.pdf>]
-<assets/plots/uniform_incompl_distr.pdf, id=900, 632.3625pt x 357.335pt>
+<assets/plots/uniform_incompl_distr.pdf, id=910, 659.46375pt x 302.12875pt>
 File: assets/plots/uniform_incompl_distr.pdf Graphic file (type pdf)
 <use assets/plots/uniform_incompl_distr.pdf>
 Package pdftex.def Info: assets/plots/uniform_incompl_distr.pdf  used on input line 229.
-(pdftex.def)             Requested size: 336.0982pt x 189.92644pt.
+(pdftex.def)             Requested size: 336.0982pt x 153.9868pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [33 </home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/plots/uniform_incompl_distr.pdf>]
-<assets/plots/uniform_compl_distr.pdf, id=918, 632.3625pt x 357.335pt>
+<assets/plots/uniform_compl_distr.pdf, id=929, 659.46375pt x 302.12875pt>
 File: assets/plots/uniform_compl_distr.pdf Graphic file (type pdf)
 <use assets/plots/uniform_compl_distr.pdf>
 Package pdftex.def Info: assets/plots/uniform_compl_distr.pdf  used on input line 262.
-(pdftex.def)             Requested size: 336.0982pt x 189.92644pt.
- [34 </home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/plots/uniform_compl_distr.pdf>]
-<assets/plots/average_ranks_all.pdf, id=940, 678.535pt x 357.335pt>
+(pdftex.def)             Requested size: 336.0982pt x 153.9868pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[34 </home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/assets/plots/uniform_compl_distr.pdf>]
+<assets/plots/average_ranks_all.pdf, id=950, 678.535pt x 357.335pt>
 File: assets/plots/average_ranks_all.pdf Graphic file (type pdf)
 <use assets/plots/average_ranks_all.pdf>
 Package pdftex.def Info: assets/plots/average_ranks_all.pdf  used on input line 297.
@@ -1026,17 +1030,17 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 67.
  ) 
 Here is how much of TeX's memory you used:
  30202 strings out of 492982
- 561544 string characters out of 6134897
- 752462 words of memory out of 5000000
+ 561568 string characters out of 6134897
+ 752390 words of memory out of 5000000
  32739 multiletter control sequences out of 15000+600000
  101514 words of font info for 178 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  66i,20n,90p,8912b,1138s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmro12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.pdf (55 pages, 618589 bytes).
+Output written on /home/aaron/Documents/studium/ba/arbeit/bachelorarbeit/main.pdf (55 pages, 622945 bytes).
 PDF statistics:
- 1199 PDF objects out of 1200 (max. 8388607)
- 1084 compressed objects within 11 object streams
+ 1209 PDF objects out of 1440 (max. 8388607)
+ 1093 compressed objects within 11 object streams
  279 named destinations out of 1000 (max. 500000)
  34439 words of extra memory for PDF output out of 35830 (max. 10000000)
 
