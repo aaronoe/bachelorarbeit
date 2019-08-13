@@ -21,7 +21,7 @@ Gale and Shapley \cite{GaleShapleyOrig} proved that for every instance of the pr
     \caption{Resident-oriented Deferred Acceptance Algorithm} 
     \label{alg:resident-oriented-algorithm} 
     \begin{algorithmic} % enter the algorithmic environment
-        \Require set of Residents with preferences $R$, set of Seminars $T$
+        \Require set of residents with preferences $R$, set of hospitals $H$
         \Ensure Stable Matching M
         \While{Some resident $r$ is free and has a non-empty preference list} 
         \State $h:=$ first hospital on $r$'s preference list
@@ -45,12 +45,12 @@ Gale and Shapley \cite{GaleShapleyOrig} proved that for every instance of the pr
 An advantage of using this algorithm for matching students to seminars is that the order in which students are processed does not matter. Gusfield shows that for any permutation of the input, each hospital is assigned the same number of residents, the same set of residents is unassigned and each undersubscribed hospital is matched to the same set of residents \cite{Gusfield}.
 
 \subsection{Many-to-Many Matchings}
-A natural extension of the many-to-one matching setting is the many-to-many matching problem. It could very well be a requirement that students need to be matched to more than one seminar. We assume that students now also provide a capacity, i.e. the number of courses they want to be matched to. In that case, we need to differentiate between one- and two-sided preferences again:
+A natural extension of the many-to-one matching setting is the many-to-many matching problem. It could very well be a requirement that students need to be matched to more than one seminar. In that case, we need to differentiate between one- and two-sided preferences again:
 
 \subsubsection{One-sided Preferences}
 Many-to-many matching scenarios with one-sided preferences are also commonly referred to as the \emph{Course allocation} problem, which is a combinatorial assignment problem with the goal of assigning students to courses, based on the students' preferences \cite{CourseAllocation}. Compared to the student and seminar scenario we now allow students to get matched to more than one course. 
 
-A common mechanism for solving course allocation problems is using an \emph{Auction model} or \emph{Bidding points mechanism} in which students are given a set amount of artificial currency, which they then use to bid on seats in classes. After all bids are submitted, the system assigns the seats to the highest bidders. The bids can be used to infer students' preferences; however, the true preferences may differ significantly, which in turn could cause conflicts \cite{Bidding}.
+A common mechanism for solving course allocation problems is using an \emph{Auction model} or \emph{Bidding points mechanism} in which students are given a set amount of artificial currency, which they then use to bid on seats in classes. After all bids are submitted, the system assigns the seats to the highest bidders. The bids can be used to infer students' preferences; however, the true preferences may differ significantly, which makes this mechanism less desirable \cite{Bidding}.
 
 Another commonly used mechanism is the \emph{Draft}, in which students are asked to pick a course with remaining seats based on a draft order. Intuitively, this mechanism is an extension of RSD (Section \ref{algo-rsd}), where the whole process is repeated until no student makes a pick anymore. Such draft mechanisms are commonly used in course allocation settings; one example being Harvard Business School \cite{CourseAllocation}. However, it has been shown that students have successfully manipulated the draft due to the fact that this mechanism is not strategy-proof.
 

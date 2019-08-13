@@ -54,7 +54,7 @@ Preflib.org is an open collection of more than 3000 community-contributed datase
 Figure \ref{fig:preflib-distribution} shows the preference distribution for the student's first choice seminars in both datasets after removing the always first-ranked seminar. We can see that in both datasets, students clearly strongly prefer two seminars. In the first dataset, however, there are three more seminars that are also decently popular, while in the second dataset the majority of students really prefers the two dominant seminars. Generally, those datasets indicate that the preference structure of real-world datasets is not likely to be uniformly distributed.
 
 \paragraph{Random Zipf-Distributed Preference Lists}
-To better simulate real-world preference structures than by using a uniform distribution, a power law distribution can be applied. One type of power law distributions are \emph{Zipfian Distributions} \cite{Zipf}, which can be used for creating synthetic seminar distributions. Using this type of distribution with some additional randomization yields the following (Figure \ref{fig:zipfian-distribution}) preference list structure when seminar and student counts are similar to the first PrefLib dataset.
+To better simulate real-world preference structures than by using a uniform distribution, a power law distribution can be applied. One type of power law distributions are \emph{Zipfian Distributions} \cite{Zipf}, which can be used for creating synthetic preference distributions. Using this type of distribution with some additional randomization yields the following (Figure \ref{fig:zipfian-distribution}) preference list structure when seminar and student counts are similar to the first PrefLib dataset.
 
   \begin{figure}[h!]
     \centering
@@ -63,11 +63,11 @@ To better simulate real-world preference structures than by using a uniform dist
     \label{fig:zipfian-distribution}
 \end{figure}
 
-To create the dataset for each student, a seminar is randomly drawn using the Zipfian distribution and added to his preference list until the desired preference-list length has been reached. Comparing Figure \ref{fig:zipfian-distribution} to Figure \ref{fig:preflib-distribution} shows somewhat similar results, which should make this generator relevant for the benchmark. 
+To create the dataset for each student, a seminar is randomly drawn using the Zipfian distribution and added to his preference list until the desired preference-list length has been reached. Comparing Figure \ref{fig:zipfian-distribution} to Figure \ref{fig:preflib-distribution} shows somewhat similar results, which should make this generator relevant for the experiments. 
 
 \subsubsection{Metrics}
 We already know that all of the algorithms under consideration produce pareto-optimal matchings; however, it will also be necessary to measure popularity. If the Popular-CHA algorithm finds a matching, we know that it is the popular matching, but if the algorithm cannot find a matching, it could be possible that one of the other algorithms produces such a matching. In general, given the definitions for Popularity that we have used before, it is not possible to check if a given matching is popular without comparing it to all other possible matchings. However, this is infeasible due to the exponential runtime complexity of that comparison, which is why we will just compare the matchings produced by the five algorithms for Popularity. Given two matchings $m, m' \in \mathcal{M}$, we say that $m$ is more popular than $m'$ if the number of students preferring $m$ is greater than the number of students preferring $m'$. 
-In addition to comparing Popularity, the following other metrics will be used:
+In addition to comparing popularity, the following other metrics will be used:
 \begin{itemize}
   \item \textbf{Profile}: The profile of the matching as defined in Section \ref{sec:profile} given as an array.
   \item \textbf{Average Rank \& Standard Deviation}: The average and standard deviation of the matched students' ranks. A matched student's rank corresponds to the position of his match on his preference list. In case there are unassigned students, two numbers will be given for this metric. First, the metric excluding unassigned students is given and then, in parentheses, the metrics including unassigned students, weighted with the maximum rank, is given.
@@ -231,7 +231,7 @@ This large uniform dataset contains 50 seminars and 5000 students, who each rand
     \label{fig:uniform-incomplete-distribution}
 \end{figure}
 
-Figure \ref{fig:uniform-incomplete-distribution} shows the average ranks when executing each algorithm 10 times using incomplete preference lists. We can see that all algorithms assign a vast majority (94\%) of students to their first choice; however, all algorithms, but the Hungarian algorithm, also assign students to their lower preferences and therefore have a worse profile.
+Figure \ref{fig:uniform-incomplete-distribution} shows the average ranks when executing each algorithm 10 times using incomplete preference lists. We can see that all algorithms assign a vast majority (at least 94\%) of students to their first choice; however, all algorithms, but the Hungarian algorithm, also assign students to their lower preferences and therefore have a worse profile.
 
 \begin{table}[h!]
   \centering
@@ -264,9 +264,9 @@ When using the same size dataset as before, but with complete preference lists, 
     \label{fig:uniform-complete-distribution}
 \end{figure}
 
-Figure \ref{fig:uniform-complete-distribution} shows the average ranks when executing each algorithm 10 times using complete preference lists. We see the same pattern as with incomplete preferences, namely that the Hungarian algorithm's matchings have the best profile and a low worst rank of two. Compared to that RSD and Max-PaCHA assign around 50 students to their 5th choice or worse.
+Figure \ref{fig:uniform-complete-distribution} shows the average ranks when executing each algorithm 10 times using complete preference lists. We see the same pattern as with incomplete preferences, namely that the Hungarian algorithm's matchings have the best profile and a low worst rank of two. Compared to that, RSD and Max-PaCHA assign around 50 students to their 5th choice or worse.
 
-Besides that, Table \ref{tab:results-uniform-large-complete} shows that Popular-CHA finds a matching for every instance, which helps answer the question if preference list length has an effect on Popular-CHA. For this dataset, Popular-CHA and the Hungarian algorithm always produce matchings of the same popularity, which means that there exists more than one popular matching for every instance. 
+Besides that, Table \ref{tab:results-uniform-large-complete} shows that Popular-CHA finds a matching for every instance, which helps answer the question if preference list length has an effect on Popular-CHA. For this dataset, Popular-CHA and the Hungarian algorithm always produce matchings of the same popularity. 
 
 \begin{table}[h!]
   \centering
